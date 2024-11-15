@@ -433,6 +433,10 @@ a,
   justify-content: center;
 }
 
+.hero h2 {
+  font-size: var(--12);
+}
+
 .hero .hero-banner img {
   min-width: var(--150);
   margin-left: var(--m9);
@@ -449,6 +453,7 @@ a,
   justify-content: start;
   padding: 0;
   gap: var(--4);
+  margin-bottom: var(--5);
 }
 
 .hero h1 {
@@ -617,8 +622,8 @@ text-decoration-skip-ink: none;
 .service h2 span,
 .employees .card span {
   background: linear-gradient(180deg,
-      transparent 70%,
-      var(--secondary) var(--7h));
+      transparent 75%,
+      var(--secondary) 25%);
 }
 
 .service h2 {
@@ -676,7 +681,7 @@ text-decoration-skip-ink: none;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   box-shadow: var(--4) var(--4) var(--8) 0 #00000029,
     0 0 var(--3) 0 #00000029 inset;
 }
