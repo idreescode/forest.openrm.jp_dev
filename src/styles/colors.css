@@ -1,0 +1,102 @@
+/*
+    Global
+*/
+
+body {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+
+/*
+    Colors
+*/
+
+.cl-white {
+    color: #ffffff;
+}
+.cl-dark {
+    color: #222222;
+}
+.cl-green {
+    color: #3BA642;
+}
+.cl-red {
+    color: #FF7000;
+}
+.cl-light-grey {
+    color: #C8CFCA;
+}
+.cl-gray {
+    color: #6C776F;
+}
+.cl-gray-2 {
+    color: #555555;
+}
+.cl-orange {
+    color: #EE6723;
+}
+
+
+
+
+/*
+    Backgrounds
+*/
+
+.bg-white {
+    background: #ffffff;
+}
+.bg-dark {
+    background: #222222;
+}
+.bg-green {
+    background: #3BA642;
+}
+.bg-gray {
+    background: #E9EFEB;
+}
+.bg-light-green {
+    background: #E7F5EB;
+}
+.bg-red {
+    background: #FF7000;
+}
+.bg-orange {
+    background: #EE6723;
+}
+.bg-gray-2 {
+    background: #F7FAF8;
+}
+
+
+
+/*
+    Background images
+*/
+
+.bg-image-green {
+    background: #3BA642 url("/assets/new/bg-green.webp") center;
+    background-size: cover;
+}
+.bg-image-red {
+    background: #FF7000 url("/assets/new/bg-red.webp") center;
+    background-size: cover;
+}
+.bg-image-hero-1 {
+    background: #B2C3B7 url("/assets/new/bg-hero-1.webp") center;
+    background-size: cover;
+}
+.bg-image-hero-2 {
+    background: #B2C3B7 url("/assets/new/bg-hero-2.webp") center;
+    background-size: cover;
+}
+.bg-image-forest {
+    background: #B2C3B7 url("/assets/new/bg-forest.webp") center;
+    background-size: cover;
+}
+.bg-image-leaves {
+    background: #F3F3F4 url("/assets/new/bg-leaves.webp") no-repeat right bottom;
+    background-size: 50%;
+}

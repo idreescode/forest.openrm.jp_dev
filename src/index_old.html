@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>ピッパの仲介 | 不動産営業ソフト | フォレスト</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="ピッパの仲介でお馴染み！レインズなどの物件図面を読み込むと、AIがピッと自動でオビ交換、お客さまにその場でパッとすぐ届く！仲介業務を10倍効率化して、物件の独自データベースも構築できるクラウド不動産営業ツール。仲介営業の効率化と反響の可視化を実現。無料で使える顧客管理機能つき">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="ピッパの仲介 | 不動産営業ソフト | フォレスト">
+    <meta property="og:url" content="https://forest.openrm.jp/">
+    <meta property="og:image" content="https://forest.openrm.jp/assets/images/og-common.png">
+    <meta property="og:site_name" content="ピッパの仲介 | 不動産営業ソフト | フォレスト">
+    <meta property="og:description"
+          content="ピッパの仲介でお馴染み！レインズなどの物件図面を読み込むと、AIがピッと自動でオビ交換、お客さまにその場でパッとすぐ届く！仲介業務を10倍効率化して、物件の独自データベースも構築できるクラウド不動産営業ツール。仲介営業の効率化と反響の可視化を実現。無料で使える顧客管理機能つき">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://forest.openrm.jp/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <script>
+        (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KLMWF65');
+    </script>
+
+    <link rel="stylesheet" href="dist/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+
+<header class="s-header u-row">
+
+    <div class="bg u-stretch"></div>
+    <a href="#" class="logo">
+        <img src="/assets/images/logo-white.svg" alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ">
+        <img src="/assets/images/logo-black.svg" alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ">
+    </a>
+
+    <a class="menu">
+        <svg class="u-stretch" viewBox="0 0 24 24">
+            <path d="M7.1,8A1.05,1.05,0,0,0,6,9H6a1.05,1.05,0,0,0,1.1,1H22.9A1.05,1.05,0,0,0,24,9h0a1.05,1.05,0,0,0-1.1-1H7.1ZM0,15a1,1,0,0,0,1,1H23a1,1,0,0,0,0-2H1A1,1,0,0,0,0,15Z"/>
+        </svg>
+        <svg class="u-stretch" viewBox="0 0 24 24">
+            <path d="M12,13.43l6.29,6.29a1,1,0,0,0,1.42-1.42L13.42,12l6.29-6.29A1,1,0,1,0,18.3,4.31h0L12,10.6,5.71,4.31A1,1,0,1,0,4.29,5.67h0L10.58,12,4.29,18.3a1,1,0,0,0,1.42,1.42Z"/>
+        </svg>
+    </a>
+
+    <nav class="u-flex u-row t6 w5">
+        <div class="u-row">
+            <a class="link left" href="/#pricing" onclick='or.track("Navigation", "Pricing Page", "Main Page Menu")'>料金</a>
+            <!-- <a class="link left">はじめての方へ</a> -->
+            <a class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329" onclick='or.track("Navigation", "FAQ", "Main Page Menu")'>よくあるご質問</a>
+            <a class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417" onclick='or.track("Navigation", "Blog", "Main Page Menu")'>お知らせ</a>
+        </div>
+
+        <div class="u-row">
+            <a class="link right desktop" href="https://forestapp.openrm.jp" onclick='or.track("Navigation", "Login", "Main Page Menu")'>ログイン</a>
+            <div class="u-row right buttons">
+                <a class="btn primary desktop" href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" style="overflow: hidden;" onclick='or.track("Navigation", "Signup", "Main Page Menu")'>
+                    <span>無料で始める</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+    <main id="main">
+
+        <section class="s-intro">
+
+            <div class="canvas u-stretch"></div>
+
+            <div>
+
+                <div class="l-container c-home cl-white u-flex u-col">
+                    <div class="hide-on-mobile">
+                        <h2 class="t2"><em>¥0</em>からはじめられる、ピッパの仲介営業ツール</h2>
+                    </div>
+                    <div class="show-on-mobile">
+                        <h2 class="t2"><em>¥0</em>からはじめられる、<br>ピッパの仲介営業ツール</h2>
+                    </div>
+
+                    <h1 class="t1"><em>ピッ! </em>と自動でオビ交換<br>お客さまに<em>パッ! </em>と届く</h1>
+
+                    <div class="hide-on-mobile">
+                        <h2 class="t2">業務効率化＆物件データベース！不動産仲介の強いミカタ！</h2>
+                    </div>
+                    <div class="show-on-mobile">
+                        <h2 class="t2">業務効率化＆物件データベース！<br>不動産仲介の強いミカタ！</h2>
+                    </div>
+
+                    <div class="mobile-on" style="display: none;">
+                        <a class="btn primary" href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" style="overflow: hidden;" onclick='or.track("Navigation", "Signup", "Main Page Main Section (Mobile)")'><span>無料で始める</span></a>
+                        <a class="link right" href="https://forestapp.openrm.jp" onclick='or.track("Navigation", "Login", "Main Page Main Section (Mobile)")'>ログイン</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Cards -->
+        <section class="s-cards">
+            <div class="c-card">
+                <h2>ピッ！とオビ替え</h2>
+                <img src="../assets/images/banner_replacement_screen.svg" alt="帯替え画面">
+            </div>
+
+            <div class="c-card">
+                <h2>パッ! とお客さまに届く</h2>
+                <img src="../assets/images/send_to_customer.svg" alt="お客さまに届く">
+            </div>
+
+            <div class="c-card">
+                <h2>サッ! と店頭広告</h2>
+                <img src="../assets/images/advertise.svg" alt="店頭広告">
+            </div>
+        </section>
+
+        <!-- About Forest Section -->
+        <section class="s-about padd5-sec">
+            <p class="greened w7">サービスについて</p>
+
+            <h2 class="head w7">フォレストとは</h2>
+
+            <p class="grey">面倒な仲介業務を10倍効率化する不動産営業ツールです</p>
+
+            <!-- Video -->
+            <iframe src="https://www.youtube.com/embed/6DSc0Eioi9Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!-- First Point -->
+            <div class="point">
+
+                <!-- Image -->
+                <img class="image" src="../assets/images/onepager.svg" alt="物件図面">
+
+                <!-- Explanation -->
+                <div>
+                    <p class="index">01</p>
+
+                    <h3 class="step w7">AIがピッ! と自動でオビ交換</h3>
+
+                    <!-- Checkmark 1 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">読み込んだレインズ図面の他社帯をAIが自動交換！</p>
+                    </div>
+
+                    <!-- Checkmark 2 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">カンタンな操作方法で、間取りや写真も編集可</p>
+                    </div>
+
+                    <!-- Checkmark 3 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">無料プランでもサクサク帯替え操作が可能</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Second Point -->
+            <div class="point">
+
+                <!-- Explanation -->
+                <div>
+                    <p class="index">02</p>
+
+                    <h3 class="step w7">お客さまにパッ! と届く</h3>
+
+                    <!-- Checkmark 1 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">オビ替えしたその場ですぐにお客様にお届け！</p>
+                    </div>
+
+                    <!-- Checkmark 2 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">もうコピー機やスキャナーの面倒な作業とサヨナラ</p>
+                    </div>
+
+                    <!-- Checkmark 3 -->
+                    <div class="subpoint">
+                        <img src="../assets/images/check.svg" alt="">
+
+                        <p class="w5">お客様の閲覧状況や、お気に入り物件も丸わかり</p>
+                    </div>
+
+                </div>
+
+                <!-- Image -->
+                <img class="image" src="../assets/images/onepagers.jpg" alt="物件図面">
+            </div>
+        </section>
+
+        <!-- Cases -->
+        <!-- <section class="second-sec padd1-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">仲介業務でのお悩み</p>
+                <h2 class="sec-head1">不動産仲介は、業務も紙の書類も山積み</h2>
+                <p class="sec-head2">接客や提案など大切な事に時間を使えず、情報の管理や編集作業に追われていませんか？</p>
+                <div class="show-on-mobile">
+                    <img class="img-fluid" src="assets/images/fd2.png" alt="山積みの書類" title="山積みの書類">
+                    <img class="img-fluid" src="assets/images/fd1.png" alt="帯替え手作業" title="帯替え手作業">
+                </div>
+
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="assets/images/Orion_multiple-files_1.png" alt=""></div>
+                            <span class="casetitle">CASE1</span><br>
+                            <h3 class="casehead">紙での物件資料の管理が手間</h3>
+                            <p class="casecontent">不動産仲介にとってマイソクやファクトシートなど、紙での物件情報の取り扱いは必要不可欠。毎日何十物件も取り扱う中で、情報の管理は難しくなります。</p>
+                        </div>
+                    </div>
+                    <div class="fright hide-on-mobile"><img class="img-fluid" src="assets/images/fd2.png" alt="山積みの書類" title="山積みの書類"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft hide-on-mobile"><img class="img-fluid" src="assets/images/fd1.png" alt="帯替え手作業" title="帯替え手作業"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="assets/images/Orion_appointment_1.png" alt=""></div>
+                            <span class="casetitle">CASE2</span><br>
+                            <h3 class="casehead">図面の帯がえ作業に月40時間!?</h3>
+                            <p class="casecontent">帯替えをいまだにプリンタを使って紙の手作業で行っていませんか？帯替えにかかる作業時間は月平均40時間と言われ、大きな無駄を生んでいます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <img class="img-fluid caselogo" src="assets/images/Group_352.png" alt="">
+                            <span class="casetitle">CASE3</span><br>
+                            <h3 class="casehead">不動産管理ソフトはどれも高額！</h3>
+                            <p class="casecontent">従来の不動産管理ソフトはどれも高額。また、物件情報の管理、顧客管理、営業ツールなど機能はバラバラで、導入にコストがかかりすぎてしまいます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mob-top">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="assets/images/Orion_account-error_1.png" alt=""></div>
+                            <span class="casetitle">CASE4</span><br>
+                            <h3 class="casehead">リモートだと接客・営業ができない</h3>
+                            <p class="casecontent">Web上での物件問い合わせが増加しています。しかし、自宅などのリモート環境では印刷や編集作業が出来ないため、結局店舗や事務所に足を運んで仕事をしていませんか？</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Free plan -->
+        <section class="third-sec padd2-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">無料プラン</p>
+                <h2 class="sec-head1 hide-on-mobile">業務を効率化して、独自の物件データベースまで作れちゃう</h2>
+                <h2 class="sec-head1 show-on-mobile">業務を効率化して、独自のデータベース構築</h2>
+                <p class="sec-head2">フォレストを使うことで、不動産業務のお困りごとをまとめて解決できます</p>
+
+                <div class="floated-content desktop">
+                    <div class="fleft mob-center"><img class="img-fluid" src="assets/images/Rectangle_514.png" alt="CRM機能" title="CRM機能"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">メルアド１つから<span class="greened">顧客情報</span>を管理
+                               <br> <span class="smalled">(CRM機能)</span></h3>
+                            <p class="casecontent">メールアドレス1つから顧客情報を管理できる機能を搭載。もうエクセルでの面倒な管理は必要ありません。これまで使っていた顧客リストも簡単にアップロード可能なため、業務フローの切り替えやシステム移行もスムーズです。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-off desktop">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な<span class="greened">オビ交換</span>もWebでラクラク
+                                <br> <span class="smalled">(PDF編集)</span></h3>
+                            <p class="casecontent">お客さんの急な来店でも安心！図面PDFをその場でサクサク編集してお客さんに渡せます。自前オビもサービス上で自動で用意、大きさも異なる３パターンに対応しています。編集したファイルをPDFからJPEG、PNG形式に変換可能。</p>
+                        </div>
+                    </div>
+                    <div class="fright"><img class="img-fluid" src="assets/images/Group_328.png" alt="ラクラクオビ交換" title="ラクラクオビ交換"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-on" style="display:none">
+                    <div class="fleft mob-center"><img class="img-fluid" src="assets/images/Group_328.png" alt="ラクラクオビ交換" title="ラクラクオビ交換"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な<span class="greened">オビ交換</span>もWebでラクラク
+                                <br> <span class="smalled">(PDF編集)</span></h3>
+                            <p class="casecontent">お客さんの急な来店でも安心！図面PDFをその場でサクサク編集してお客さんに渡せます。自前オビもサービス上で自動で用意、大きさも異なる３パターンに対応しています。編集したファイルをPDFからJPEG、PNG形式に変換可能。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div></div>
+                <div class="floated-content desktop">
+                    <div class="fleft mob-center"><img class="img-fluid" src="assets/images/Group_387.png" alt="AI-OCRでデータベース化" title="AI-OCRでデータベース化"></div>
+                    <div class="fright">
+                        <div class="casebox">
+
+                            <h3 class="casehead">紙の物件情報を、独自の<span class="greened">データ資産</span>に
+                               <br> <span class="smalled">(AI-OCR・自動文字認識)</span></h3>
+                            <p class="casecontent">今話題のAI-OCRを搭載！図面データからAIが自動で文字情報を認識し記憶。手入力を一切行わず、日々取り扱う物件情報を一括管理できます。データが自動で貯まるため、独自の物件データベースも構築されます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-off desktop">
+                    <div class="fleft ">
+                        <div class="casebox">
+                            <h3 class="casehead">完全<span class="greened">リモート</span>でも仲介営業が可能に
+                                <br> <span class="smalled">(PDF編集、顧客管理、物件管理)</span></h3>
+                            <p class="casecontent">お客さんからの急な物件の問い合わせや追客も完全リモートで対応可能です。PDFやJPEGでの図面データをWeb上でフォレストに取り込み、帯編集からファイル形式の変換（PDF、JPEG、PNG他）、ダウンロードまで一括して行えるため、職場環境にいなくても営業を止めずにビジネスを加速できます。</p>
+                        </div>
+                    </div>
+                    <div class="fright"><img class="img-fluid" src="assets/images/Rectangle_516.png" alt="リモート仲介営業" title="リモート仲介営業"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-on" style="display:none">
+                    <div class="fleft mob-center"><img class="img-fluid" src="assets/images/Rectangle_516.png" alt="リモート仲介営業" title="リモート仲介営業"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">完全<span class="greened">リモート</span>でも仲介営業が可能に
+                                <br> <span class="smalled">(PDF編集、顧客管理、物件管理)</span></h3>
+                            <p class="casecontent">お客さんからの急な物件の問い合わせや追客も完全リモートで対応可能です。PDFやJPEGでの図面データをWeb上でフォレストに取り込み、帯編集からファイル形式の変換（PDF、JPEG、PNG他）、ダウンロードまで一括して行えるため、職場環境にいなくても営業を止めずにビジネスを加速できます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fourth-sec padd3-sec">
+            <div class="main-container">
+                <div class="bordered-box">
+                    <h3 class="box-head">これら機能がすべて<span class="greened">無料</span>で使い放題！</h3>
+                    <p class="box-text">登録は今すぐこちらから！</p>
+                    <a href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" class="box-link" onclick='or.track("Navigation", "Signup", "Main Page Free Plan CTA")'>無料アカウント登録</a>
+                    <p class="box-desc">個人単位でのご登録・¥0からご利用が可能です。ユーザが一方的に課金されることはありません。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pro Plan Benefits -->
+        <section class="s-benefits">
+            <img class="bgImg" alt="" src="assets/images/forest-background-logo.svg">
+            <div class="background"></div>
+
+            <h3 class="subtitle">有料プラン月額8,000円〜</h3>
+
+            <div class="title">
+                <h2 class="head">より成約を<br>増やしたい方のために</h2>
+
+                <div class="yellow-bar"></div>
+            </div>
+
+            <p>業務効率を格段に上げ、成約件数を増やしたい方向けのサービスです。</p>
+
+            <!-- Cards -->
+                <div class="cards">
+                    <!-- Time -->
+                    <div class="card">
+                        <!-- Icon -->
+                        <div class="icon">
+                            <img src="assets/images/clock-minimal.svg" alt="時計">
+                        </div>
+
+                        <h3 class="w7 hide-on-mobile">作業時間は<em>半分</em>に!</h3>
+
+                        <h3 class="w7 show-on-mobile">作業時間は<br><em>半分</em>に!</h3>
+
+                        <p>オビ替えやお客さまへの物件提案作業を自動化することによって、<br>飛躍的な業務効率を実現します。</p>
+
+                        <img class="visual" src="assets/images/time-reduction.svg" alt="">
+                    </div>
+
+                    <!-- Introductions -->
+                    <div class="card">
+                        <!-- Icon -->
+                        <div class="icon">
+                            <img src="assets/images/house.svg" alt="">
+                        </div>
+
+                        <h3 class="w7 hide-on-mobile">提案物件数は<em>5倍</em>に!</h3>
+
+                        <h3 class="w7 show-on-mobile">提案物件数は<br><em>5倍</em>に!</h3>
+
+                        <p>業務の自動化とデジタル化によってメールでの物件提案と比べて、<br>お客さまに提案できる物件数が大幅アップします。</p>
+
+                        <img class="visual" src="assets/images/5x-introductions-minimal.svg" alt="">
+                    </div>
+                </div>
+        </section>
+
+        <!-- Service Utility Section -->
+        <section class="s-utility">
+            <div class="background">
+                <p class="greened w7">サービスの利便性</p>
+
+                <h2 class="head w7">作業は短く 接客は手厚く</h2>
+
+                <div class="cards">
+                    <!-- Time card -->
+                    <div class="card clock">
+                        <img src="../assets/images/clock.svg" alt="時計">
+                        <h3 class="t4">これまでの作業時間を大幅削減</h3>
+                        <p class="grey">これまでお客さまに提案する前に行っていたオビ替えなどの面倒な作業時間を大幅に削減できます。</p>
+                    </div>
+
+                    <!-- Customer service card -->
+                    <div class="card customer-service">
+                        <img src="../assets/images/customer-service.png" alt="接客">
+                        <h3 class="t4">空いた時間でより丁寧な接客応対！</h3>
+                        <p class="grey">空いた時間をお客さまへのより丁寧な接客に回すことによってサービスの品質向上と成約アップに繋げられます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image with tagline -->
+            <div class="tagline">
+                <div class="content u-row">
+                    <div class="message u-col">
+                        <span class="w7">より丁寧な接客によって</span>
+                        <span class="w7">成約率アップ！</span>
+                    </div>
+
+                    <img class="foreground" src="../assets/images/tagline-image.png" alt="より丁寧な接客によって成約率アップ！">
+                </div>
+            </div>
+        </section>
+
+        <section class="fifth-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">有料プランのみ対象</p>
+                <h2 class="sec-head1">成約アップのための便利な機能</h2>
+                <p class="sec-head2">AIによる帯がえの完全自動化、お客さまとネット上で物件情報をやり取り、チーム連携機能など豊富なラインアップで成約アップ！</p>
+
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な帯替えもラクラク、AIがあなたの代わりに完全自動で行ってくれる</h3>
+                            <h4 class="black-bg">AI自動帯替え</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="assets/images/functions-obi-change-obi-change.png" alt="AI自動帯替え" title="AI自動帯替え"></div>
+                            <p class="casecontent">当社が独自に開発した最先端のAI技術によって、物件図面に記載されている他社の会社情報を自動で認識し、登録されている御社の情報と完全自動で置き換えてくれます。これによって、店舗あたり平均で月約40時間とも言われる帯がえ業務をほぼゼロにできます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="assets/images/functions-obi-change-obi-change.png" alt="AI自動帯替え" title="AI自動帯替え"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">マイソクでの物件提案がマップ付でできる</h3>
+                            <h4 class="black-bg">物件マップ提案</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="assets/images/Group_357.png" alt="物件マップ提案" title="物件マップ提案"></div>
+                            <p class="casecontent">物件情報を一切手入力せず、最先端のAI技術を使って所在地などの物件情報を登録可能。マイソクでの物件提案もマップ付で行えるように。お客様は過去紹介された物件をマップ上で一覧でき、顧客満足度の向上も期待できます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="assets/images/Group_357.png" alt="物件マップ提案" title="物件マップ提案"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">お客さんが好みの物件を可視化する</h3>
+                            <h4 class="black-bg">お客様専用ページ</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="assets/images/Group_3502.png" alt="お客様専用ページ" title="お客様専用ページ"></div>
+                            <p class="casecontent">オンライン上でお客さんの閲覧状況を確認することで、どの物件をご覧になったのかを把握できます。またお客さんがどの物件に関心を持っているかを可視化してくれるため、電話などでの確認が不要になり、追客効率が格段に上がります。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="assets/images/Group_3502.png" alt="お客様専用ページ" title="お客様専用ページ"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">物件の共有から問合せ対応までチャット内容をチームで共有し、社内で連携</h3>
+                            <h4 class="black-bg">チャット機能</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="assets/images/Group_1662.png" alt="チャット機能" title="チャット機能"></div>
+                            <p class="casecontent">チーム内で物件情報を相互共有し、お客様からのチャット問合わせにもチームで対応可能。社内全体の営業効率が飛躍的にアップ。返信漏れアラート、送信メールの開封状況確認で、人為的ミスによる営業の取りこぼしも防げます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="assets/images/Group_1662.png" alt="チャット機能" title="チャット機能"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="s-interview-cards s-cards" id="interviews">
+            <div class="title">
+                <p class="greened w7">フォレストをご利用中のお客様の声</p>
+                <h2 class="sec-head1">導入事例</h2>
+            </div>
+            <div class="cards" id="interviewCards">
+                <a class="c-card" href="/interviews/tsunashima-tokyo-bunkyo/">
+                    <div class="prolabel w7">フォレストPRO</div>
+                    <img src="/assets/images/interview_tsunashima_thumb.jpg" alt="">
+                    <div class="description">
+                        <div class="companyName">株式会社ツナシマ様</div>
+                        <div class="title w7">今まで30分かかっていたメールでの物件提案が5分に短縮し顧客満足度も向上</div>
+                        <div class="industry"><span class="note">業種: </span>居住用賃貸仲介、不動産オーナー業、サービスアパートメント事業など</div>
+                    </div>
+                </a>
+
+                <a class="c-card" href="/interviews/elion/">
+                    <div class="prolabel w7">フォレストPRO</div>
+                    <img src="/assets/images/interview_elion_thumb.png" alt="">
+                    <div class="description">
+                        <div class="companyName">株式会社エリオン様</div>
+                        <div class="title w7">フォレストで物件の仕入れからお客様への提案までをワンストップで完結</div>
+                        <div class="industry"><span class="note">業種: </span>法人向け社宅仲介</div>
+                    </div>
+                </a>
+
+                <div class="previous" id="interviewPrevious"><img src="/assets/images/next.svg" alt=""></div>
+                <div class="next" id="interviewNext"><img src="/assets/images/next.svg" alt=""></div>
+            </div>
+        </section>
+
+<!--         <section class="s-companies" id="companies">
+            <div class="title">
+                <p class="greened w7">導入企業様</p>
+                <h2 class="sec-head1">導入企業様一覧</h2>
+            </div>
+            <div class="logos">
+                <div class="logo"><img src="/assets/images/logos/pitathouse.png" alt="ピタットハウス"></div>
+                <div class="logo"><img src="/assets/images/logos/mitsubishi.png" alt="三菱地所ハウスネット"></div>
+                <div class="logo"><img src="/assets/images/logos/elion.png" alt="株式会社エリオン"></div>
+                <div class="logo"><img src="/assets/images/logos/daiwa.png" alt="大和エステート株式会社"></div>
+                <div class="logo"><img src="/assets/images/logos/mufg.png" alt="三菱UFJ不動産販売"></div>
+                <div class="logo"><img src="/assets/images/logos/mitsuisumitomo.png" alt="三井住友トラスト不動産"></div>
+            </div>
+        </section> -->
+
+        <section class="s-price" id="pricing">
+            <div class="main-container">
+                <p class="spaned-p greened">料金プラン</p>
+                <h2 class="sec-head1">月額利用料のみ、その他費用は一切なし！明朗会計</h2>
+                <p class="sec-head2">フォレストは、即日導入が可能。人数や事業規模に合わせて選べる明朗な料金プランをご用意しています。</p>
+            </div>
+
+            <!-- web version price table -->
+            <div class="plans desktop">
+                <table>
+
+                    <col> <col>  <col>  <col>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>無料</th>
+                            <th colspan="2">有料(PRO)</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <span class="planName">FREE</span>
+                                <br>
+                                <span class="details">個人向け無料プラン</span>
+                                <br>
+                                <span class="planPrice">0</span>
+                                <span class="currency">円/月</span>
+                            </th>
+                            <th>
+                                <span class="planName">LIGHT</span>
+                                <br>
+                                <span class="details">個人向け有料プラン</span>
+                                <br>
+                                <span class="planPrice">8,000</span>
+                                <span class="currency">円/月</span>
+                            </th>
+                            <th>
+                                <span class="planName">BASIC</span>
+                                <br>
+                                <span class="details">小規模チーム向け有料プラン</span>
+                                <br>
+                                <span class="planPrice">15,200</span>
+                                <span class="currency">円/月</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="w5">初期設定料</td>
+                            <td class="cl-grey-dark">-</td>
+                            <td class="cl-grey-dark">なし</td>
+                            <td class="cl-grey-dark">なし</td>
+                        </tr>
+                        <tr>
+                            <td class="w5">解約手数料</td>
+                            <td class="cl-grey-dark">-</td>
+                            <td class="cl-grey-dark">なし</td>
+                            <td class="cl-grey-dark">なし</td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">アカウント制限</td></tr>
+                        <tr>
+                            <td class="w5">発行ID数(ご利用可能人数)</td>
+                            <td>1名</td>
+                            <td class="t4 w7"><span class="t1">1</span>名</td>
+                            <td class="t4 w7"><span class="t1">3</span>名まで</td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">オビ交換</td></tr>
+                        <tr>
+                            <td class="w5">手動(イメージ編集)</td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="w5">完全自動(AIオビ替え)</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="w5">図面データの一括読み込み</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">物件データベース</td></tr>
+                        <tr>
+                            <td class="w5">自動データベース登録</td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="w5">AI-OCR文字コピー</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">クラウド物件提案</td></tr>
+                        <tr>
+                            <td class="w5">顧客情報管理(CRM)</td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="w5">クラウド物件提案</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">チーム共有</td></tr>
+                        <tr>
+                            <td class="w5">オビ替え連携</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+
+                        <tr class="space"><td colspan="4"></td></tr>
+                        <tr class="group w7"><td colspan="4">セキュリティ</td></tr>
+                        <tr>
+                            <td class="w5">データセキュリティ保証</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="w5">チャットサポート</td>
+                            <td>72時間以内</td>
+                            <td>即日(営業時間内)</td>
+                            <td>即日(営業時間内)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="plans mobile mobile-on main-container u-col" style="display: none">
+                <div class="plan free u-col">
+                    <div class="summary">
+                        <h3 class="name">FREE</h3>
+                        <p class="cl-grey-dark">個人向け無料プラン</p>
+                        <p class="price w4"><span class="w7">0</span>円/月</p>
+                    </div>
+                    <div class="seats">
+                        <p class="w5">ご利用可能人数</p>
+                        <p class="count"><span class="w7">1名</span>まで</p>
+                    </div>
+                    <div class="features">
+                        <ul>
+                            <li class="w5"><i class="fas fa-check-circle"></i>手動オビ交換</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>物件の自動データベース登録</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>72時間以内のチャットサポート</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan premium u-col">
+                    <div class="summary">
+                        <h3 class="name">LIGHT</h3>
+                        <p class="cl-grey-dark">個人向け有料プラン</p>
+                        <p class="price w4"><span class="w7">8,000</span>円/月</p>
+                    </div>
+                    <div class="seats">
+                        <p class="w5">ご利用可能人数</p>
+                        <p class="count"><span class="w7">1名</span>まで</p>
+                    </div>
+                    <div class="features">
+                        <div class="common">
+                            <p class="cl-grey-dark">FREEプランの全機能</p>
+                            <span class="plus">+</span>
+                        </div>
+                        <ul>
+                            <li class="w5"><i class="fas fa-check-circle"></i>完全自動オビ替え(AIオビ替え)</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>図面データの一括読み込み</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>AI-OCR文字コピー</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>クラウド物件提案</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>データセキュリティ保証</li>
+                            <li class="w5"><i class="fas fa-check-circle"></i>即時(営業時間内)のチャットサポート</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan premium u-col">
+                    <div class="summary">
+                        <h3 class="name">BASIC</h3>
+                        <p class="cl-grey-dark">小規模チーム向け有料プラン</p>
+                        <p class="price w4"><span class="w7">15,200</span>円/月</p>
+                    </div>
+                    <div class="seats">
+                        <p class="w5">ご利用可能人数</p>
+                        <p class="count"><span class="w7">3名</span>まで</p>
+                    </div>
+                    <div class="features">
+                        <div class="common">
+                            <p class="cl-grey-dark">BASICプランの全機能</p>
+                            <span class="plus">+</span>
+                        </div>
+                        <ul>
+                            <li class="w5"><i class="fas fa-check-circle"></i>オビ替え連携</li>
+                        </ul>
+                        <div class="team u-col">
+                            <p class="title w7"><span>4名</span>以上、利用希望の場合</p>
+                            <p class="caption cl-grey-dark">BASICプラン内で利用人数に応じて追加購入が可能</p>
+                            <span class="badge cl-white">1名あたり</span>
+                            <p class="price w4"><span class="w7">+5,000</span>円/月</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sixth-sec padd5-sec">
+            <div class="main-container">
+                <div class="bordered-box">
+                    <h3 class="box-head">PROプラン(有料)</h3>
+                    <p class="box-text">より成約を増やしたい方は<span>今すぐ資料請求！</span></p>
+                    <a href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="box-link" onclick='or.track("Navigation", "Inquiry", "Index")' target="_blank">資料請求をする(無料)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="eight-sec padd5-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">掲載メディア</p>
+                <h2 class="sec-head1">掲載メディア一覧</h2>
+                <p class="sec-head2">フォレストは、様々な全国メディアで取り上げられた実績のあるサービスです</p>
+
+                <div class="floated-content">
+                    <div class="floating-img"><a target="_blank" href="https://www.nikkei.com/article/DGXMZO65429610U0A021C2EA1000/"><img src="assets/images/imagex20.png" alt="日本経済新聞"  title="日本経済新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.sankei.com/economy/news/190830/prl1908300229-n1.html"><img src="assets/images/imagex26.png" alt="産経新聞" title="産経新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.jutaku-s.com/newsp/id/0000040493"><img src="assets/images/imagex22.png" alt="住宅新報" title="住宅新報" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.sogo-unicom.co.jp/property/"><img src="assets/images/imagex24.png" alt="プロパティマネジメント" title="プロパティマネジメント" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.zenchin.com/news/post-4846.php"><img src="assets/images/imagex25.png" alt="全国賃貸住宅新聞" title="全国賃貸住宅新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://newspicks.com/news/4669908/"><img src="assets/images/imagex23.png" alt="NewsPicks" title="NewsPicks" class="img-fluid"></a></div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="s-compare-horizontal">
+            <div class="header">
+                <h2 class="title">まずは無料で体験してみましょう</h2>
+                <p class="desc">無料でご利用いただけるプランをご用意しています</p>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <p class="subtitle w7">業務のお困りごとをまとめて解決！</p>
+                    <h3 class="title">無料でアカウント作成</h3>
+                    <p class="desc">メルアド一つからのご登録が可能。<br>
+                        初期導入費や追加費用は一切かかりません。</p>
+                    <div class="button">
+                        <a href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" class="btn primary-alt" onclick='or.track("Navigation", "Signup", "Main Page Free Plan Card")'><span>無料でアカウント作成</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="subtitle w7">有料会員ならもっと便利な機能が使い放題</p>
+                    <h3 class="title">PROプラン(有料)</h3>
+                    <p class="desc">月額8,000円〜<br>初期導入費やキャンセル費などは<span>一切かかりません。</span></p>
+                    <div class="button">
+                        <a href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="btn primary" onclick='or.track("Navigation", "Inquiry", "Main Page Pro Plan Card")' target="_blank"><span>資料請求をする(無料)</span></a>
+                    </div>
+                </div>
+            </div>
+            <img class="bg" src="/assets/images/forest_with_animals_no_building.svg" alt="フォレスト">
+        </section>
+
+        <section class="s-contact-medium">
+            <div class="header">
+                <p class="spaned-p greened">お問い合わせ</p>
+                <h2 class="sec-head1">お気軽にご相談ください</h2>
+                <p class="desc">質問・ご相談などありましたら、下記までお問い合わせください。<br>気になる点・ご不明な点・導入準備など、専任のスタッフが丁寧にご案内いたします。</p>
+            </div>
+            <div class="content">
+                <div class="part1">
+                    <p class="title">WEBからのお問い合わせ</p>
+                    <div class="button"><a onclick='return contact("Main Page CTA Contact (bottom section)");'
+                            class="btn default"><span>お問い合わせ</span></a></div>
+                </div>
+                <div class="part2">
+                    <p class="title">お電話からのお問い合わせ</p>
+                    <p class="phone"><a href="tel:050-3033-5162">050 - 3033 - 5162</a></p>
+                    <p class="time">受付時間 10:00 ~ 17:00 （土・日・祝を除きます）</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="s-footer">
+            <div class="info">
+            <div>
+                <div>
+                    <img src="/assets/images/forest_logo_white.svg" alt="フォレストのロゴ" title="フォレストのロゴ">
+                </div>
+                <div class="address">
+                    <p class="name">株式会社オープンルーム</p>
+                    <p>東京都渋谷区道玄坂一丁目 2 番 3 号　渋谷フクラス 17 階<br>050 - 3033 - 5162</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">フォレストについて</p>
+                <div class="column">
+                    <a class="link" href="/" onclick='or.track("Navigation", "Main", "Main Page Footer")'>トップ</a>
+                    <br><br><br>
+                    <a class="link" onclick='or.track("Navigation", "FAQ", "Main Page Footer")' target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329">よくあるご質問</a>
+                    <a class="link" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417" onclick='or.track("Navigation", "Blog", "Main Page Footer")'>お知らせ</a>
+                    <a class="link" onclick='return contact("Main Page Footer");'>お問い合わせ</a>
+                    <a class="link" href="https://openrm.co.jp/policy.html" onclick='or.track("Navigation", "Privacy Policy", "Main Page Footer")'>プライバシーポリシー</a>
+                    <a class="link" href="https://openrm.co.jp/" onclick='or.track("Navigation", "Corporate Page", "Main Page Footer")'>運営会社</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">機能</p>
+                <div class="column">
+                    <a class="link" href="/features/rpa.html" onclick='or.track("Navigation", "Features (図面編集・帯替えRPA)", "Main Page Footer")'>図面編集・帯替えRPA</a>
+                    <a class="link" href="/features/ai-ocr.html" onclick='or.track("Navigation", "Features (AI-OCR物件データベース)", "Main Page Footer")'>AI-OCR物件データベース</a>
+                    <a class="link" href="/features/share.html" onclick='or.track("Navigation", "Features (お客様専用ページ作成)", "Main Page Footer")'>お客様専用ページ作成</a>
+                    <a class="link" href="/features/customer-logs.html" onclick='or.track("Navigation", "Features (お客様の行動ログ)", "Main Page Footer")'>お客様の行動ログ</a>
+                    <a class="link" href="/features/data.html" onclick='or.track("Navigation", "Features (顧客データベース)", "Main Page Footer")'>顧客データベース</a>
+                    <a class="link" href="/features/support.html" onclick='or.track("Navigation", "Features (サポート体制)", "Main Page Footer")'>サポート体制</a>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright © Open Room inc. All Rights Reserved.</p>
+                <a href="https://openrm.co.jp/" onclick='or.track("Navigation", "Corporate Page", "Main Page Footer Link")'>
+                    <img src="/assets/images/openroom_white_small.svg" alt="Open Room Inc. ロゴ" title="Open Room Inc. ロゴ">
+                </a>
+            </div>
+    </footer>
+
+
+
+    <script src="dist/scripts.js"></script>
+    <script>
+        function show_more(i){
+            let x = document.getElementsByClassName("hidden-items")[i-1],
+                y = document.getElementsByClassName("show-more-less")[i-1];
+
+            if(x.style.maxHeight === "0px"){
+                x.style.maxHeight = "800px";
+                y.innerHTML = "詳細を非表示  &nbsp;<i class='fas fa-angle-up'>"
+            }else{
+                x.style.maxHeight = "0px";
+                y.innerHTML = "詳細を表示 &nbsp;<i class='fas fa-angle-down'>"
+            }
+        }
+    </script>
+</body>
+
+</html>

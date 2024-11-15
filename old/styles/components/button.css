@@ -1,0 +1,30 @@
+a.contact {
+    right: -3px;
+    top: 45%;
+    z-index: 999;
+    width: 43px;
+    height: 184px;
+    border-radius: 3px;
+    position: fixed;
+    color: white;
+    background-color: #ff7000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+a.contact span {
+    width: 14px;
+    line-height: 1.07;
+    font-weight: 700;
+    font-style: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    a.contact {
+        display: none;
+    }
+}

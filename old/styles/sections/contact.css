@@ -1,0 +1,116 @@
+/*
+    Root
+*/
+
+.s-contact {
+    max-width: 1000px;
+    margin: 78px auto 0 auto;
+}
+
+
+
+/*
+    Header
+*/
+
+.s-contact-header .desc {
+    color: #555555;
+}
+
+@media (min-width: 769px) {
+    .s-contact-header {
+        margin-bottom: 16px;
+    }
+    .s-contact-header .title {
+        font-size: 36px;
+    }
+    .s-contact-header .desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-contact-header {
+        margin-bottom: 50px;
+    }
+    .s-contact-header .t5 {
+        font-size: 16px;
+    }
+    .s-contact-header .title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .s-contact-header .desc {
+        font-size: 14px;
+    }
+}
+
+
+
+/*
+    Content
+*/
+
+.s-contact-content {
+    text-align: center;
+    line-height: 1;
+}
+.s-contact-content .t6 {
+    margin-bottom: 8px;
+}
+.s-contact-content .btn {
+    padding: 0 70px;
+}
+.s-contact-content .phone {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+.s-contact-content .time {
+    font-size: 13px;
+}
+
+@media (min-width: 769px) {
+    .s-contact-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-contact-content .t6 {
+        font-size: 15px;
+    }
+}
+
+
+
+/*
+    Content parts
+*/
+
+@media (min-width: 769px) {
+    .s-contact-part {
+        padding: 20px 0 8px 0;
+    }
+    .s-contact-part--1 {
+        padding-left: 32px;
+        padding-right: 32px;
+        border-right: 1px solid #EDECED;
+    }
+    .s-contact-part--2 {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-contact-part {
+        padding: 0 24px;
+    }
+    .s-contact-part--1 {
+        margin-bottom: 36px;
+    }
+}
+

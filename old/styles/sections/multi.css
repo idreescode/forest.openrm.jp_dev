@@ -1,0 +1,123 @@
+.s-multi {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 78px;
+}
+
+.s-multi .header .desc.additional {
+    margin: auto;
+    margin-top: 40px;
+    line-height: 1.64;
+    font-size: 14px;
+}
+
+.s-multi .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.s-multi.columns-1 .content .item {
+    width: 100%;
+}
+.s-multi.columns-2 .content .item {
+    width: 47.2%;
+}
+.s-multi.columns-3 .content .item {
+    width: 32%;
+}
+
+.s-multi .content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.s-multi .content .item .desc {
+    text-align: left;
+}
+
+.s-multi .content .item p {
+    line-height: 1.64;
+    font-size: 14px;
+}
+
+.s-multi .content .item img {
+    max-height: 125px;
+    margin: auto;
+}
+
+.s-multi .content .item img.large {
+    max-height: 181px;
+}
+
+.s-multi .content .item img.icon {
+    width: 76px;
+}
+
+.s-multi .content .item .title, .s-multi .content .item .point, .s-multi .content .item .subtitle {
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.s-multi .content .item .subtitle {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.s-multi .content .item .title.smaller {
+    font-size: 18px;
+}
+
+.s-multi .content .item .point {
+    border-bottom: 2px solid #EDECED;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.s-multi .content .item .point em {
+    font-style: normal;
+    color: #1c9e3b;
+    padding-right: 10px;
+}
+
+.s-multi .link.secondary {
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .s-multi .content .item .title {
+        font-size: 16px;
+    }
+    .s-multi.columns-2 .content .item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .s-multi.columns-3 .content .item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .s-multi {
+        margin: 20px;
+    }
+}
+
+@media all and (-ms-high-contrast:none) {
+    .s-multi .content .item {
+        align-items: stretch;
+    }
+
+    .s-multi .content .item img.feature  {
+        height: 100%;
+        width: 100%;
+    }
+}

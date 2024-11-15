@@ -1,0 +1,38 @@
+.s-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    padding: 0 25px;
+}
+
+.s-cards .c-card {
+    height: unset;
+}
+
+.s-cards .c-card:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.s-cards .c-card h2 {
+    font-size: 26px;
+}
+
+.s-cards .c-card img {
+    max-width: 100%;
+    flex: 0 0 auto; /* for IE to keep the ratio */
+}
+
+@media (max-width: 1028px) {
+    .s-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-cards .c-card:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

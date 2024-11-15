@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+    .r-rabby .s-header .menu {
+        display: none;
+    }
+}
+
+.r-rabby .s-header {
+    justify-content: space-between;
+}

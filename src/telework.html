@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>フォレスト Forest： 不動産業界向け業務改善生産性向上ツール</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="手頃な価格でRPAとクラウドを導入でき、お客様への物件紹介を効率化するサービスです。「帯交換」から「追客・顧客管理」までオンラインで行い、テレワーク・在宅勤務を簡単に実現。">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="フォレスト Forest： 不動産業界向け業務改善生産性向上ツール">
+    <meta property="og:url" content="https://forest.openrm.jp/">
+    <meta property="og:image" content="https://forest.openrm.jp/assets/images/og-common.png">
+    <meta property="og:site_name" content="無料帯替えオンラインソフトForest(フォレスト)">
+    <meta property="og:description"
+        content="手頃な価格でRPAとクラウドを導入でき、お客様への物件紹介を効率化するサービスです。「帯交換」から「追客・顧客管理」までオンラインで行い、テレワーク・在宅勤務を簡単に実現。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://forest.openrm.jp/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <script>
+        (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KLMWF65');
+    </script>
+
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="s-header u-row">
+
+        <div class="bg u-stretch"></div>
+        <a href="#" class="logo">
+            <img src="/assets/images/logo-white.svg" alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ">
+            <img src="/assets/images/logo-black.svg" alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ">
+        </a>
+
+        <a class="menu">
+            <svg class="u-stretch" viewBox="0 0 24 24">
+                <path
+                    d="M7.1,8A1.05,1.05,0,0,0,6,9H6a1.05,1.05,0,0,0,1.1,1H22.9A1.05,1.05,0,0,0,24,9h0a1.05,1.05,0,0,0-1.1-1H7.1ZM0,15a1,1,0,0,0,1,1H23a1,1,0,0,0,0-2H1A1,1,0,0,0,0,15Z">
+            </svg>
+            <svg class="u-stretch" viewBox="0 0 24 24">
+                <path
+                    d="M12,13.43l6.29,6.29a1,1,0,0,0,1.42-1.42L13.42,12l6.29-6.29A1,1,0,1,0,18.3,4.31h0L12,10.6,5.71,4.31A1,1,0,1,0,4.29,5.67h0L10.58,12,4.29,18.3a1,1,0,0,0,1.42,1.42Z">
+            </svg>
+        </a>
+
+        <nav class="u-flex u-row t6 w5">
+            <div class="u-row">
+                <a class="link left" href="/#pricing" onclick='or.track("Navigation", "Pricing Page", "Main Page Menu")'>料金</a>
+                <!-- <a class="link left">はじめての方へ</a> -->
+                <a class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329" onclick='or.track("Navigation", "FAQ", "Main Page Menu")'>よくあるご質問</a>
+                <a class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417" onclick='or.track("Navigation", "Blog", "Main Page Menu")'>お知らせ</a>
+            </div>
+
+            <div class="u-row">
+                <a class="link right desktop" href="https://forestapp.openrm.jp" onclick='or.track("Navigation", "Login", "Main Page Menu")'>ログイン</a>
+                <div class="u-row right buttons">
+                    <a class="btn primary desktop" href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" style="overflow: hidden;" onclick='or.track("Navigation", "Signup", "Main Page Menu")'>
+                        <span>無料で始める</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="main">
+
+        <section class="s-intro">
+
+            <div class="canvas u-stretch">
+                <figure>
+                    <picture>
+                        <source srcset="/assets/images/forest-1@3378.webp 3378w,
+                                    /assets/images/forest-1@1920.webp 1920w,
+                                    /assets/images/forest-1@1600.webp 1600w,
+                                    /assets/images/forest-1@1200.webp 1200w,
+                                    /assets/images/forest-1@992.webp 992w,
+                                    /assets/images/forest-1@768.webp 768w,
+                                    /assets/images/forest-1@576.webp 576w" sizes="100vw" type="image/webp">
+                        <img class="hills" src="/assets/images/forest-1@3378.png" alt="山々">
+                    </picture>
+                    <img class="balloon3" src="/assets/images/balloon-5.svg" alt="気球">
+                    <img class="balloon2" src="/assets/images/balloon-1.svg" alt="気球">
+                    <img class="balloon1" src="/assets/images/balloon-2.svg" alt="気球">
+                    <img class="cloud2" src="/assets/images/cloud-2.svg" alt="雲">
+                    <img class="cloud3" src="/assets/images/cloud-3.svg" alt="雲">
+                </figure>
+
+            </div>
+
+            <div>
+
+                <div class="l-container c-home cl-white u-flex u-col">
+                    <div>
+                        <h1 class="t1">不動産業界の<span class="mobilebreak">ソフトウェア改革</span></h1>
+                        <h2 class="t2"> 業務の課題をこれ１つで解決。<span class="mobile-on" style="display: none;"><br></span>¥<em>0</em>ではじめる不動産クラウドCRMサービス</h2>
+                    </div>
+                    <div class="mobile-on" style="display: none;">
+                        <a class="btn primary" href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" style="overflow: hidden;" onclick='or.track("Navigation", "Signup", "Main Page Main Section (Mobile)")'><span>無料で始める</span></a>
+                        <a class="link right" href="https://forestapp.openrm.jp" onclick='or.track("Navigation", "Login", "Main Page Main Section (Mobile)")'>ログイン</a>
+                    </div>
+                </div>
+
+                <a class="image" href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" onclick='or.track("Navigation", "Signup", "Main Page Main Section (Laptop Image)")'>
+                    <div class="container">
+                        <div class="laptop u-horizontal">
+                            <img class="img-fluid" alt="Forest お客様ページ" title="Forest お客様ページ" src="/assets/images/main-laptop.png">
+                            <div class="badge">
+                                <img src="/assets/images/badge.svg" alt="キャンペーンバッジ" title="キャンペーンバッジ">
+                                <div class="text u-col cl-white t7">
+                                    <div class="head t6">導入社数</div>
+                                    <div class="main u-row"><div class="t1 w4">1,000</div><span class="t5">社</span></div>
+                                    <div class="t3">達成!!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="second-sec padd1-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">仲介業務でのお悩み</p>
+                <h2 class="sec-head1">不動産仲介は、業務も紙の書類も山積み</h2>
+                <p class="sec-head2">接客や提案など大切な事に時間を使えず、情報の管理や編集作業に追われていませんか？</p>
+                <div class="show-on-mobile">
+                    <img class="img-fluid" src="/assets/images/fd2.png" alt="山積みの書類" title="山積みの書類">
+                    <img class="img-fluid" src="/assets/images/fd1.png" alt="リモート営業" title="リモート営業">
+                </div>
+
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="/assets/images/Orion_account-error_1.png" alt=""></div>
+                            <span class="casetitle">CASE1</span><br>
+                            <h3 class="casehead">テレワーク導入がうまくいかない</h3>
+                            <p class="casecontent">Web上での物件問い合わせが増加しています。しかし、自宅などのリモート環境では印刷や編集作業が出来ないため、結局店舗や事務所に足を運んで仕事をしていませんか？</p>
+                        </div>
+                    </div>
+                    <div class="fright hide-on-mobile"><img class="img-fluid" src="/assets/images/fd1.png" alt="リモート営業" title="リモート営業"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft hide-on-mobile"><img class="img-fluid" src="/assets/images/fd2.png" alt="山積みの書類" title="山積みの書類"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="/assets/images/Orion_appointment_1.png" alt=""></div>
+                            <span class="casetitle">CASE2</span><br>
+                            <h3 class="casehead">図面の帯がえ作業に月40時間!?</h3>
+                            <p class="casecontent">帯替えをいまだにプリンタを使って紙の手作業で行っていませんか？帯替えにかかる作業時間は月平均40時間と言われ、大きな無駄を生んでいます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <img class="img-fluid caselogo" src="/assets/images/Group_352.png" alt="">
+                            <span class="casetitle">CASE3</span><br>
+                            <h3 class="casehead">不動産管理ソフトはどれも高額！</h3>
+                            <p class="casecontent">従来の不動産管理ソフトはどれも高額。また、物件情報の管理、顧客管理、営業ツールなど機能はバラバラで、導入にコストがかかりすぎてしまいます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mob-top">
+                        <div class="casebox">
+                            <div class="caselogo"><img class="img-fluid" src="/assets/images/Orion_multiple-files_1.png" alt=""></div>
+                            <span class="casetitle">CASE4</span><br>
+                            <h3 class="casehead">紙での物件資料の管理が手間</h3>
+                            <p class="casecontent">不動産仲介にとってマイソクやファクトシートなど、紙での物件情報の取り扱いは必要不可欠。毎日何十物件も取り扱う中で、情報の管理は難しくなります。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-sec padd2-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">Forestでできること</p>
+                <h2 class="sec-head1">Forestで業務を改善して、紙の情報をデータ資産に</h2>
+                <p class="sec-head2">フォレストを使えば、不動産業務のお困りごとをまとめて解決できます</p>
+
+                <div class="floated-content mobile-off desktop">
+                    <div class="fleft ">
+                        <div class="casebox">
+                            <h3 class="casehead">完全<span class="greened">リモート</span>でも仲介営業が可能に
+                                <br> <span class="smalled">(PDF編集、顧客管理、物件管理)</span></h3>
+                            <p class="casecontent">お客さんからの急な物件の問い合わせや追客も完全リモートで対応可能です。PDFやJPEGでの図面データをWeb上でフォレストに取り込み、帯編集からファイル形式の変換（PDF、JPEG、PNG他）、ダウンロードまで一括して行えるため、職場環境にいなくても営業を止めずにビジネスを加速できます。</p>
+                        </div>
+                    </div>
+                    <div class="fright"><img class="img-fluid" src="/assets/images/Rectangle_516.png" alt="リモート仲介営業" title="リモート仲介営業"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-on" style="display:none">
+                    <div class="fleft mob-center"><img class="img-fluid" src="/assets/images/Rectangle_516.png" alt="リモート仲介営業" title="リモート仲介営業"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">完全<span class="greened">リモート</span>でも仲介営業が可能に
+                                <br> <span class="smalled">(PDF編集、顧客管理、物件管理)</span></h3>
+                            <p class="casecontent">お客さんからの急な物件の問い合わせや追客も完全リモートで対応可能です。PDFやJPEGでの図面データをWeb上でフォレストに取り込み、帯編集からファイル形式の変換（PDF、JPEG、PNG他）、ダウンロードまで一括して行えるため、職場環境にいなくても営業を止めずにビジネスを加速できます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content desktop">
+                    <div class="fleft mob-center"><img class="img-fluid" src="/assets/images/Rectangle_514.png" alt="CRM機能" title="CRM機能"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">メルアド１つから<span class="greened">顧客情報</span>を管理
+                               <br> <span class="smalled">(CRM機能)</span></h3>
+                            <p class="casecontent">不動産仲介にとってマイソクやファクトシートなど、紙での物件情報の取り扱いは必要不可欠。毎日何十物件も取り扱う中で、情報の管理は難しくなります。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-off desktop">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な<span class="greened">オビ交換</span>もWebでラクラク
+                                <br> <span class="smalled">(PDF編集)</span></h3>
+                            <p class="casecontent">お客さんの急な来店でも安心！図面PDFをその場でサクサク編集してお客さんに渡せます。自前オビもサービス上で自動で用意、大きさも異なる３パターンに対応しています。編集したファイルをPDFからJPEG、PNG形式に変換可能。</p>
+                        </div>
+                    </div>
+                    <div class="fright"><img class="img-fluid" src="/assets/images/Group_328.png" alt="ラクラクオビ交換" title="ラクラクオビ交換"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content mobile-on" style="display:none">
+                    <div class="fleft mob-center"><img class="img-fluid" src="/assets/images/Group_328.png" alt="ラクラクオビ交換" title="ラクラクオビ交換"></div>
+                    <div class="fright">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な<span class="greened">オビ交換</span>もWebでラクラク
+                                <br> <span class="smalled">(PDF編集)</span></h3>
+                            <p class="casecontent">お客さんの急な来店でも安心！図面PDFをその場でサクサク編集してお客さんに渡せます。自前オビもサービス上で自動で用意、大きさも異なる３パターンに対応しています。編集したファイルをPDFからJPEG、PNG形式に変換可能。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div></div>
+                <div class="floated-content desktop">
+                    <div class="fleft mob-center"><img class="img-fluid" src="/assets/images/Group_387.png" alt="AI-OCRでデータベース化" title="AI-OCRでデータベース化"></div>
+                    <div class="fright">
+                        <div class="casebox">
+
+                            <h3 class="casehead">紙の物件情報を、独自の<span class="greened">データ資産</span>に
+                               <br> <span class="smalled">(AI-OCR・自動文字認識)</span></h3>
+                            <p class="casecontent">今話題のAI-OCRを搭載！図面データからAIが自動で文字情報を認識し記憶。手入力を一切行わず、日々取り扱う物件情報を一括管理できます。データが自動で貯まるため、独自の物件データベースも構築されます。</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fourth-sec padd3-sec">
+            <div class="main-container">
+                <div class="bordered-box">
+                    <h3 class="box-head">これら機能がすべて<span class="greened">無料</span>で使い放題！</h3>
+                    <p class="box-text">登録は今すぐこちらから！</p>
+                    <a href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" class="box-link" onclick='or.track("Navigation", "Signup", "Main Page Free Plan CTA")'>無料アカウント登録</a>
+                    <p class="box-desc">個人単位でのご登録・¥0からご利用が可能です。ユーザが一方的に課金されることはありません。</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="fifth-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">よりビジネスを成長させたい方へ</p>
+                <h2 class="sec-head1">有料会員ならより便利な機能が使い放題</h2>
+                <p class="sec-head2">お客様とネット上でやり取り、チームで情報を共有して連携など、さらに効率的に営業成績が高まる機能をご用意しました</p>
+
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">面倒な帯替えもラクラク、AIがあなたの代わりに完全自動で行ってくれる</h3>
+                            <h4 class="black-bg">AI自動帯替え</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="/assets/images/functions-obi-change-obi-change.png" alt="AI自動帯替え" title="AI自動帯替え"></div>
+                            <p class="casecontent">当社が独自に開発した最先端のAI技術によって、物件図面に記載されている他社の会社情報を自動で認識し、登録されている御社の情報と完全自動で置き換えてくれます。これによって、店舗あたり平均で月約40時間とも言われる帯がえ業務をほぼゼロにできます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="/assets/images/functions-obi-change-obi-change.png" alt="AI自動帯替え" title="AI自動帯替え"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">マイソクでの物件提案がマップ付でできる</h3>
+                            <h4 class="black-bg">物件マップ提案</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="/assets/images/Group_357.png" alt="物件マップ提案" title="物件マップ提案"></div>
+                            <p class="casecontent">物件情報を一切手入力せず、最先端のAI技術を使って所在地などの物件情報を登録可能。マイソクでの物件提案もマップ付で行えるように。お客様は過去紹介された物件をマップ上で一覧でき、顧客満足度の向上も期待できます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="/assets/images/Group_357.png" alt="物件マップ提案" title="物件マップ提案"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">お客さんが好みの物件を可視化する</h3>
+                            <h4 class="black-bg">お客様専用ページ</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="/assets/images/Group_3502.png" alt="お客様専用ページ" title="お客様専用ページ"></div>
+                            <p class="casecontent">オンライン上でお客さんの閲覧状況を確認することで、どの物件をご覧になったのかを把握できます。またお客さんがどの物件に関心を持っているかを可視化してくれるため、電話などでの確認が不要になり、追客効率が格段に上がります。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="/assets/images/Group_3502.png" alt="お客様専用ページ" title="お客様専用ページ"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="floated-content">
+                    <div class="fleft">
+                        <div class="casebox">
+                            <h3 class="casehead">物件の共有から問合せ対応までチャット内容をチームで共有し、社内で連携</h3>
+                            <h4 class="black-bg">チャット機能</h4>
+                            <div class="mobile-on" style="display: none;"><img class="img-fluid" src="/assets/images/Group_1662.png" alt="チャット機能" title="チャット機能"></div>
+                            <p class="casecontent">チーム内で物件情報を相互共有し、お客様からのチャット問合わせにもチームで対応可能。社内全体の営業効率が飛躍的にアップ。返信漏れアラート、送信メールの開封状況確認で、人為的ミスによる営業の取りこぼしも防げます。</p>
+                        </div>
+                    </div>
+                    <div class="fright mobile-off"><img class="img-fluid" src="/assets/images/Group_1662.png" alt="チャット機能" title="チャット機能"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="padd4-sec" id="pricing">
+            <div class="main-container">
+                <p class="spaned-p greened">料金プラン</p>
+                <h2 class="sec-head1">初期費用は一切なし。月額利用料だけでできる本格IT導入</h2>
+                <p class="sec-head2">フォレストは、無料でのご利用が可能。<br>
+                    人数や事業規模に合わせて選べる低コストな料金プランをご用意しています。</p>
+            </div>
+        </section>
+
+        <!-- web version price table -->
+        <div class="table-container">
+            <table id="price-table">
+
+                <col> <col>  <col>  <col> <col>
+                <thead>
+                    <tr>
+                        <th style="border-left:0;"></th>
+                        <th>無料</th>
+                        <th colspan="3">有料(PRO)</th>
+                    </tr>
+                    <tr>
+                        <th style="border-left:0;"></th>
+                        <th>
+                            <span class="planName">FREE</span>
+                            <br>
+                            <span class="details">個人向け無料プラン</span>
+                            <br>
+                            <span class="planPrice">0</span>
+                            <span class="currency">円/月</span>
+                        </th>
+                        <th>
+                            <span class="planName">LIGHT</span>
+                            <br>
+                            <span class="details">個人向け有料プラン</span>
+                            <br>
+                            <span class="planPrice">8,000</span>
+                            <span class="currency">円/月</span>
+                        </th>
+                        <th>
+                            <span class="planName">BASIC</span>
+                            <br>
+                            <span class="details">小規模チーム向け有料プラン</span>
+                            <br>
+                            <span class="planPrice">15,200</span>
+                            <span class="currency">円/月</span>
+                        </th>
+                        <th>
+                            <span class="planName">TEAM+</span>
+                            <br>
+                            <span class="details">利用人数に応じてアカウント追加が<br>可能（3名まではBasicでのご利用）</span>
+                            <br>
+                            <span class="planPrice">+5,000</span>
+                            <span class="currency">円/月</span><div class="currency">(1アカウント)</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border-left:0;">ご利用可能人数</td>
+                        <td>1名まで</td>
+                        <td>1名まで</td>
+                        <td>3名まで</td>
+                        <td>4名以上</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">顧客情報管理(CRM)</td>
+                        <td>無制限</td>
+                        <td colspan="3">無制限</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">帯替え</td>
+                        <td>手動</td>
+                        <td colspan="3">完全自動(AI帯替え)</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">物件データベース</td>
+                        <td><i class="fas fa-check-circle"></i></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">クラウド物件提案</td>
+                        <td></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">顧客とのチャット機能</td>
+                        <td></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">チーム共有・組織管理</td>
+                        <td></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">CSVでのデータ出力</td>
+                        <td></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">データセキュリティ保証</td>
+                        <td></td>
+                        <td colspan="3"><i class="fas fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0;">チャットサポート</td>
+                        <td>72時間以内</td>
+                        <td colspan="3">即日(営業時間内)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- mobile version price table -->
+        <section>
+            <div class="mob-price-table mobile-on main-container" style="display: none">
+                <div class="floated-content">
+                    <div class="fleft supcard free-sup">
+                        <h3 class="sup-type">FREE</h3>
+                        <p class="supcard-disc">個人向け無料プラン</p>
+                        <p class="supcard-price"><span>0</span>円/月</p>
+                        <hr>
+                        <p class="supcard-subtitle">ご利用可能人数</p>
+                        <p class="supcard-title">1名まで</p>
+                        <hr>
+                        <p class="supcard-feature-title">その他の機能</p>
+                        <ul>
+                            <li class="active"><i class="fas fa-check-circle"></i> 帯替え(手動)</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 顧客情報管理(CRM) 無制限</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 物件データベース</li>
+                        </ul>
+                        <ul class="hidden-items" style="max-height:0px; overflow: hidden;">
+                            <li class="disabled"><i class="fas fa-check-circle"></i> クラウド物件提案</li>
+                            <li class="disabled"><i class="fas fa-check-circle"></i> 顧客とのチャット機能</li>
+                            <li class="disabled"><i class="fas fa-check-circle"></i> チーム共有・組織管理</li>
+                            <li class="disabled"><i class="fas fa-check-circle"></i> CSVでのデータ出力</li>
+                            <li class="disabled"><i class="fas fa-check-circle"></i> データセキュリティ保証</li>
+                            <li class="disabled" style="margin-top: 20px;">チャットサポート</li>
+                            <li class="disabled">72時間以内</li>
+                        </ul>
+
+                        <button class="show-more-less" onclick="show_more(1)">詳細を表示 &nbsp;<i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div class="fleft supcard">
+                        <h3 class="sup-type">LIGHT</h3>
+                        <p class="supcard-disc">個人向け有料プラン</p>
+                        <p class="supcard-price"><span>8,000</span>円/月</p>
+                        <hr>
+                        <p class="supcard-subtitle">ご利用可能人数</p>
+                        <p class="supcard-title">1名まで</p>
+                        <hr>
+                        <p class="supcard-feature-title">その他の機能</p>
+                        <ul>
+                            <li class="active"><i class="fas fa-check-circle"></i> 帯替え(完全自動)</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> クラウド物件提案</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 顧客とのチャット機能</li>
+                        </ul>
+                        <ul class="hidden-items" style="max-height:0px; overflow: hidden;">
+                            <li class="active"><i class="fas fa-check-circle"></i> チーム共有・組織管理</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> CSVでのデータ出力</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> データセキュリティ保証</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 顧客情報管理(CRM) 無制限</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 物件データベース</li>
+                            <li style="margin-top: 20px;">チャットサポート</li>
+                            <li>72時間以内</li>
+                        </ul>
+
+                        <button class="show-more-less" onclick="show_more(2)">詳細を表示 &nbsp;<i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div class="fleft supcard">
+                        <h3 class="sup-type">BASIC</h3>
+                        <p class="supcard-disc">小規模チーム向け有料プラン</p>
+                        <p class="supcard-price"><span>15,200</span>円/月</p>
+                        <hr>
+                        <p class="supcard-subtitle">ご利用可能人数</p>
+                        <p class="supcard-title">3名まで</p>
+                        <hr>
+                        <p class="supcard-feature-title">その他の機能</p>
+                        <ul>
+                            <li class="active"><i class="fas fa-check-circle"></i> 帯替え(完全自動)</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> クラウド物件提案</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 顧客とのチャット機能</li>
+                        </ul>
+                        <ul class="hidden-items" style="max-height:0px; overflow: hidden;">
+                            <li class="active"><i class="fas fa-check-circle"></i> チーム共有・組織管理</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> CSVでのデータ出力</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> データセキュリティ保証</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 顧客情報管理(CRM) 無制限</li>
+                            <li class="active"><i class="fas fa-check-circle"></i> 物件データベース</li>
+                            <li style="margin-top: 20px;">チャットサポート</li>
+                            <li>即日</li>
+                        </ul>
+
+                        <button class="show-more-less" onclick="show_more(3)">詳細を表示 &nbsp;<i class="fas fa-angle-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sixth-sec padd5-sec">
+            <div class="main-container">
+                <div class="bordered-box">
+                    <h3 class="box-head">PROプラン(有料)</h3>
+                    <p class="box-text">より成約を増やしたい方は今すぐ資料請求！</p>
+                    <a href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="btn primary" onclick='or.track("Navigation", "Inquiry", "Telework")' target="_blank"><span>資料請求をする(無料)</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="seventh-sec padd5-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">Forestの利用者</p>
+                <h2 class="sec-head1">Forestは幅広い層にご利用いただけます</h2>
+                <p class="sec-head2">仲介業に関わる幅広い年齢層の方が使いやすいサービスです</p>
+
+                <div class="floated-content">
+                    <div class="fleft chart leftchart">
+                        <h3 class="charthead">ご登録ユーザーの職種</h3>
+                        <div class="chartbody">
+                            <svg width="100%" height="248" viewBox="0 0 481 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.68 54.12H3.1V56.2H16.98V54.12H11.14V52.82H18.82V50.66H11.14V49.08H8.68V50.66H1.2V52.82H8.68V54.12ZM18.56 61.44V57.18H1.46V61.44H3.76V59.32H16.16V61.44H18.56ZM6.14 59.94C5.9 63.02 5.4 64.82 0.66 65.74C1.14 66.24 1.74 67.18 1.96 67.8C7.42 66.5 8.3 63.96 8.62 59.94H6.14ZM14.28 65.36C13.56 65.36 13.44 65.28 13.44 64.66V59.94H11.04V64.68C11.04 66.82 11.62 67.5 13.94 67.5H16.52C18.4 67.5 19.02 66.76 19.28 63.88C18.64 63.72 17.62 63.36 17.14 62.98C17.06 65.02 16.94 65.36 16.28 65.36H14.28ZM36.66 53.04H34.14V51.66H36.66V53.04ZM32.16 53.04H29.74V51.66H32.16V53.04ZM27.76 53.04H25.36V51.66H27.76V53.04ZM38.96 49.88H23.16V54.8H38.96V49.88ZM26.64 61.9H35.4V62.9H26.64V61.9ZM26.64 59.5H35.4V60.5H26.64V59.5ZM26.64 57.12H35.4V58.1H26.64V57.12ZM37.9 64.4V55.62H24.24V64.4H27.32C25.9 65.08 23.72 65.72 21.76 66.08C22.26 66.48 23.12 67.34 23.52 67.82C25.6 67.24 28.22 66.28 29.9 65.18L28.16 64.4H33.74L32.12 65.44C34.3 66.18 36.5 67.1 37.74 67.76L40.32 66.58C38.92 65.96 36.62 65.08 34.5 64.4H37.9ZM46.86 49.12C45.88 51.98 44.18 54.8 42.44 56.6C42.84 57.2 43.5 58.5 43.72 59.08C44.1 58.64 44.5 58.18 44.9 57.66V67.74H47.16V54.12C47.9 52.72 48.56 51.26 49.1 49.82L46.86 49.12ZM55.8 59.2V55.28H58.44V59.2H55.8ZM50.84 59.2V55.28H53.42V59.2H50.84ZM55.8 53.06V49.32H53.42V53.06H48.6V62.58H50.84V61.4H53.42V67.74H55.8V61.4H58.44V62.42H60.8V53.06H55.8ZM72.92 51.44C74.54 54.04 77.82 56.82 81 58.44C81.44 57.7 81.96 56.88 82.56 56.26C79.32 55 76.14 52.38 74.08 49.02H71.54C70.14 51.64 67.04 54.86 63.52 56.54C64.04 57.02 64.68 57.92 64.98 58.5C68.32 56.74 71.38 53.98 72.92 51.44ZM75.14 56.34V67.72H77.62V56.34H75.14ZM68.26 56.44V58.86C68.26 61.14 67.92 63.96 64.42 66.04C65.04 66.42 66 67.22 66.4 67.74C70.3 65.28 70.72 61.74 70.72 58.92V56.44H68.26Z" fill="#111111"/>
+                                <path d="M407.5 52.08H402.8V53.74H407.5V54.66H403.46V56.3H414.2V54.66H409.78V53.74H414.86V52.08H409.78V51.12C411.26 51 412.66 50.84 413.84 50.62L412.64 49.16C410.5 49.56 406.88 49.82 403.78 49.92C403.98 50.32 404.18 50.98 404.24 51.38C405.28 51.36 406.38 51.34 407.5 51.28V52.08ZM399.66 56.44H401.9V51.8C402.56 51.18 403.14 50.52 403.64 49.88L401.48 49.06C400.3 50.6 398.28 52.06 396.34 52.96C396.86 53.36 397.68 54.24 398.06 54.7C398.58 54.4 399.12 54.04 399.66 53.64V56.44ZM401.82 62.52H410.44V63.34H401.82V62.52ZM401.82 60.44H410.44V61.24H401.82V60.44ZM401.82 58.38H410.44V59.16H401.82V58.38ZM412.86 64.7V57.02H399.52V64.7H402.2C400.8 65.28 398.76 65.78 396.9 66.1C397.4 66.5 398.24 67.34 398.62 67.8C400.66 67.3 403.2 66.4 404.86 65.42L403.28 64.7H408.82L407.1 65.64C409.1 66.3 411.1 67.14 412.22 67.74L415.08 66.68C413.78 66.12 411.66 65.32 409.72 64.7H412.86ZM421.28 55.76H423.56V51.52C424.2 50.94 424.78 50.34 425.26 49.72L423.1 48.92C421.82 50.52 419.6 52 417.44 52.94C417.94 53.3 418.74 54.18 419.12 54.64C419.82 54.26 420.56 53.82 421.28 53.32V55.76ZM422.76 62.08H431.44V62.96H422.76V62.08ZM422.76 59.88H431.44V60.74H422.76V59.88ZM422.76 57.68H431.44V58.54H422.76V57.68ZM433.84 64.38V56.3C435.22 56.22 435.84 55.7 436.1 53.7C435.56 53.56 434.8 53.24 434.36 52.88C434.26 53.9 434.12 54.22 433.6 54.24C432.52 54.24 431.38 53.72 430.44 52.82L435.88 52.5L435.7 50.78L433.64 50.9L434.34 50.12C433.54 49.68 432 49.2 430.9 49L429.84 50.16C430.62 50.36 431.56 50.66 432.32 50.98L429.2 51.16C428.88 50.52 428.64 49.82 428.54 49.06H426.32C426.42 49.86 426.6 50.6 426.84 51.28L424.14 51.44L424.32 53.2L427.7 53C428.94 54.86 430.8 56.04 432.82 56.26H420.46V64.38H423.4C422.02 65.06 419.84 65.7 417.9 66.06C418.4 66.48 419.24 67.34 419.66 67.8C421.68 67.24 424.24 66.26 425.9 65.18L424.08 64.38H429.92L428.12 65.42C430.14 66.18 432.18 67.12 433.32 67.78L436.08 66.72C434.72 66.06 432.42 65.1 430.38 64.38H433.84ZM442.86 49.12C441.88 51.98 440.18 54.8 438.44 56.6C438.84 57.2 439.5 58.5 439.72 59.08C440.1 58.64 440.5 58.18 440.9 57.66V67.74H443.16V54.12C443.9 52.72 444.56 51.26 445.1 49.82L442.86 49.12ZM451.8 59.2V55.28H454.44V59.2H451.8ZM446.84 59.2V55.28H449.42V59.2H446.84ZM451.8 53.06V49.32H449.42V53.06H444.6V62.58H446.84V61.4H449.42V67.74H451.8V61.4H454.44V62.42H456.8V53.06H451.8ZM468.92 51.44C470.54 54.04 473.82 56.82 477 58.44C477.44 57.7 477.96 56.88 478.56 56.26C475.32 55 472.14 52.38 470.08 49.02H467.54C466.14 51.64 463.04 54.86 459.52 56.54C460.04 57.02 460.68 57.92 460.98 58.5C464.32 56.74 467.38 53.98 468.92 51.44ZM471.14 56.34V67.72H473.62V56.34H471.14ZM464.26 56.44V58.86C464.26 61.14 463.92 63.96 460.42 66.04C461.04 66.42 462 67.22 462.4 67.74C466.3 65.28 466.72 61.74 466.72 58.92V56.44H464.26Z" fill="#111111"/>
+                                <path d="M21.1485 87.2H8.8935L8.76449 93.263C9.16583 93.1197 9.66749 93.0193 10.2695 92.962C10.9002 92.9047 11.4878 92.876 12.0325 92.876C13.5232 92.876 14.8848 93.1197 16.1175 93.607C17.3788 94.0657 18.4538 94.7393 19.3425 95.628C20.2312 96.5167 20.9192 97.5773 21.4065 98.81C21.9225 100.043 22.1805 101.433 22.1805 102.981C22.1805 104.615 21.8938 106.091 21.3205 107.41C20.7758 108.7 20.0018 109.804 18.9985 110.721C18.0238 111.61 16.8628 112.298 15.5155 112.785C14.1682 113.272 12.7205 113.516 11.1725 113.516C8.73583 113.516 6.65749 112.943 4.93749 111.796C3.24616 110.649 2.04216 108.901 1.32549 106.55L6.74349 105.088C7.08749 106.177 7.67516 107.037 8.5065 107.668C9.33783 108.299 10.4128 108.614 11.7315 108.614C12.5055 108.614 13.2078 108.485 13.8385 108.227C14.4978 107.969 15.0568 107.611 15.5155 107.152C16.0028 106.665 16.3755 106.106 16.6335 105.475C16.8915 104.844 17.0205 104.156 17.0205 103.411C17.0205 102.35 16.8198 101.447 16.4185 100.702C16.0458 99.9567 15.5298 99.3547 14.8705 98.896C14.2112 98.4087 13.4515 98.0647 12.5915 97.864C11.7315 97.6347 10.8285 97.52 9.8825 97.52C8.7645 97.52 7.64649 97.649 6.52849 97.907C5.43916 98.165 4.43583 98.5233 3.51849 98.982L3.81949 82.556H21.1485V87.2ZM28.7508 97.778C28.7508 95.37 28.9371 93.3203 29.3098 91.629C29.7111 89.909 30.2271 88.4757 30.8578 87.329C31.4884 86.1537 32.1908 85.222 32.9648 84.534C33.7674 83.8173 34.5701 83.287 35.3728 82.943C36.2041 82.5703 36.9924 82.3267 37.7378 82.212C38.5118 82.0973 39.1854 82.04 39.7588 82.04C40.3321 82.04 40.9914 82.0973 41.7368 82.212C42.5108 82.3267 43.2991 82.5703 44.1018 82.943C44.9331 83.287 45.7358 83.8173 46.5098 84.534C47.3124 85.222 48.0291 86.1537 48.6598 87.329C49.2904 88.4757 49.7921 89.909 50.1648 91.629C50.5661 93.3203 50.7668 95.37 50.7668 97.778C50.7668 100.186 50.5661 102.25 50.1648 103.97C49.7921 105.661 49.2904 107.095 48.6598 108.27C48.0291 109.417 47.3124 110.348 46.5098 111.065C45.7358 111.753 44.9331 112.283 44.1018 112.656C43.2991 113 42.5108 113.229 41.7368 113.344C40.9914 113.459 40.3321 113.516 39.7588 113.516C39.1854 113.516 38.5118 113.459 37.7378 113.344C36.9924 113.229 36.2041 113 35.3728 112.656C34.5701 112.283 33.7674 111.753 32.9648 111.065C32.1908 110.348 31.4884 109.417 30.8578 108.27C30.2271 107.095 29.7111 105.661 29.3098 103.97C28.9371 102.25 28.7508 100.186 28.7508 97.778ZM33.9108 97.778C33.9108 98.724 33.9681 99.8277 34.0828 101.089C34.2261 102.322 34.4984 103.497 34.8998 104.615C35.3011 105.733 35.8888 106.679 36.6628 107.453C37.4368 108.227 38.4688 108.614 39.7588 108.614C41.0488 108.614 42.0808 108.227 42.8548 107.453C43.6288 106.679 44.2164 105.733 44.6178 104.615C45.0191 103.497 45.2771 102.322 45.3918 101.089C45.5351 99.8277 45.6068 98.724 45.6068 97.778C45.6068 96.832 45.5351 95.7427 45.3918 94.51C45.2771 93.2487 45.0191 92.059 44.6178 90.941C44.2164 89.823 43.6288 88.877 42.8548 88.103C42.0808 87.329 41.0488 86.942 39.7588 86.942C38.4688 86.942 37.4368 87.329 36.6628 88.103C35.8888 88.877 35.3011 89.823 34.8998 90.941C34.4984 92.059 34.2261 93.2487 34.0828 94.51C33.9681 95.7427 33.9108 96.832 33.9108 97.778ZM71.293 107.258C71.293 106.4 71.447 105.608 71.755 104.882C72.085 104.134 72.525 103.485 73.075 102.935C73.647 102.363 74.296 101.923 75.022 101.615C75.77 101.285 76.573 101.12 77.431 101.12C78.289 101.12 79.081 101.285 79.807 101.615C80.555 101.923 81.204 102.363 81.754 102.935C82.326 103.485 82.766 104.134 83.074 104.882C83.404 105.608 83.569 106.4 83.569 107.258C83.569 108.116 83.404 108.919 83.074 109.667C82.766 110.393 82.326 111.042 81.754 111.614C81.204 112.164 80.555 112.604 79.807 112.934C79.081 113.242 78.289 113.396 77.431 113.396C76.573 113.396 75.77 113.242 75.022 112.934C74.296 112.604 73.647 112.164 73.075 111.614C72.525 111.042 72.085 110.393 71.755 109.667C71.447 108.919 71.293 108.116 71.293 107.258ZM80.401 107.258C80.401 106.422 80.115 105.718 79.543 105.146C78.971 104.574 78.267 104.288 77.431 104.288C76.595 104.288 75.891 104.574 75.319 105.146C74.747 105.718 74.461 106.422 74.461 107.258C74.461 108.094 74.747 108.798 75.319 109.37C75.891 109.942 76.595 110.228 77.431 110.228C78.267 110.228 78.971 109.942 79.543 109.37C80.115 108.798 80.401 108.094 80.401 107.258ZM55.618 95.378C55.618 94.52 55.772 93.728 56.08 93.002C56.41 92.254 56.85 91.605 57.4 91.055C57.972 90.483 58.621 90.043 59.347 89.735C60.095 89.405 60.898 89.24 61.756 89.24C62.614 89.24 63.406 89.405 64.132 89.735C64.88 90.043 65.529 90.483 66.079 91.055C66.651 91.605 67.091 92.254 67.399 93.002C67.729 93.728 67.894 94.52 67.894 95.378C67.894 96.236 67.729 97.039 67.399 97.787C67.091 98.513 66.651 99.162 66.079 99.734C65.529 100.284 64.88 100.724 64.132 101.054C63.406 101.362 62.614 101.516 61.756 101.516C60.898 101.516 60.095 101.362 59.347 101.054C58.621 100.724 57.972 100.284 57.4 99.734C56.85 99.162 56.41 98.513 56.08 97.787C55.772 97.039 55.618 96.236 55.618 95.378ZM64.726 95.378C64.726 94.542 64.44 93.838 63.868 93.266C63.296 92.694 62.592 92.408 61.756 92.408C60.92 92.408 60.216 92.694 59.644 93.266C59.072 93.838 58.786 94.542 58.786 95.378C58.786 96.214 59.072 96.918 59.644 97.49C60.216 98.062 60.92 98.348 61.756 98.348C62.592 98.348 63.296 98.062 63.868 97.49C64.44 96.918 64.726 96.214 64.726 95.378ZM75.121 88.58L77.86 89.834L64.132 114.056L61.393 112.802L75.121 88.58Z" fill="#111111"/>
+                                <path d="M417.148 87.2H404.893L404.764 93.263C405.166 93.1197 405.667 93.0193 406.269 92.962C406.9 92.9047 407.488 92.876 408.032 92.876C409.523 92.876 410.885 93.1197 412.117 93.607C413.379 94.0657 414.454 94.7393 415.342 95.628C416.231 96.5167 416.919 97.5773 417.406 98.81C417.922 100.043 418.18 101.433 418.18 102.981C418.18 104.615 417.894 106.091 417.32 107.41C416.776 108.7 416.002 109.804 414.998 110.721C414.024 111.61 412.863 112.298 411.515 112.785C410.168 113.272 408.72 113.516 407.172 113.516C404.736 113.516 402.657 112.943 400.937 111.796C399.246 110.649 398.042 108.901 397.325 106.55L402.743 105.088C403.087 106.177 403.675 107.037 404.506 107.668C405.338 108.299 406.413 108.614 407.731 108.614C408.505 108.614 409.208 108.485 409.838 108.227C410.498 107.969 411.057 107.611 411.515 107.152C412.003 106.665 412.375 106.106 412.633 105.475C412.891 104.844 413.02 104.156 413.02 103.411C413.02 102.35 412.82 101.447 412.418 100.702C412.046 99.9567 411.53 99.3547 410.87 98.896C410.211 98.4087 409.451 98.0647 408.591 97.864C407.731 97.6347 406.828 97.52 405.882 97.52C404.764 97.52 403.646 97.649 402.528 97.907C401.439 98.165 400.436 98.5233 399.518 98.982L399.819 82.556H417.148V87.2ZM424.751 97.778C424.751 95.37 424.937 93.3203 425.31 91.629C425.711 89.909 426.227 88.4757 426.858 87.329C427.488 86.1537 428.191 85.222 428.965 84.534C429.767 83.8173 430.57 83.287 431.373 82.943C432.204 82.5703 432.992 82.3267 433.738 82.212C434.512 82.0973 435.185 82.04 435.759 82.04C436.332 82.04 436.991 82.0973 437.737 82.212C438.511 82.3267 439.299 82.5703 440.102 82.943C440.933 83.287 441.736 83.8173 442.51 84.534C443.312 85.222 444.029 86.1537 444.66 87.329C445.29 88.4757 445.792 89.909 446.165 91.629C446.566 93.3203 446.767 95.37 446.767 97.778C446.767 100.186 446.566 102.25 446.165 103.97C445.792 105.661 445.29 107.095 444.66 108.27C444.029 109.417 443.312 110.348 442.51 111.065C441.736 111.753 440.933 112.283 440.102 112.656C439.299 113 438.511 113.229 437.737 113.344C436.991 113.459 436.332 113.516 435.759 113.516C435.185 113.516 434.512 113.459 433.738 113.344C432.992 113.229 432.204 113 431.373 112.656C430.57 112.283 429.767 111.753 428.965 111.065C428.191 110.348 427.488 109.417 426.858 108.27C426.227 107.095 425.711 105.661 425.31 103.97C424.937 102.25 424.751 100.186 424.751 97.778ZM429.911 97.778C429.911 98.724 429.968 99.8277 430.083 101.089C430.226 102.322 430.498 103.497 430.9 104.615C431.301 105.733 431.889 106.679 432.663 107.453C433.437 108.227 434.469 108.614 435.759 108.614C437.049 108.614 438.081 108.227 438.855 107.453C439.629 106.679 440.216 105.733 440.618 104.615C441.019 103.497 441.277 102.322 441.392 101.089C441.535 99.8277 441.607 98.724 441.607 97.778C441.607 96.832 441.535 95.7427 441.392 94.51C441.277 93.2487 441.019 92.059 440.618 90.941C440.216 89.823 439.629 88.877 438.855 88.103C438.081 87.329 437.049 86.942 435.759 86.942C434.469 86.942 433.437 87.329 432.663 88.103C431.889 88.877 431.301 89.823 430.9 90.941C430.498 92.059 430.226 93.2487 430.083 94.51C429.968 95.7427 429.911 96.832 429.911 97.778ZM467.293 107.258C467.293 106.4 467.447 105.608 467.755 104.882C468.085 104.134 468.525 103.485 469.075 102.935C469.647 102.363 470.296 101.923 471.022 101.615C471.77 101.285 472.573 101.12 473.431 101.12C474.289 101.12 475.081 101.285 475.807 101.615C476.555 101.923 477.204 102.363 477.754 102.935C478.326 103.485 478.766 104.134 479.074 104.882C479.404 105.608 479.569 106.4 479.569 107.258C479.569 108.116 479.404 108.919 479.074 109.667C478.766 110.393 478.326 111.042 477.754 111.614C477.204 112.164 476.555 112.604 475.807 112.934C475.081 113.242 474.289 113.396 473.431 113.396C472.573 113.396 471.77 113.242 471.022 112.934C470.296 112.604 469.647 112.164 469.075 111.614C468.525 111.042 468.085 110.393 467.755 109.667C467.447 108.919 467.293 108.116 467.293 107.258ZM476.401 107.258C476.401 106.422 476.115 105.718 475.543 105.146C474.971 104.574 474.267 104.288 473.431 104.288C472.595 104.288 471.891 104.574 471.319 105.146C470.747 105.718 470.461 106.422 470.461 107.258C470.461 108.094 470.747 108.798 471.319 109.37C471.891 109.942 472.595 110.228 473.431 110.228C474.267 110.228 474.971 109.942 475.543 109.37C476.115 108.798 476.401 108.094 476.401 107.258ZM451.618 95.378C451.618 94.52 451.772 93.728 452.08 93.002C452.41 92.254 452.85 91.605 453.4 91.055C453.972 90.483 454.621 90.043 455.347 89.735C456.095 89.405 456.898 89.24 457.756 89.24C458.614 89.24 459.406 89.405 460.132 89.735C460.88 90.043 461.529 90.483 462.079 91.055C462.651 91.605 463.091 92.254 463.399 93.002C463.729 93.728 463.894 94.52 463.894 95.378C463.894 96.236 463.729 97.039 463.399 97.787C463.091 98.513 462.651 99.162 462.079 99.734C461.529 100.284 460.88 100.724 460.132 101.054C459.406 101.362 458.614 101.516 457.756 101.516C456.898 101.516 456.095 101.362 455.347 101.054C454.621 100.724 453.972 100.284 453.4 99.734C452.85 99.162 452.41 98.513 452.08 97.787C451.772 97.039 451.618 96.236 451.618 95.378ZM460.726 95.378C460.726 94.542 460.44 93.838 459.868 93.266C459.296 92.694 458.592 92.408 457.756 92.408C456.92 92.408 456.216 92.694 455.644 93.266C455.072 93.838 454.786 94.542 454.786 95.378C454.786 96.214 455.072 96.918 455.644 97.49C456.216 98.062 456.92 98.348 457.756 98.348C458.592 98.348 459.296 98.062 459.868 97.49C460.44 96.918 460.726 96.214 460.726 95.378ZM471.121 88.58L473.86 89.834L460.132 114.056L457.393 112.802L471.121 88.58Z" fill="#111111"/>
+                                <path d="M243 230C256.92 230 270.704 227.258 283.564 221.931C296.425 216.604 308.11 208.796 317.953 198.953C327.796 189.11 335.604 177.425 340.931 164.564C346.258 151.704 349 137.92 349 124C349 110.08 346.258 96.2961 340.931 83.4355C335.604 70.575 327.796 58.8897 317.953 49.0467C308.11 39.2037 296.425 31.3958 283.564 26.0688C270.704 20.7418 256.92 18 243 18" stroke="#EFCB68" style="fill: #FBFBFB; color:#FBFBFB" stroke-width="36"/>
+                                <path d="M235 18C221.08 18 207.296 20.7418 194.436 26.0688C181.575 31.3958 169.89 39.2037 160.047 49.0467C150.204 58.8897 142.396 70.575 137.069 83.4356C131.742 96.2961 129 110.08 129 124C129 137.92 131.742 151.704 137.069 164.564C142.396 177.425 150.204 189.11 160.047 198.953C169.89 208.796 181.575 216.604 194.436 221.931C207.296 227.258 221.08 230 235 230" stroke="#3BA642" style="fill: #FBFBFB; color:#FBFBFB" stroke-width="36"/>
+                                <line x1="8.74228e-08" y1="127" x2="98" y2="127" stroke="#3BA642" stroke-width="2"/>
+                                <line x1="384" y1="127" x2="481" y2="127" stroke="#EFCB68" stroke-width="2"/>
+                                <circle cx="99" cy="127" r="5" fill="#3BA642"/>
+                                <circle cx="385" cy="127" r="5" fill="#EFCB68"/>
+                            </svg>
+                        </div>
+                        <p class="chartfoot">不動産仲介業であれば、どなたでもご利用頂けます。</p>
+                    </div>
+
+                    <div class="fright chart rightchart">
+                        <h3 class="charthead">ご登録ユーザーの年齢</h3>
+                        <div class="chartbody">
+                            <svg width="100%" height="245" viewBox="0 0 454 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M358.8 19.68L352 30.16L352.08 30.24C352.373 30.08 352.76 29.96 353.24 29.88C353.746 29.8 354.24 29.76 354.72 29.76C355.973 29.76 357.12 30 358.16 30.48C359.2 30.96 360.093 31.6133 360.84 32.44C361.613 33.2667 362.2 34.2267 362.6 35.32C363.026 36.4133 363.24 37.5733 363.24 38.8C363.24 40.2667 362.986 41.6 362.48 42.8C361.973 44 361.266 45.0267 360.36 45.88C359.48 46.7067 358.413 47.3467 357.16 47.8C355.933 48.2533 354.6 48.48 353.16 48.48C351.666 48.48 350.306 48.2667 349.08 47.84C347.853 47.3867 346.786 46.7467 345.88 45.92C345 45.0933 344.306 44.08 343.8 42.88C343.32 41.68 343.08 40.3333 343.08 38.84C343.08 37.3467 343.32 36 343.8 34.8C344.306 33.5733 344.946 32.3333 345.72 31.08L352.96 19.68H358.8ZM348.12 38.76C348.12 39.48 348.253 40.16 348.52 40.8C348.786 41.4133 349.146 41.96 349.6 42.44C350.08 42.8933 350.626 43.2533 351.24 43.52C351.88 43.7867 352.56 43.92 353.28 43.92C354 43.92 354.666 43.7867 355.28 43.52C355.92 43.2533 356.466 42.8933 356.92 42.44C357.4 41.96 357.773 41.4133 358.04 40.8C358.306 40.16 358.44 39.48 358.44 38.76C358.44 38.04 358.306 37.3733 358.04 36.76C357.773 36.12 357.4 35.5733 356.92 35.12C356.466 34.64 355.92 34.2667 355.28 34C354.666 33.7333 354 33.6 353.28 33.6C352.56 33.6 351.88 33.7333 351.24 34C350.626 34.2667 350.08 34.64 349.6 35.12C349.146 35.5733 348.786 36.12 348.52 36.76C348.253 37.3733 348.12 38.04 348.12 38.76ZM367.392 33.84C367.392 31.6 367.565 29.6933 367.912 28.12C368.285 26.52 368.765 25.1867 369.352 24.12C369.938 23.0267 370.592 22.16 371.312 21.52C372.058 20.8533 372.805 20.36 373.552 20.04C374.325 19.6933 375.058 19.4667 375.752 19.36C376.472 19.2533 377.098 19.2 377.632 19.2C378.165 19.2 378.778 19.2533 379.472 19.36C380.192 19.4667 380.925 19.6933 381.672 20.04C382.445 20.36 383.192 20.8533 383.912 21.52C384.658 22.16 385.325 23.0267 385.912 24.12C386.498 25.1867 386.965 26.52 387.312 28.12C387.685 29.6933 387.872 31.6 387.872 33.84C387.872 36.08 387.685 38 387.312 39.6C386.965 41.1733 386.498 42.5067 385.912 43.6C385.325 44.6667 384.658 45.5333 383.912 46.2C383.192 46.84 382.445 47.3333 381.672 47.68C380.925 48 380.192 48.2133 379.472 48.32C378.778 48.4267 378.165 48.48 377.632 48.48C377.098 48.48 376.472 48.4267 375.752 48.32C375.058 48.2133 374.325 48 373.552 47.68C372.805 47.3333 372.058 46.84 371.312 46.2C370.592 45.5333 369.938 44.6667 369.352 43.6C368.765 42.5067 368.285 41.1733 367.912 39.6C367.565 38 367.392 36.08 367.392 33.84ZM372.192 33.84C372.192 34.72 372.245 35.7467 372.352 36.92C372.485 38.0667 372.738 39.16 373.112 40.2C373.485 41.24 374.032 42.12 374.752 42.84C375.472 43.56 376.432 43.92 377.632 43.92C378.832 43.92 379.792 43.56 380.512 42.84C381.232 42.12 381.778 41.24 382.152 40.2C382.525 39.16 382.765 38.0667 382.872 36.92C383.005 35.7467 383.072 34.72 383.072 33.84C383.072 32.96 383.005 31.9467 382.872 30.8C382.765 29.6267 382.525 28.52 382.152 27.48C381.778 26.44 381.232 25.56 380.512 24.84C379.792 24.12 378.832 23.76 377.632 23.76C376.432 23.76 375.472 24.12 374.752 24.84C374.032 25.56 373.485 26.44 373.112 27.48C372.738 28.52 372.485 29.6267 372.352 30.8C372.245 31.9467 372.192 32.96 372.192 33.84ZM406.613 42.78C406.613 42 406.753 41.28 407.033 40.62C407.333 39.94 407.733 39.35 408.233 38.85C408.753 38.33 409.343 37.93 410.003 37.65C410.683 37.35 411.413 37.2 412.193 37.2C412.973 37.2 413.693 37.35 414.353 37.65C415.033 37.93 415.623 38.33 416.123 38.85C416.643 39.35 417.043 39.94 417.323 40.62C417.623 41.28 417.773 42 417.773 42.78C417.773 43.56 417.623 44.29 417.323 44.97C417.043 45.63 416.643 46.22 416.123 46.74C415.623 47.24 415.033 47.64 414.353 47.94C413.693 48.22 412.973 48.36 412.193 48.36C411.413 48.36 410.683 48.22 410.003 47.94C409.343 47.64 408.753 47.24 408.233 46.74C407.733 46.22 407.333 45.63 407.033 44.97C406.753 44.29 406.613 43.56 406.613 42.78ZM414.893 42.78C414.893 42.02 414.633 41.38 414.113 40.86C413.593 40.34 412.953 40.08 412.193 40.08C411.433 40.08 410.793 40.34 410.273 40.86C409.753 41.38 409.493 42.02 409.493 42.78C409.493 43.54 409.753 44.18 410.273 44.7C410.793 45.22 411.433 45.48 412.193 45.48C412.953 45.48 413.593 45.22 414.113 44.7C414.633 44.18 414.893 43.54 414.893 42.78ZM392.363 31.98C392.363 31.2 392.503 30.48 392.783 29.82C393.083 29.14 393.483 28.55 393.983 28.05C394.503 27.53 395.093 27.13 395.753 26.85C396.433 26.55 397.163 26.4 397.943 26.4C398.723 26.4 399.443 26.55 400.103 26.85C400.783 27.13 401.373 27.53 401.873 28.05C402.393 28.55 402.793 29.14 403.073 29.82C403.373 30.48 403.523 31.2 403.523 31.98C403.523 32.76 403.373 33.49 403.073 34.17C402.793 34.83 402.393 35.42 401.873 35.94C401.373 36.44 400.783 36.84 400.103 37.14C399.443 37.42 398.723 37.56 397.943 37.56C397.163 37.56 396.433 37.42 395.753 37.14C395.093 36.84 394.503 36.44 393.983 35.94C393.483 35.42 393.083 34.83 392.783 34.17C392.503 33.49 392.363 32.76 392.363 31.98ZM400.643 31.98C400.643 31.22 400.383 30.58 399.863 30.06C399.343 29.54 398.703 29.28 397.943 29.28C397.183 29.28 396.543 29.54 396.023 30.06C395.503 30.58 395.243 31.22 395.243 31.98C395.243 32.74 395.503 33.38 396.023 33.9C396.543 34.42 397.183 34.68 397.943 34.68C398.703 34.68 399.343 34.42 399.863 33.9C400.383 33.38 400.643 32.74 400.643 31.98ZM410.093 25.8L412.583 26.94L400.103 48.96L397.613 47.82L410.093 25.8Z" fill="#111111"/>
+                                <path d="M240.2 110.08H241.44C242.133 110.08 242.8 110.04 243.44 109.96C244.106 109.88 244.693 109.707 245.2 109.44C245.733 109.173 246.16 108.787 246.48 108.28C246.8 107.773 246.96 107.093 246.96 106.24C246.96 105.147 246.586 104.253 245.84 103.56C245.093 102.867 244.12 102.52 242.92 102.52C241.96 102.52 241.093 102.8 240.32 103.36C239.573 103.893 239.026 104.653 238.68 105.64L233.6 104.28C233.92 103.24 234.373 102.333 234.96 101.56C235.546 100.787 236.24 100.16 237.04 99.68C237.84 99.1733 238.72 98.8 239.68 98.56C240.64 98.32 241.64 98.2 242.68 98.2C243.906 98.2 245.066 98.36 246.16 98.68C247.253 99 248.213 99.48 249.04 100.12C249.866 100.733 250.52 101.52 251 102.48C251.506 103.413 251.76 104.507 251.76 105.76C251.76 107.28 251.333 108.64 250.48 109.84C249.626 111.013 248.44 111.787 246.92 112.16V112.24C248.733 112.507 250.106 113.28 251.04 114.56C251.973 115.84 252.44 117.36 252.44 119.12C252.44 120.48 252.173 121.68 251.64 122.72C251.133 123.76 250.44 124.64 249.56 125.36C248.68 126.053 247.653 126.587 246.48 126.96C245.333 127.307 244.133 127.48 242.88 127.48C241.706 127.48 240.6 127.347 239.56 127.08C238.52 126.84 237.573 126.453 236.72 125.92C235.893 125.387 235.173 124.707 234.56 123.88C233.946 123.027 233.48 122.013 233.16 120.84L238.28 119.48C238.573 120.653 239.093 121.56 239.84 122.2C240.586 122.84 241.6 123.16 242.88 123.16C243.52 123.16 244.12 123.053 244.68 122.84C245.266 122.627 245.773 122.333 246.2 121.96C246.653 121.56 247 121.093 247.24 120.56C247.506 120 247.64 119.387 247.64 118.72C247.64 117.813 247.44 117.08 247.04 116.52C246.666 115.933 246.173 115.493 245.56 115.2C244.973 114.88 244.306 114.667 243.56 114.56C242.813 114.453 242.08 114.4 241.36 114.4H240.2V110.08ZM257.392 112.84C257.392 110.6 257.565 108.693 257.912 107.12C258.285 105.52 258.765 104.187 259.352 103.12C259.938 102.027 260.592 101.16 261.312 100.52C262.058 99.8533 262.805 99.36 263.552 99.04C264.325 98.6933 265.058 98.4667 265.752 98.36C266.472 98.2533 267.098 98.2 267.632 98.2C268.165 98.2 268.778 98.2533 269.472 98.36C270.192 98.4667 270.925 98.6933 271.672 99.04C272.445 99.36 273.192 99.8533 273.912 100.52C274.658 101.16 275.325 102.027 275.912 103.12C276.498 104.187 276.965 105.52 277.312 107.12C277.685 108.693 277.872 110.6 277.872 112.84C277.872 115.08 277.685 117 277.312 118.6C276.965 120.173 276.498 121.507 275.912 122.6C275.325 123.667 274.658 124.533 273.912 125.2C273.192 125.84 272.445 126.333 271.672 126.68C270.925 127 270.192 127.213 269.472 127.32C268.778 127.427 268.165 127.48 267.632 127.48C267.098 127.48 266.472 127.427 265.752 127.32C265.058 127.213 264.325 127 263.552 126.68C262.805 126.333 262.058 125.84 261.312 125.2C260.592 124.533 259.938 123.667 259.352 122.6C258.765 121.507 258.285 120.173 257.912 118.6C257.565 117 257.392 115.08 257.392 112.84ZM262.192 112.84C262.192 113.72 262.245 114.747 262.352 115.92C262.485 117.067 262.738 118.16 263.112 119.2C263.485 120.24 264.032 121.12 264.752 121.84C265.472 122.56 266.432 122.92 267.632 122.92C268.832 122.92 269.792 122.56 270.512 121.84C271.232 121.12 271.778 120.24 272.152 119.2C272.525 118.16 272.765 117.067 272.872 115.92C273.005 114.747 273.072 113.72 273.072 112.84C273.072 111.96 273.005 110.947 272.872 109.8C272.765 108.627 272.525 107.52 272.152 106.48C271.778 105.44 271.232 104.56 270.512 103.84C269.792 103.12 268.832 102.76 267.632 102.76C266.432 102.76 265.472 103.12 264.752 103.84C264.032 104.56 263.485 105.44 263.112 106.48C262.738 107.52 262.485 108.627 262.352 109.8C262.245 110.947 262.192 111.96 262.192 112.84ZM296.613 121.78C296.613 121 296.753 120.28 297.033 119.62C297.333 118.94 297.733 118.35 298.233 117.85C298.753 117.33 299.343 116.93 300.003 116.65C300.683 116.35 301.413 116.2 302.193 116.2C302.973 116.2 303.693 116.35 304.353 116.65C305.033 116.93 305.623 117.33 306.123 117.85C306.643 118.35 307.043 118.94 307.323 119.62C307.623 120.28 307.773 121 307.773 121.78C307.773 122.56 307.623 123.29 307.323 123.97C307.043 124.63 306.643 125.22 306.123 125.74C305.623 126.24 305.033 126.64 304.353 126.94C303.693 127.22 302.973 127.36 302.193 127.36C301.413 127.36 300.683 127.22 300.003 126.94C299.343 126.64 298.753 126.24 298.233 125.74C297.733 125.22 297.333 124.63 297.033 123.97C296.753 123.29 296.613 122.56 296.613 121.78ZM304.893 121.78C304.893 121.02 304.633 120.38 304.113 119.86C303.593 119.34 302.953 119.08 302.193 119.08C301.433 119.08 300.793 119.34 300.273 119.86C299.753 120.38 299.493 121.02 299.493 121.78C299.493 122.54 299.753 123.18 300.273 123.7C300.793 124.22 301.433 124.48 302.193 124.48C302.953 124.48 303.593 124.22 304.113 123.7C304.633 123.18 304.893 122.54 304.893 121.78ZM282.363 110.98C282.363 110.2 282.503 109.48 282.783 108.82C283.083 108.14 283.483 107.55 283.983 107.05C284.503 106.53 285.093 106.13 285.753 105.85C286.433 105.55 287.163 105.4 287.943 105.4C288.723 105.4 289.443 105.55 290.103 105.85C290.783 106.13 291.373 106.53 291.873 107.05C292.393 107.55 292.793 108.14 293.073 108.82C293.373 109.48 293.523 110.2 293.523 110.98C293.523 111.76 293.373 112.49 293.073 113.17C292.793 113.83 292.393 114.42 291.873 114.94C291.373 115.44 290.783 115.84 290.103 116.14C289.443 116.42 288.723 116.56 287.943 116.56C287.163 116.56 286.433 116.42 285.753 116.14C285.093 115.84 284.503 115.44 283.983 114.94C283.483 114.42 283.083 113.83 282.783 113.17C282.503 112.49 282.363 111.76 282.363 110.98ZM290.643 110.98C290.643 110.22 290.383 109.58 289.863 109.06C289.343 108.54 288.703 108.28 287.943 108.28C287.183 108.28 286.543 108.54 286.023 109.06C285.503 109.58 285.243 110.22 285.243 110.98C285.243 111.74 285.503 112.38 286.023 112.9C286.543 113.42 287.183 113.68 287.943 113.68C288.703 113.68 289.343 113.42 289.863 112.9C290.383 112.38 290.643 111.74 290.643 110.98ZM300.093 104.8L302.583 105.94L290.103 127.96L287.613 126.82L300.093 104.8Z" fill="#111111"/>
+                                <path d="M162.94 188.2L157.62 193.12L154.82 189.8L163.38 182.68H167.74V211H162.94V188.2ZM177.492 196.84C177.492 194.6 177.665 192.693 178.012 191.12C178.385 189.52 178.865 188.187 179.452 187.12C180.038 186.027 180.692 185.16 181.412 184.52C182.158 183.853 182.905 183.36 183.652 183.04C184.425 182.693 185.158 182.467 185.852 182.36C186.572 182.253 187.198 182.2 187.732 182.2C188.265 182.2 188.878 182.253 189.572 182.36C190.292 182.467 191.025 182.693 191.772 183.04C192.545 183.36 193.292 183.853 194.012 184.52C194.758 185.16 195.425 186.027 196.012 187.12C196.598 188.187 197.065 189.52 197.412 191.12C197.785 192.693 197.972 194.6 197.972 196.84C197.972 199.08 197.785 201 197.412 202.6C197.065 204.173 196.598 205.507 196.012 206.6C195.425 207.667 194.758 208.533 194.012 209.2C193.292 209.84 192.545 210.333 191.772 210.68C191.025 211 190.292 211.213 189.572 211.32C188.878 211.427 188.265 211.48 187.732 211.48C187.198 211.48 186.572 211.427 185.852 211.32C185.158 211.213 184.425 211 183.652 210.68C182.905 210.333 182.158 209.84 181.412 209.2C180.692 208.533 180.038 207.667 179.452 206.6C178.865 205.507 178.385 204.173 178.012 202.6C177.665 201 177.492 199.08 177.492 196.84ZM182.292 196.84C182.292 197.72 182.345 198.747 182.452 199.92C182.585 201.067 182.838 202.16 183.212 203.2C183.585 204.24 184.132 205.12 184.852 205.84C185.572 206.56 186.532 206.92 187.732 206.92C188.932 206.92 189.892 206.56 190.612 205.84C191.332 205.12 191.878 204.24 192.252 203.2C192.625 202.16 192.865 201.067 192.972 199.92C193.105 198.747 193.172 197.72 193.172 196.84C193.172 195.96 193.105 194.947 192.972 193.8C192.865 192.627 192.625 191.52 192.252 190.48C191.878 189.44 191.332 188.56 190.612 187.84C189.892 187.12 188.932 186.76 187.732 186.76C186.532 186.76 185.572 187.12 184.852 187.84C184.132 188.56 183.585 189.44 183.212 190.48C182.838 191.52 182.585 192.627 182.452 193.8C182.345 194.947 182.292 195.96 182.292 196.84ZM216.713 205.78C216.713 205 216.853 204.28 217.133 203.62C217.433 202.94 217.833 202.35 218.333 201.85C218.853 201.33 219.443 200.93 220.103 200.65C220.783 200.35 221.513 200.2 222.293 200.2C223.073 200.2 223.793 200.35 224.453 200.65C225.133 200.93 225.723 201.33 226.223 201.85C226.743 202.35 227.143 202.94 227.423 203.62C227.723 204.28 227.873 205 227.873 205.78C227.873 206.56 227.723 207.29 227.423 207.97C227.143 208.63 226.743 209.22 226.223 209.74C225.723 210.24 225.133 210.64 224.453 210.94C223.793 211.22 223.073 211.36 222.293 211.36C221.513 211.36 220.783 211.22 220.103 210.94C219.443 210.64 218.853 210.24 218.333 209.74C217.833 209.22 217.433 208.63 217.133 207.97C216.853 207.29 216.713 206.56 216.713 205.78ZM224.993 205.78C224.993 205.02 224.733 204.38 224.213 203.86C223.693 203.34 223.053 203.08 222.293 203.08C221.533 203.08 220.893 203.34 220.373 203.86C219.853 204.38 219.593 205.02 219.593 205.78C219.593 206.54 219.853 207.18 220.373 207.7C220.893 208.22 221.533 208.48 222.293 208.48C223.053 208.48 223.693 208.22 224.213 207.7C224.733 207.18 224.993 206.54 224.993 205.78ZM202.463 194.98C202.463 194.2 202.603 193.48 202.883 192.82C203.183 192.14 203.583 191.55 204.083 191.05C204.603 190.53 205.193 190.13 205.853 189.85C206.533 189.55 207.263 189.4 208.043 189.4C208.823 189.4 209.543 189.55 210.203 189.85C210.883 190.13 211.473 190.53 211.973 191.05C212.493 191.55 212.893 192.14 213.173 192.82C213.473 193.48 213.623 194.2 213.623 194.98C213.623 195.76 213.473 196.49 213.173 197.17C212.893 197.83 212.493 198.42 211.973 198.94C211.473 199.44 210.883 199.84 210.203 200.14C209.543 200.42 208.823 200.56 208.043 200.56C207.263 200.56 206.533 200.42 205.853 200.14C205.193 199.84 204.603 199.44 204.083 198.94C203.583 198.42 203.183 197.83 202.883 197.17C202.603 196.49 202.463 195.76 202.463 194.98ZM210.743 194.98C210.743 194.22 210.483 193.58 209.963 193.06C209.443 192.54 208.803 192.28 208.043 192.28C207.283 192.28 206.643 192.54 206.123 193.06C205.603 193.58 205.343 194.22 205.343 194.98C205.343 195.74 205.603 196.38 206.123 196.9C206.643 197.42 207.283 197.68 208.043 197.68C208.803 197.68 209.443 197.42 209.963 196.9C210.483 196.38 210.743 195.74 210.743 194.98ZM220.193 188.8L222.683 189.94L210.203 211.96L207.713 210.82L220.193 188.8Z" fill="#111111"/>
+                                <line x1="93.5" y1="-2.18557e-08" x2="93.5" y2="244" stroke="#D7D7D7"/>
+                                <line x1="454" y1="244.5" x2="93" y2="244.5" stroke="#D7D7D7"/>
+                                <path d="M1.65537 39.333L7.43037 33.747C7.59837 33.579 7.77337 33.404 7.95537 33.222C8.13737 33.026 8.29837 32.823 8.43837 32.613C8.59237 32.403 8.71837 32.186 8.81637 31.962C8.91437 31.724 8.96337 31.479 8.96337 31.227C8.96337 30.919 8.90037 30.646 8.77437 30.408C8.66237 30.17 8.50837 29.967 8.31237 29.799C8.11637 29.631 7.88537 29.505 7.61937 29.421C7.36737 29.323 7.09437 29.274 6.80037 29.274C6.17037 29.274 5.65237 29.456 5.24637 29.82C4.84037 30.184 4.59537 30.674 4.51137 31.29L1.86537 31.08C1.92137 30.394 2.08237 29.792 2.34837 29.274C2.62837 28.742 2.98537 28.301 3.41937 27.951C3.85337 27.601 4.35737 27.335 4.93137 27.153C5.50537 26.971 6.12837 26.88 6.80037 26.88C7.47237 26.88 8.09537 26.971 8.66937 27.153C9.25737 27.321 9.76837 27.58 10.2024 27.93C10.6364 28.266 10.9794 28.7 11.2314 29.232C11.4834 29.764 11.6094 30.387 11.6094 31.101C11.6094 32.039 11.3924 32.851 10.9584 33.537C10.5384 34.209 9.99237 34.853 9.32037 35.469L4.72137 39.732H11.6094V42H1.65537V39.333ZM13.6841 34.566C13.6841 33.39 13.7751 32.389 13.9571 31.563C14.1531 30.723 14.4051 30.023 14.7131 29.463C15.0211 28.889 15.3641 28.434 15.7421 28.098C16.1341 27.748 16.5261 27.489 16.9181 27.321C17.3241 27.139 17.7091 27.02 18.0731 26.964C18.4511 26.908 18.7801 26.88 19.0601 26.88C19.3401 26.88 19.6621 26.908 20.0261 26.964C20.4041 27.02 20.7891 27.139 21.1811 27.321C21.5871 27.489 21.9791 27.748 22.3571 28.098C22.7491 28.434 23.0991 28.889 23.4071 29.463C23.7151 30.023 23.9601 30.723 24.1421 31.563C24.3381 32.389 24.4361 33.39 24.4361 34.566C24.4361 35.742 24.3381 36.75 24.1421 37.59C23.9601 38.416 23.7151 39.116 23.4071 39.69C23.0991 40.25 22.7491 40.705 22.3571 41.055C21.9791 41.391 21.5871 41.65 21.1811 41.832C20.7891 42 20.4041 42.112 20.0261 42.168C19.6621 42.224 19.3401 42.252 19.0601 42.252C18.7801 42.252 18.4511 42.224 18.0731 42.168C17.7091 42.112 17.3241 42 16.9181 41.832C16.5261 41.65 16.1341 41.391 15.7421 41.055C15.3641 40.705 15.0211 40.25 14.7131 39.69C14.4051 39.116 14.1531 38.416 13.9571 37.59C13.7751 36.75 13.6841 35.742 13.6841 34.566ZM16.2041 34.566C16.2041 35.028 16.2321 35.567 16.2881 36.183C16.3581 36.785 16.4911 37.359 16.6871 37.905C16.8831 38.451 17.1701 38.913 17.5481 39.291C17.9261 39.669 18.4301 39.858 19.0601 39.858C19.6901 39.858 20.1941 39.669 20.5721 39.291C20.9501 38.913 21.2371 38.451 21.4331 37.905C21.6291 37.359 21.7551 36.785 21.8111 36.183C21.8811 35.567 21.9161 35.028 21.9161 34.566C21.9161 34.104 21.8811 33.572 21.8111 32.97C21.7551 32.354 21.6291 31.773 21.4331 31.227C21.2371 30.681 20.9501 30.219 20.5721 29.841C20.1941 29.463 19.6901 29.274 19.0601 29.274C18.4301 29.274 17.9261 29.463 17.5481 29.841C17.1701 30.219 16.8831 30.681 16.6871 31.227C16.4911 31.773 16.3581 32.354 16.2881 32.97C16.2321 33.572 16.2041 34.104 16.2041 34.566ZM37.1368 35.679C36.9828 35.903 36.8148 36.127 36.6328 36.351C36.4648 36.561 36.2758 36.75 36.0658 36.918C35.8698 37.086 35.6388 37.226 35.3728 37.338C35.1208 37.436 34.8338 37.485 34.5118 37.485C34.1198 37.485 33.7488 37.422 33.3988 37.296C33.0628 37.156 32.7198 36.988 32.3698 36.792C32.0338 36.596 31.6698 36.428 31.2778 36.288C30.8858 36.134 30.4448 36.057 29.9548 36.057C29.7168 36.057 29.4998 36.106 29.3038 36.204C29.1218 36.288 28.9538 36.4 28.7998 36.54C28.6598 36.666 28.5338 36.813 28.4218 36.981C28.3238 37.149 28.2328 37.317 28.1488 37.485L27.3928 35.721C27.5048 35.497 27.6378 35.28 27.7918 35.07C27.9458 34.846 28.1278 34.65 28.3378 34.482C28.5478 34.314 28.7858 34.181 29.0518 34.083C29.3178 33.971 29.6188 33.915 29.9548 33.915C30.3608 33.915 30.7668 33.985 31.1728 34.125C31.5788 34.251 31.9848 34.405 32.3908 34.587C32.7828 34.755 33.1608 34.923 33.5248 35.091C33.9028 35.259 34.2318 35.343 34.5118 35.343C34.7218 35.343 34.9178 35.301 35.0998 35.217C35.2818 35.119 35.4428 35.007 35.5828 34.881C35.7368 34.741 35.8768 34.587 36.0028 34.419C36.1288 34.251 36.2548 34.083 36.3808 33.915L37.1368 35.679ZM43.9202 33.117H44.5712C44.9352 33.117 45.2852 33.096 45.6212 33.054C45.9712 33.012 46.2792 32.921 46.5452 32.781C46.8252 32.641 47.0492 32.438 47.2172 32.172C47.3852 31.906 47.4692 31.549 47.4692 31.101C47.4692 30.527 47.2732 30.058 46.8812 29.694C46.4892 29.33 45.9782 29.148 45.3482 29.148C44.8442 29.148 44.3892 29.295 43.9832 29.589C43.5912 29.869 43.3042 30.268 43.1222 30.786L40.4552 30.072C40.6232 29.526 40.8612 29.05 41.1692 28.644C41.4772 28.238 41.8412 27.909 42.2612 27.657C42.6812 27.391 43.1432 27.195 43.6472 27.069C44.1512 26.943 44.6762 26.88 45.2222 26.88C45.8662 26.88 46.4752 26.964 47.0492 27.132C47.6232 27.3 48.1272 27.552 48.5612 27.888C48.9952 28.21 49.3382 28.623 49.5902 29.127C49.8562 29.617 49.9892 30.191 49.9892 30.849C49.9892 31.647 49.7652 32.361 49.3172 32.991C48.8692 33.607 48.2462 34.013 47.4482 34.209V34.251C48.4002 34.391 49.1212 34.797 49.6112 35.469C50.1012 36.141 50.3462 36.939 50.3462 37.863C50.3462 38.577 50.2062 39.207 49.9262 39.753C49.6602 40.299 49.2962 40.761 48.8342 41.139C48.3722 41.503 47.8332 41.783 47.2172 41.979C46.6152 42.161 45.9852 42.252 45.3272 42.252C44.7112 42.252 44.1302 42.182 43.5842 42.042C43.0382 41.916 42.5412 41.713 42.0932 41.433C41.6592 41.153 41.2812 40.796 40.9592 40.362C40.6372 39.914 40.3922 39.382 40.2242 38.766L42.9122 38.052C43.0662 38.668 43.3392 39.144 43.7312 39.48C44.1232 39.816 44.6552 39.984 45.3272 39.984C45.6632 39.984 45.9782 39.928 46.2722 39.816C46.5802 39.704 46.8462 39.55 47.0702 39.354C47.3082 39.144 47.4902 38.899 47.6162 38.619C47.7562 38.325 47.8262 38.003 47.8262 37.653C47.8262 37.177 47.7212 36.792 47.5112 36.498C47.3152 36.19 47.0562 35.959 46.7342 35.805C46.4262 35.637 46.0762 35.525 45.6842 35.469C45.2922 35.413 44.9072 35.385 44.5292 35.385H43.9202V33.117ZM52.5259 34.566C52.5259 33.39 52.6169 32.389 52.7989 31.563C52.9949 30.723 53.2469 30.023 53.5549 29.463C53.8629 28.889 54.2059 28.434 54.5839 28.098C54.9759 27.748 55.3679 27.489 55.7599 27.321C56.1659 27.139 56.5509 27.02 56.9149 26.964C57.2929 26.908 57.6219 26.88 57.9019 26.88C58.1819 26.88 58.5039 26.908 58.8679 26.964C59.2459 27.02 59.6309 27.139 60.0229 27.321C60.4289 27.489 60.8209 27.748 61.1989 28.098C61.5909 28.434 61.9409 28.889 62.2489 29.463C62.5569 30.023 62.8019 30.723 62.9839 31.563C63.1799 32.389 63.2779 33.39 63.2779 34.566C63.2779 35.742 63.1799 36.75 62.9839 37.59C62.8019 38.416 62.5569 39.116 62.2489 39.69C61.9409 40.25 61.5909 40.705 61.1989 41.055C60.8209 41.391 60.4289 41.65 60.0229 41.832C59.6309 42 59.2459 42.112 58.8679 42.168C58.5039 42.224 58.1819 42.252 57.9019 42.252C57.6219 42.252 57.2929 42.224 56.9149 42.168C56.5509 42.112 56.1659 42 55.7599 41.832C55.3679 41.65 54.9759 41.391 54.5839 41.055C54.2059 40.705 53.8629 40.25 53.5549 39.69C53.2469 39.116 52.9949 38.416 52.7989 37.59C52.6169 36.75 52.5259 35.742 52.5259 34.566ZM55.0459 34.566C55.0459 35.028 55.0739 35.567 55.1299 36.183C55.1999 36.785 55.3329 37.359 55.5289 37.905C55.7249 38.451 56.0119 38.913 56.3899 39.291C56.7679 39.669 57.2719 39.858 57.9019 39.858C58.5319 39.858 59.0359 39.669 59.4139 39.291C59.7919 38.913 60.0789 38.451 60.2749 37.905C60.4709 37.359 60.5969 36.785 60.6529 36.183C60.7229 35.567 60.7579 35.028 60.7579 34.566C60.7579 34.104 60.7229 33.572 60.6529 32.97C60.5969 32.354 60.4709 31.773 60.2749 31.227C60.0789 30.681 59.7919 30.219 59.4139 29.841C59.0359 29.463 58.5319 29.274 57.9019 29.274C57.2719 29.274 56.7679 29.463 56.3899 29.841C56.0119 30.219 55.7249 30.681 55.5289 31.227C55.3329 31.773 55.1999 32.354 55.1299 32.97C55.0739 33.572 55.0459 34.104 55.0459 34.566ZM78.8556 32.494C78.4496 31.836 77.5816 30.912 76.8396 30.24L75.5936 31.01C76.3216 31.724 77.1616 32.704 77.5116 33.362L78.8556 32.494ZM69.5736 30.254C68.7336 32.368 67.2636 34.426 65.7516 35.714C66.0456 36.12 66.5216 37.016 66.6756 37.408C67.1796 36.96 67.6556 36.428 68.1316 35.84V43.19H69.8676V33.348C70.3716 32.494 70.8056 31.626 71.1696 30.772L69.5736 30.254ZM79.0656 35.28L78.8276 33.712L74.8376 34.23C74.7396 33.04 74.6836 31.724 74.6556 30.352H72.9616C73.0036 31.822 73.0876 33.194 73.1856 34.454L70.3576 34.832L70.5956 36.442L73.3536 36.064C73.8576 40.334 74.9636 42.966 77.3296 43.19C78.1136 43.232 78.8696 42.588 79.2196 39.886C78.9116 39.718 78.1696 39.298 77.8616 38.934C77.7496 40.488 77.5816 41.188 77.2596 41.16C76.1396 41.02 75.3976 38.948 75.0056 35.84L79.0656 35.28Z" fill="#111111"/>
+                                <rect x="94" y="19" width="237" height="32" fill="#3BA642"/>
+                                <path d="M7.18637 117.976H0.865367V115.477L6.85037 106.132H9.70637V115.708H11.8694V117.976H9.70637V121H7.18637V117.976ZM7.18637 109.702H7.14437L3.42737 115.708H7.18637V109.702ZM13.4191 113.566C13.4191 112.39 13.5101 111.389 13.6921 110.563C13.8881 109.723 14.1401 109.023 14.4481 108.463C14.7561 107.889 15.0991 107.434 15.4771 107.098C15.8691 106.748 16.2611 106.489 16.6531 106.321C17.0591 106.139 17.4441 106.02 17.8081 105.964C18.1861 105.908 18.5151 105.88 18.7951 105.88C19.0751 105.88 19.3971 105.908 19.7611 105.964C20.1391 106.02 20.5241 106.139 20.9161 106.321C21.3221 106.489 21.7141 106.748 22.0921 107.098C22.4841 107.434 22.8341 107.889 23.1421 108.463C23.4501 109.023 23.6951 109.723 23.8771 110.563C24.0731 111.389 24.1711 112.39 24.1711 113.566C24.1711 114.742 24.0731 115.75 23.8771 116.59C23.6951 117.416 23.4501 118.116 23.1421 118.69C22.8341 119.25 22.4841 119.705 22.0921 120.055C21.7141 120.391 21.3221 120.65 20.9161 120.832C20.5241 121 20.1391 121.112 19.7611 121.168C19.3971 121.224 19.0751 121.252 18.7951 121.252C18.5151 121.252 18.1861 121.224 17.8081 121.168C17.4441 121.112 17.0591 121 16.6531 120.832C16.2611 120.65 15.8691 120.391 15.4771 120.055C15.0991 119.705 14.7561 119.25 14.4481 118.69C14.1401 118.116 13.8881 117.416 13.6921 116.59C13.5101 115.75 13.4191 114.742 13.4191 113.566ZM15.9391 113.566C15.9391 114.028 15.9671 114.567 16.0231 115.183C16.0931 115.785 16.2261 116.359 16.4221 116.905C16.6181 117.451 16.9051 117.913 17.2831 118.291C17.6611 118.669 18.1651 118.858 18.7951 118.858C19.4251 118.858 19.9291 118.669 20.3071 118.291C20.6851 117.913 20.9721 117.451 21.1681 116.905C21.3641 116.359 21.4901 115.785 21.5461 115.183C21.6161 114.567 21.6511 114.028 21.6511 113.566C21.6511 113.104 21.6161 112.572 21.5461 111.97C21.4901 111.354 21.3641 110.773 21.1681 110.227C20.9721 109.681 20.6851 109.219 20.3071 108.841C19.9291 108.463 19.4251 108.274 18.7951 108.274C18.1651 108.274 17.6611 108.463 17.2831 108.841C16.9051 109.219 16.6181 109.681 16.4221 110.227C16.2261 110.773 16.0931 111.354 16.0231 111.97C15.9671 112.572 15.9391 113.104 15.9391 113.566ZM36.8718 114.679C36.7178 114.903 36.5498 115.127 36.3678 115.351C36.1998 115.561 36.0108 115.75 35.8008 115.918C35.6048 116.086 35.3738 116.226 35.1078 116.338C34.8558 116.436 34.5688 116.485 34.2468 116.485C33.8548 116.485 33.4838 116.422 33.1338 116.296C32.7978 116.156 32.4548 115.988 32.1048 115.792C31.7688 115.596 31.4048 115.428 31.0128 115.288C30.6208 115.134 30.1798 115.057 29.6898 115.057C29.4518 115.057 29.2348 115.106 29.0388 115.204C28.8568 115.288 28.6888 115.4 28.5348 115.54C28.3948 115.666 28.2688 115.813 28.1568 115.981C28.0588 116.149 27.9678 116.317 27.8838 116.485L27.1278 114.721C27.2398 114.497 27.3728 114.28 27.5268 114.07C27.6808 113.846 27.8628 113.65 28.0728 113.482C28.2828 113.314 28.5208 113.181 28.7868 113.083C29.0528 112.971 29.3538 112.915 29.6898 112.915C30.0958 112.915 30.5018 112.985 30.9078 113.125C31.3138 113.251 31.7198 113.405 32.1258 113.587C32.5178 113.755 32.8958 113.923 33.2598 114.091C33.6378 114.259 33.9668 114.343 34.2468 114.343C34.4568 114.343 34.6528 114.301 34.8348 114.217C35.0168 114.119 35.1778 114.007 35.3178 113.881C35.4718 113.741 35.6118 113.587 35.7378 113.419C35.8638 113.251 35.9898 113.083 36.1158 112.915L36.8718 114.679ZM49.5982 108.4H43.6132L43.5502 111.361C43.7462 111.291 43.9912 111.242 44.2852 111.214C44.5932 111.186 44.8802 111.172 45.1462 111.172C45.8742 111.172 46.5392 111.291 47.1412 111.529C47.7572 111.753 48.2822 112.082 48.7162 112.516C49.1502 112.95 49.4862 113.468 49.7242 114.07C49.9762 114.672 50.1022 115.351 50.1022 116.107C50.1022 116.905 49.9622 117.626 49.6822 118.27C49.4162 118.9 49.0382 119.439 48.5482 119.887C48.0722 120.321 47.5052 120.657 46.8472 120.895C46.1892 121.133 45.4822 121.252 44.7262 121.252C43.5362 121.252 42.5212 120.972 41.6812 120.412C40.8552 119.852 40.2672 118.998 39.9172 117.85L42.5632 117.136C42.7312 117.668 43.0182 118.088 43.4242 118.396C43.8302 118.704 44.3552 118.858 44.9992 118.858C45.3772 118.858 45.7202 118.795 46.0282 118.669C46.3502 118.543 46.6232 118.368 46.8472 118.144C47.0852 117.906 47.2672 117.633 47.3932 117.325C47.5192 117.017 47.5822 116.681 47.5822 116.317C47.5822 115.799 47.4842 115.358 47.2882 114.994C47.1062 114.63 46.8542 114.336 46.5322 114.112C46.2102 113.874 45.8392 113.706 45.4192 113.608C44.9992 113.496 44.5582 113.44 44.0962 113.44C43.5502 113.44 43.0042 113.503 42.4582 113.629C41.9262 113.755 41.4362 113.93 40.9882 114.154L41.1352 106.132H49.5982V108.4ZM52.2609 113.566C52.2609 112.39 52.3519 111.389 52.5339 110.563C52.7299 109.723 52.9819 109.023 53.2899 108.463C53.5979 107.889 53.9409 107.434 54.3189 107.098C54.7109 106.748 55.1029 106.489 55.4949 106.321C55.9009 106.139 56.2859 106.02 56.6499 105.964C57.0279 105.908 57.3569 105.88 57.6369 105.88C57.9169 105.88 58.2389 105.908 58.6029 105.964C58.9809 106.02 59.3659 106.139 59.7579 106.321C60.1639 106.489 60.5559 106.748 60.9339 107.098C61.3259 107.434 61.6759 107.889 61.9839 108.463C62.2919 109.023 62.5369 109.723 62.7189 110.563C62.9149 111.389 63.0129 112.39 63.0129 113.566C63.0129 114.742 62.9149 115.75 62.7189 116.59C62.5369 117.416 62.2919 118.116 61.9839 118.69C61.6759 119.25 61.3259 119.705 60.9339 120.055C60.5559 120.391 60.1639 120.65 59.7579 120.832C59.3659 121 58.9809 121.112 58.6029 121.168C58.2389 121.224 57.9169 121.252 57.6369 121.252C57.3569 121.252 57.0279 121.224 56.6499 121.168C56.2859 121.112 55.9009 121 55.4949 120.832C55.1029 120.65 54.7109 120.391 54.3189 120.055C53.9409 119.705 53.5979 119.25 53.2899 118.69C52.9819 118.116 52.7299 117.416 52.5339 116.59C52.3519 115.75 52.2609 114.742 52.2609 113.566ZM54.7809 113.566C54.7809 114.028 54.8089 114.567 54.8649 115.183C54.9349 115.785 55.0679 116.359 55.2639 116.905C55.4599 117.451 55.7469 117.913 56.1249 118.291C56.5029 118.669 57.0069 118.858 57.6369 118.858C58.2669 118.858 58.7709 118.669 59.1489 118.291C59.5269 117.913 59.8139 117.451 60.0099 116.905C60.2059 116.359 60.3319 115.785 60.3879 115.183C60.4579 114.567 60.4929 114.028 60.4929 113.566C60.4929 113.104 60.4579 112.572 60.3879 111.97C60.3319 111.354 60.2059 110.773 60.0099 110.227C59.8139 109.681 59.5269 109.219 59.1489 108.841C58.7709 108.463 58.2669 108.274 57.6369 108.274C57.0069 108.274 56.5029 108.463 56.1249 108.841C55.7469 109.219 55.4599 109.681 55.2639 110.227C55.0679 110.773 54.9349 111.354 54.8649 111.97C54.8089 112.572 54.7809 113.104 54.7809 113.566ZM77.1206 111.494C76.7146 110.836 75.8466 109.912 75.1046 109.24L73.8586 110.01C74.5866 110.724 75.4266 111.704 75.7766 112.362L77.1206 111.494ZM67.8386 109.254C66.9986 111.368 65.5286 113.426 64.0166 114.714C64.3106 115.12 64.7866 116.016 64.9406 116.408C65.4446 115.96 65.9206 115.428 66.3966 114.84V122.19H68.1326V112.348C68.6366 111.494 69.0706 110.626 69.4346 109.772L67.8386 109.254ZM77.3306 114.28L77.0926 112.712L73.1026 113.23C73.0046 112.04 72.9486 110.724 72.9206 109.352H71.2266C71.2686 110.822 71.3526 112.194 71.4506 113.454L68.6226 113.832L68.8606 115.442L71.6186 115.064C72.1226 119.334 73.2286 121.966 75.5946 122.19C76.3786 122.232 77.1346 121.588 77.4846 118.886C77.1766 118.718 76.4346 118.298 76.1266 117.934C76.0146 119.488 75.8466 120.188 75.5246 120.16C74.4046 120.02 73.6626 117.948 73.2706 114.84L77.3306 114.28Z" fill="#111111"/>
+                                <rect x="94" y="98" width="127" height="32" fill="#68CA6F"/>
+                                <path d="M31.6615 187.132L28.0915 192.634L28.1335 192.676C28.2875 192.592 28.4905 192.529 28.7425 192.487C29.0085 192.445 29.2675 192.424 29.5195 192.424C30.1775 192.424 30.7795 192.55 31.3255 192.802C31.8715 193.054 32.3405 193.397 32.7325 193.831C33.1385 194.265 33.4465 194.769 33.6565 195.343C33.8805 195.917 33.9925 196.526 33.9925 197.17C33.9925 197.94 33.8595 198.64 33.5935 199.27C33.3275 199.9 32.9565 200.439 32.4805 200.887C32.0185 201.321 31.4585 201.657 30.8005 201.895C30.1565 202.133 29.4565 202.252 28.7005 202.252C27.9165 202.252 27.2025 202.14 26.5585 201.916C25.9145 201.678 25.3545 201.342 24.8785 200.908C24.4165 200.474 24.0525 199.942 23.7865 199.312C23.5345 198.682 23.4085 197.975 23.4085 197.191C23.4085 196.407 23.5345 195.7 23.7865 195.07C24.0525 194.426 24.3885 193.775 24.7945 193.117L28.5955 187.132H31.6615ZM26.0545 197.149C26.0545 197.527 26.1245 197.884 26.2645 198.22C26.4045 198.542 26.5935 198.829 26.8315 199.081C27.0835 199.319 27.3705 199.508 27.6925 199.648C28.0285 199.788 28.3855 199.858 28.7635 199.858C29.1415 199.858 29.4915 199.788 29.8135 199.648C30.1495 199.508 30.4365 199.319 30.6745 199.081C30.9265 198.829 31.1225 198.542 31.2625 198.22C31.4025 197.884 31.4725 197.527 31.4725 197.149C31.4725 196.771 31.4025 196.421 31.2625 196.099C31.1225 195.763 30.9265 195.476 30.6745 195.238C30.4365 194.986 30.1495 194.79 29.8135 194.65C29.4915 194.51 29.1415 194.44 28.7635 194.44C28.3855 194.44 28.0285 194.51 27.6925 194.65C27.3705 194.79 27.0835 194.986 26.8315 195.238C26.5935 195.476 26.4045 195.763 26.2645 196.099C26.1245 196.421 26.0545 196.771 26.0545 197.149ZM35.7523 194.566C35.7523 193.39 35.8433 192.389 36.0253 191.563C36.2213 190.723 36.4733 190.023 36.7813 189.463C37.0893 188.889 37.4323 188.434 37.8103 188.098C38.2023 187.748 38.5943 187.489 38.9863 187.321C39.3923 187.139 39.7773 187.02 40.1413 186.964C40.5193 186.908 40.8483 186.88 41.1283 186.88C41.4083 186.88 41.7303 186.908 42.0943 186.964C42.4723 187.02 42.8573 187.139 43.2493 187.321C43.6553 187.489 44.0473 187.748 44.4253 188.098C44.8173 188.434 45.1673 188.889 45.4753 189.463C45.7833 190.023 46.0283 190.723 46.2103 191.563C46.4063 192.389 46.5043 193.39 46.5043 194.566C46.5043 195.742 46.4063 196.75 46.2103 197.59C46.0283 198.416 45.7833 199.116 45.4753 199.69C45.1673 200.25 44.8173 200.705 44.4253 201.055C44.0473 201.391 43.6553 201.65 43.2493 201.832C42.8573 202 42.4723 202.112 42.0943 202.168C41.7303 202.224 41.4083 202.252 41.1283 202.252C40.8483 202.252 40.5193 202.224 40.1413 202.168C39.7773 202.112 39.3923 202 38.9863 201.832C38.5943 201.65 38.2023 201.391 37.8103 201.055C37.4323 200.705 37.0893 200.25 36.7813 199.69C36.4733 199.116 36.2213 198.416 36.0253 197.59C35.8433 196.75 35.7523 195.742 35.7523 194.566ZM38.2723 194.566C38.2723 195.028 38.3003 195.567 38.3563 196.183C38.4263 196.785 38.5593 197.359 38.7553 197.905C38.9513 198.451 39.2383 198.913 39.6163 199.291C39.9943 199.669 40.4983 199.858 41.1283 199.858C41.7583 199.858 42.2623 199.669 42.6403 199.291C43.0183 198.913 43.3053 198.451 43.5013 197.905C43.6973 197.359 43.8233 196.785 43.8793 196.183C43.9493 195.567 43.9843 195.028 43.9843 194.566C43.9843 194.104 43.9493 193.572 43.8793 192.97C43.8233 192.354 43.6973 191.773 43.5013 191.227C43.3053 190.681 43.0183 190.219 42.6403 189.841C42.2623 189.463 41.7583 189.274 41.1283 189.274C40.4983 189.274 39.9943 189.463 39.6163 189.841C39.2383 190.219 38.9513 190.681 38.7553 191.227C38.5593 191.773 38.4263 192.354 38.3563 192.97C38.3003 193.572 38.2723 194.104 38.2723 194.566ZM60.612 192.494C60.206 191.836 59.338 190.912 58.596 190.24L57.35 191.01C58.078 191.724 58.918 192.704 59.268 193.362L60.612 192.494ZM51.33 190.254C50.49 192.368 49.02 194.426 47.508 195.714C47.802 196.12 48.278 197.016 48.432 197.408C48.936 196.96 49.412 196.428 49.888 195.84V203.19H51.624V193.348C52.128 192.494 52.562 191.626 52.926 190.772L51.33 190.254ZM60.822 195.28L60.584 193.712L56.594 194.23C56.496 193.04 56.44 191.724 56.412 190.352H54.718C54.76 191.822 54.844 193.194 54.942 194.454L52.114 194.832L52.352 196.442L55.11 196.064C55.614 200.334 56.72 202.966 59.086 203.19C59.87 203.232 60.626 202.588 60.976 199.886C60.668 199.718 59.926 199.298 59.618 198.934C59.506 200.488 59.338 201.188 59.016 201.16C57.896 201.02 57.154 198.948 56.762 195.84L60.822 195.28ZM70.37 197.282C71.322 198.318 72.344 198.822 73.674 198.822C75.172 198.822 76.544 197.982 77.482 196.246L75.942 195.406C75.41 196.4 74.612 197.086 73.716 197.086C72.75 197.086 72.232 196.722 71.63 196.078C70.678 195.042 69.656 194.538 68.326 194.538C66.828 194.538 65.456 195.378 64.518 197.114L66.058 197.954C66.59 196.96 67.388 196.274 68.284 196.274C69.264 196.274 69.768 196.652 70.37 197.282Z" fill="#111111"/>
+                                <rect x="94" y="179" width="48" height="32" fill="#A4DFA7"/>
+                                </svg>
+                        </div>
+                        <p class="chartfoot">年齢や性別を問わず、使いやすさから高い支持を得ています。</p>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="eight-sec padd5-sec">
+            <div class="main-container">
+                <p class="spaned-p greened">掲載メディア</p>
+                <h2 class="sec-head1">掲載メディア一覧</h2>
+                <p class="sec-head2">フォレストは、様々な全国メディアで取り上げられた実績のあるサービスです</p>
+
+                <div class="floated-content">
+                    <div class="floating-img"><a target="_blank" href="https://www.nikkei.com/article/DGXMZO65429610U0A021C2EA1000/"><img src="/assets/images/imagex20.png" alt="日本経済新聞"  title="日本経済新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.sankei.com/economy/news/190830/prl1908300229-n1.html"><img src="/assets/images/imagex26.png" alt="産経新聞" title="産経新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.jutaku-s.com/newsp/id/0000040493"><img src="/assets/images/imagex22.png" alt="住宅新報" title="住宅新報" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.sogo-unicom.co.jp/property/"><img src="/assets/images/imagex24.png" alt="プロパティマネジメント" title="プロパティマネジメント" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://www.zenchin.com/news/post-4846.php"><img src="/assets/images/imagex25.png" alt="全国賃貸住宅新聞" title="全国賃貸住宅新聞" class="img-fluid"></a></div>
+                    <div class="floating-img"><a target="_blank" href="https://newspicks.com/news/4669908/"><img src="/assets/images/imagex23.png" alt="NewsPicks" title="NewsPicks" class="img-fluid"></a></div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="s-compare-horizontal">
+            <div class="header">
+                <h2 class="title">まずは無料で体験してみましょう</h2>
+                <p class="desc">無料でご利用いただけるプランをご用意しています</p>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <p class="subtitle w7">業務のお困りごとをまとめて解決！</p>
+                    <h3 class="title">無料でアカウント作成</h3>
+                    <p class="desc">メルアド一つからのご登録が可能。<br>
+                        初期導入費や追加費用は一切かかりません。</p>
+                    <div class="button">
+                        <a href="https://login.openrm.jp/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" class="btn primary-alt" onclick='or.track("Navigation", "Signup", "Telework")'><span>無料でアカウント作成</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="subtitle w7">有料会員ならもっと便利な機能が使い放題</p>
+                    <h3 class="title">PROプラン(有料)</h3>
+                    <p class="desc">月額8,000円〜<br>初期導入費やキャンセル費などは<span>一切かかりません。</span></p>
+                    <div class="button">
+                        <a href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="btn primary" onclick='or.track("Navigation", "Inquiry", "Telework")' target="_blank"><span>資料請求をする(無料)</span></a>
+                    </div>
+                </div>
+            </div>
+            <img class="bg" src="/assets/images/forest_with_animals_no_building.svg" alt="フォレスト">
+        </section>
+
+        <section class="s-contact-medium">
+            <div class="header">
+                <h2 class="title">お気軽にご相談ください</h2>
+                <p class="desc">質問・ご相談などありましたら、下記までお問い合わせください。<br>気になる点・ご不明な点・導入準備など、専任のスタッフが丁寧にご案内いたします。</p>
+            </div>
+            <div class="content">
+                <div class="part1">
+                    <p class="title">WEBからのお問い合わせ</p>
+                    <div class="button"><a onclick='return contact("Main Page CTA Contact (bottom section)");'
+                            class="btn default"><span>お問い合わせ</span></a></div>
+                </div>
+                <div class="part2">
+                    <p class="title">お電話からのお問い合わせ</p>
+                    <p class="phone"><a href="tel:050-3033-5162">050 - 3033 - 5162</a></p>
+                    <p class="time">受付時間 10:00 ~ 17:00 （土・日・祝を除きます）</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="s-footer">
+            <div class="info">
+            <div>
+                <div>
+                    <img src="/assets/images/forest_logo_white.svg" alt="フォレストのロゴ" title="フォレストのロゴ">
+                </div>
+                <div class="address">
+                    <p class="name">株式会社オープンルーム</p>
+                    <p>東京都渋谷区道玄坂一丁目 2 番 3 号　渋谷フクラス 17 階<br>050 - 3033 - 5162</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">フォレストについて</p>
+                <div class="column">
+                    <a class="link" href="/" onclick='or.track("Navigation", "Main", "Main Page Footer")'>トップ</a>
+                    <br><br><br>
+                    <a class="link" onclick='or.track("Navigation", "FAQ", "Main Page Footer")' target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329">よくあるご質問</a>
+                    <a class="link" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417" onclick='or.track("Navigation", "Blog", "Main Page Footer")'>お知らせ</a>
+                    <a class="link" onclick='return contact("Main Page Footer");'>お問い合わせ</a>
+                    <a class="link" href="https://openrm.co.jp/policy.html" onclick='or.track("Navigation", "Privacy Policy", "Main Page Footer")'>プライバシーポリシー</a>
+                    <a class="link" href="https://openrm.co.jp/" onclick='or.track("Navigation", "Corporate Page", "Main Page Footer")'>運営会社</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">機能</p>
+                <div class="column">
+                    <a class="link" href="/features/rpa.html" onclick='or.track("Navigation", "Features (図面編集・帯替えRPA)", "Main Page Footer")'>図面編集・帯替えRPA</a>
+                    <a class="link" href="/features/ai-ocr.html" onclick='or.track("Navigation", "Features (AI-OCR物件データベース)", "Main Page Footer")'>AI-OCR物件データベース</a>
+                    <a class="link" href="/features/share.html" onclick='or.track("Navigation", "Features (お客様専用ページ作成)", "Main Page Footer")'>お客様専用ページ作成</a>
+                    <a class="link" href="/features/customer-logs.html" onclick='or.track("Navigation", "Features (お客様の行動ログ)", "Main Page Footer")'>お客様の行動ログ</a>
+                    <a class="link" href="/features/data.html" onclick='or.track("Navigation", "Features (顧客データベース)", "Main Page Footer")'>顧客データベース</a>
+                    <a class="link" href="/features/support.html" onclick='or.track("Navigation", "Features (サポート体制)", "Main Page Footer")'>サポート体制</a>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright © Open Room inc. All Rights Reserved.</p>
+                <a href="https://openrm.co.jp/" onclick='or.track("Navigation", "Corporate Page", "Main Page Footer Link")'>
+                    <img src="/assets/images/openroom_white_small.svg" alt="Open Room Inc. ロゴ" title="Open Room Inc. ロゴ">
+                </a>
+            </div>
+    </footer>
+
+
+
+    <script src="/dist/scripts.js"></script>
+    <script>
+        function show_more(i){
+            let x = document.getElementsByClassName("hidden-items")[i-1],
+                y = document.getElementsByClassName("show-more-less")[i-1];
+
+            if(x.style.maxHeight === "0px"){
+                x.style.maxHeight = "800px";
+                y.innerHTML = "詳細を非表示  &nbsp;<i class='fas fa-angle-up'>"
+            }else{
+                x.style.maxHeight = "0px";
+                y.innerHTML = "詳細を表示 &nbsp;<i class='fas fa-angle-down'>"
+            }
+        }
+    </script>
+</body>
+
+</html>

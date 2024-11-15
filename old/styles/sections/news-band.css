@@ -1,0 +1,38 @@
+.s-news-band {
+    max-width: 1000px;
+    min-height: 80px;
+    border-radius: 2px;
+    background-color: #edf4ef;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.s-news-band h2 {
+    font-size: 18px;
+}
+
+.s-news-band .new {
+    font-weight: 700;
+    line-height: inherit;
+    color: #ff7000;
+    margin-right: 20px;
+}
+
+.s-news-band a {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.s-news-band a span:not(.new) {
+    line-height: 1.33;
+    color: #222222;
+}
+
+.s-news-band em {
+    font-style: normal;
+    font-weight: 700;
+}

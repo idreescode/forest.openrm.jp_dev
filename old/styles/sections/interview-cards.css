@@ -1,0 +1,172 @@
+.s-interview-cards {
+    background-color: #F8FDF9;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+}
+
+.s-interview-cards.s-cards {
+    padding: 0px;
+    justify-content: start;
+}
+
+.s-interview-cards > .title {
+    margin-top: 62px;
+    margin-bottom: 62px;
+    text-align: center;
+}
+.s-interview-cards > .title .head {
+    margin-top: 17px;
+}
+
+.s-interview-cards .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 344px;
+}
+
+.s-interview-cards .cards .c-card {
+    height: 344px;
+    width: 460px;
+    position: relative;
+}
+
+.s-interview-cards .cards .c-card:hover {
+    cursor: pointer;
+}
+
+.s-interview-cards .cards .c-card .prolabel {
+    position: absolute;
+    top: 16px;
+    left: 34px;
+    background-color: #FB7021;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 3px;
+    border-radius: 4px;
+    color: white;
+}
+
+.s-interview-cards .cards .c-card:hover .title {
+    text-decoration: underline;
+}
+
+.s-interview-cards .cards .c-card img {
+    height: 180px;
+    margin-right: 0px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.s-interview-cards .cards .c-card .description {
+    padding: 30px;
+    position: relative;
+}
+.s-interview-cards .cards .c-card .description .companyName {
+    color: #5F5F5F;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.s-interview-cards .cards .c-card .description .title {
+    font-size: 15px;
+    line-height: 22px;
+    height: 65px;
+    letter-spacing: 0.02em;
+}
+
+.s-interview-cards .cards .c-card .description .subtitle {
+    margin-top: 42px;
+    color: #505050;
+    font-size: 12px;
+}
+.s-interview-cards .cards .c-card .description .industry {
+    color: #505050;
+    font-size: 11px;
+}
+.s-interview-cards .cards .c-card .description .industry .note {
+    color:  #2C9D33;
+}
+
+@media (max-width: 1030px) {
+    .s-interview-cards {
+        height: 542px;
+    }
+    .s-interview-cards .cards .c-card {
+        height: 300px;
+        width: 300px;
+    }
+    .s-interview-cards .cards .c-card .prolabel {
+        top: 8px;
+        left: 8px;
+    }
+    .s-interview-cards > .title {
+        margin-bottom: 36px;
+    }
+    .s-interview-cards .cards {
+        height: 315px;
+    }
+    .s-interview-cards .cards .c-card img {
+        height: 117px;
+    }
+
+    .s-interview-cards .cards .c-card {
+        margin-right: 30px;
+    }
+    .s-interview-cards .cards .c-card .description {
+        padding: 15px;
+    }
+    .s-interview-cards .cards .c-card .description .industry {
+        font-size: 10px;
+    }
+    .s-interview-cards .cards .c-card .description .title {
+        height: 80px;
+    }
+}
+
+.s-interview-cards .cards .previous {
+    display: none;
+    position: absolute;
+    left: 15px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+.s-interview-cards .cards .next {
+    display: none;
+    position: absolute;
+    right: 15px;
+}
+
+@media (max-width: 680px) {
+    .s-interview-cards.s-cards {
+        overflow: hidden;
+        align-items: inherit;
+    }
+    .s-interview-cards .cards {
+        width: 600px;
+        margin-left: 15px;
+        transition: 1s;
+    }
+    .s-interview-cards .cards .c-card {
+        width: 300px;
+    }
+
+    .s-interview-cards .cards .next {
+        display: inline-block;
+    }
+
+    .s-interview-cards .cards.paged {
+        margin-left: -215px;
+        transition: 1s;
+    }
+    .s-interview-cards .cards.paged .next {
+        display: none;
+    }
+    .s-interview-cards .cards.paged .previous {
+        display: inline-block;
+    }
+}

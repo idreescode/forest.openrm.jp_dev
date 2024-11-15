@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>お客様専用ページ作成機能：不動産業界向け業務改善ツールフォレストPROの機能</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="クラウド上にお客様専用ページを作成し、物件情報を簡単に共有することができます。 フォレストPROは、お客様案内履歴を自動的にデータベース化します。お客様ステイタスも迷うこともありません。スムーズなご案内を可能にしました。">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="お客様専用ページ作成機能：不動産業界向け業務改善ツールフォレストPROの機能">
+    <meta property="og:url" content="https://forest.openrm.jp/features/share.html">
+    <meta property="og:image" content="https://forest.openrm.jp/assets/images/og-common.png">
+    <meta property="og:site_name" content="無料帯替えオンラインソフトForest(フォレスト)">
+    <meta property="og:description" content="クラウド上にお客様専用ページを作成し、物件情報を簡単に共有することができます。 フォレストPROは、お客様案内履歴を自動的にデータベース化します。お客様ステイタスも迷うこともありません。スムーズなご案内を可能にしました。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://forest.openrm.jp/features/share.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese" as="style" media="(min-width: 768px)" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65&l=dataLayer" as="script">
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>&l=dataLayer" as="script">
+
+    <script>
+      (function (w, d, s, l) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], dl = '&l=' + l; w.addEventListener('load', function () { z('https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65'); z('https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>'); }); function z (u) { var j = d.createElement(s); j.async = true; j.src = u + dl; f.parentNode.insertBefore(j, f); } })(window, document, 'script', 'dataLayer');
+    </script>
+
+    <script>
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= GA_MEASUREMENT_ID %>');
+    </script>
+
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLMWF65" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!--
+        Header
+    -->
+
+    <header class="s-header u-row white">
+
+        <div class="bg u-stretch"></div>
+
+        <a id="header-logo" href="/" class="logo">
+            <img src="/assets/images/logo-white.svg" alt="フォレストホームページのロゴ">
+            <img src="/assets/images/logo-black.svg" alt="フォレストホームページのロゴ">
+        </a>
+
+        <a class="menu">
+            <svg class="u-stretch" viewBox="0 0 24 24">
+                <path d="M7.1,8A1.05,1.05,0,0,0,6,9H6a1.05,1.05,0,0,0,1.1,1H22.9A1.05,1.05,0,0,0,24,9h0a1.05,1.05,0,0,0-1.1-1H7.1ZM0,15a1,1,0,0,0,1,1H23a1,1,0,0,0,0-2H1A1,1,0,0,0,0,15Z"/>
+            </svg>
+            <svg class="u-stretch" viewBox="0 0 24 24">
+                <path d="M12,13.43l6.29,6.29a1,1,0,0,0,1.42-1.42L13.42,12l6.29-6.29A1,1,0,1,0,18.3,4.31h0L12,10.6,5.71,4.31A1,1,0,1,0,4.29,5.67h0L10.58,12,4.29,18.3a1,1,0,0,0,1.42,1.42Z"/>
+            </svg>
+        </a>
+
+        <nav class="u-flex u-row t6 w5">
+            <a id="nav-pricing" class="link left" href="/#pricing">料金</a>
+            <!-- <a class="link left">はじめての方へ</a> -->
+            <a id="nav-faq" class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329">よくあるご質問</a>
+            <a id="nav-news" class="link left" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417">お知らせ</a>
+            <span class="u-flex"></span>
+            <!-- <a class="link right" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db">お問い合わせ</a> -->
+            <a id="nav-login" class="link right desktop" href="<%= APP_ORIGIN %>/">ログイン</a>
+            <div class="u-row right buttons">
+                <a id="nav-login-mobile" class="btn default mobile" href="<%= APP_ORIGIN %>/">
+                    <span>ログイン</span>
+                </a>
+                <a id="nav-signup" class="btn primary" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
+                    <span>無料で使う</span>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main id="main">
+
+        <nav class="breadcrumb">
+            <ol>
+                <li><a id="breadcrumb-top" href="/">HOME</a></li>
+                <li><a id="breadcrumb-pro" href="/products/pro.html">フォレストPRO</a></li>
+                <li>お客様専用ページ作成機能</li>
+            </ol>
+        </nav>
+
+
+        <section class="s-feature">
+            <div class="header">
+                <div class="icon"><img src="/assets/images/features/share/icon.svg" alt=""></div>
+                <div class="text">
+                    <p class="subtitle">物件提案はクラウド上のお客様ページで一括管理！</p>
+                    <h1 class="title">
+                        お客様専用ページ作成機能
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="s-multi columns-3">
+            <div class="header">
+                <p class="subtitle">お客様に紹介する物件は、専用ページを作成し管理が可能！</p>
+                <h2 class="title">
+                    これからの物件紹介はクラウドで共有・管理
+                </h2>
+                <p class="desc">
+                    クラウド上にお客様専用ページを作成し、物件情報を簡単に共有することができます。<br>ページの作成は、物件情報を選択し、お客様情報（メールアドレス）を設定するだけ！
+                </p>
+            </div>
+            <div class="content">
+                <div class="item">
+                    <img alt="" src="/assets/images/share_200.svg">
+                    <p class="title">物件情報共有をスピーディーに</p>
+                    <p class="desc">自動で招待メールがお客様に送信され、これまでの物件情報送付の手間が大幅短縮！ </p>
+                </div>
+                <div class="item">
+                    <img alt="" src="/assets/images/security_200.svg">
+                    <p class="title">抜群のセキュリティ</p>
+                    <p class="desc">世界水準の情報セキュリティを導入しているため、安心・安全にご利用いただけます。</p>
+                </div>
+                <div class="item">
+                    <img alt="" src="/assets/images/customer_200.svg">
+                    <p class="title">お客様とのやり取りをスムーズに</p>
+                    <p class="desc">お客様のモチベーシンを測る「気になる」機能！提案された物件にコメントもつける！</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="s-banner-green">
+            <img class="bg" src="/assets/images/forest_empty.svg" alt="">
+            <p class="title">便利な機能がもっと使える！PROプランを試してみましょう</p>
+            <div class="button">
+                <a id="section-pro-contact-us" href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="btn primary" target="_blank"><span>資料請求をする(無料)</span></a>
+            </div>
+        </div>
+
+        <section class="s-feature">
+            <h2 class="u-sr-only">機能</h2>
+            <div class="content">
+                <div class="item">
+                    <div class="text">
+                        <div class="badges">
+                            <span class="badge pro">PRO</span>
+                        </div>
+                        <h3 class="title">クラウドにお客様ページを作成して、<br>物件情報をスムーズに共有する</h3>
+                        <p>
+                            クラウド上にお客様専用ページを作成し、物件情報を簡単に共有することができます。ページの作成は、物件情報を選択しお客様情報（メールアドレス）を設定するだけ。自動で招待メールがお客様に送信され、これまでの物件情報送付の手間が大幅短縮！
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img srcset="/assets/images/features/share/screenshot-1.webp, /assets/images/features/share/screenshot-1@2x.webp 2x" alt="" src="/assets/images/features/share/screenshot-1.webp">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <div class="badges">
+                            <span class="badge pro">PRO</span>
+                        </div>
+                        <h3 class="title">雛形テンプレートを使って<br>メール作成も効率的に！</h3>
+                        <p>
+                            お客様へ送付するメール文章は、雛形テンプレート設定を行うことで、大幅に時短します。お客様に合わせて、テンプレートのテキストを少し編集するだけでメール作成が完了します。
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img srcset="/assets/images/features/share/screenshot-2.webp, /assets/images/features/share/screenshot-2@2x.webp 2x" alt="" src="/assets/images/features/share/screenshot-2.webp">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <div class="badges">
+                            <span class="badge pro">PRO</span>
+                        </div>
+                        <h3 class="title">管理画面で<br>紹介済みの物件を一覧管理！</h3>
+                        <p>
+                            お客様に紹介した物件データは自動で一覧化されるため、紹介済み物件の図面データなどを一々管理する必要がなくなります！管理画面では、紹介物件の追加や募集終了した物件をお知らせすることも可能です。
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img srcset="/assets/images/features/share/screenshot-3.webp, /assets/images/features/share/screenshot-3@2x.webp 2x" alt="" src="/assets/images/features/share/screenshot-3.webp">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <div class="badges">
+                            <span class="badge pro">PRO</span>
+                        </div>
+                        <h3 class="title">お客様が気になる物件を伝える<br>気になるボタン機能</h3>
+                        <p>
+                            お客様が気になった物件をブックマークする「気になる」ボタン機能では、お客様に送信した物件情報への反応を見ることができます。
+                        </p>
+                        <a id="section-features-activity-feed" href="/features/customer-logs.html" class="link secondary cl-green"><img src="/assets/images/big-arr-right.svg" alt="">詳しくは、お客様行動ログをご覧ください</a>
+                    </div>
+                    <div class="image">
+                        <img srcset="/assets/images/features/share/screenshot-4.webp, /assets/images/features/share/screenshot-4@2x.webp 2x" alt="" src="/assets/images/features/share/screenshot-4.webp">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-compare-horizontal">
+            <div class="header">
+                <h2 class="title">まずは無料で体験してみましょう</h2>
+                <p class="desc">無料でご利用いただけるプランをご用意しています</p>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <p class="subtitle w7">業務のお困りごとをまとめて解決！</p>
+                    <h3 class="title">無料でアカウント作成</h3>
+                    <p class="desc">メルアド一つからのご登録が可能。<br>
+                        初期導入費や追加費用は一切かかりません。</p>
+                    <div class="button">
+                        <a id="section-plans-free-signup" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e" class="btn primary-alt"><span>無料でアカウント作成</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="subtitle w7">有料会員ならもっと便利な機能が使い放題</p>
+                    <h3 class="title">PROプラン(有料)</h3>
+                    <p class="desc">月額8,000円〜<br>初期導入費やキャンセル費などは<span>一切かかりません。</span></p>
+                    <div class="button">
+                        <a id="section-plans-pro-contact" href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" class="btn primary" target="_blank"><span>資料請求をする(無料)</span></a>
+                    </div>
+                </div>
+            </div>
+            <img class="bg" src="/assets/images/forest_with_animals_no_building.svg" alt="フォレスト">
+        </section>
+
+        <section class="s-contact-medium">
+            <div class="header">
+                <h2 class="title">お気軽にご相談ください</h2>
+                <p class="desc">質問・ご相談などありましたら、下記までお問い合わせください。<br>気になる点・ご不明な点・導入準備など、専任のスタッフが丁寧にご案内いたします。</p>
+            </div>
+            <div class="content">
+                <div class="part1">
+                    <p class="title">WEBからのお問い合わせ</p>
+                    <div class="button"><a id="section-contact-web" target="_blank" href="https://ie.nativeforms.com/smRK5UPmZSbvh3ZkhmZp1Db" onclick='return contact(event)' class="btn default"><span>お問い合わせ</span></a></div>
+                </div>
+                <div class="part2">
+                    <p class="title">お電話からのお問い合わせ</p>
+                    <p class="phone"><a id="section-contact-phone" href="tel:050-3033-5162">050 - 3033 - 5162</a></p>
+                    <p class="time">受付時間 10:00 ~ 17:00 （土・日・祝を除きます）</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!--
+        Footer
+    -->
+
+    <footer class="s-footer">
+
+        <div class="info">
+            <div>
+                <div>
+                    <img src="/assets/images/forest_logo_white.svg" alt="">
+                </div>
+                <div class="address">
+                    <p class="name">株式会社オープンルーム</p>
+                    <p>東京都渋谷区道玄坂一丁目 2 番 3 号　渋谷フクラス 17 階<br>050 - 3033 - 5162</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">フォレストについて</p>
+                <div class="column">
+                    <a id="footer-top" class="link" href="/">トップ</a>
+                    <br><br><br>
+                    <a id="footer-faq" class="link" target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329">よくあるご質問</a>
+                    <a id="footer-news" class="link" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417">お知らせ</a>
+                    <a id="footer-contact" class="link" target="_blank" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" onclick='return contact(event)'>お問い合わせ</a>
+                    <a id="footer-policy" class="link" href="https://openrm.co.jp/policy.html">プライバシーポリシー</a>
+                    <a id="footer-company" class="link" href="https://openrm.co.jp/">運営会社</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">機能</p>
+                <div class="column">
+                    <a id="footer-features-rpa" class="link" href="/features/rpa.html">図面編集・帯替えRPA</a>
+                    <a id="footer-features-ai-ocr" class="link" href="/features/ai-ocr.html">AI-OCR物件データベース</a>
+                    <a id="footer-features-share" class="link" href="/features/share.html">お客様専用ページ作成</a>
+                    <a id="footer-features-activity-feed" class="link" href="/features/customer-logs.html">お客様の行動ログ</a>
+                    <a id="footer-features-crm" class="link" href="/features/data.html">顧客データベース</a>
+                    <a id="footer-features-support" class="link" href="/features/support.html">サポート体制</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright © Open Room inc. All Rights Reserved.</p>
+            <a id="footer-company-logo" href="https://openrm.co.jp/">
+                <img src="/assets/images/openroom_white_small.svg" alt="Open Room Inc. ロゴ">
+            </a>
+        </div>
+
+    </footer>
+
+
+    <a class="contact" target="_blank" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" onclick="return contact(event)">
+        <img src="/assets/images/chat.svg" alt="">
+        <span>チ<br>ャ<br>ットで相談する</span>
+    </a>
+
+    <!--
+        Scripts
+    -->
+
+    <script src="/dist/scripts.js"></script>
+
+</body>
+</html>

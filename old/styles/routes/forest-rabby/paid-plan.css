@@ -1,0 +1,121 @@
+.s-paid-plan {
+    padding-top: 60px;
+    padding-bottom: 92px;
+    text-align: center;
+}
+
+.s-paid-plan .section-heading {
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 500;
+}
+
+.s-paid-plan .section-label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 210%;
+    letter-spacing: 0.05em;
+    color: #3BA642;
+}
+
+.s-paid-plan .section-subheading {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #555555;
+}
+
+/* Points */
+.s-paid-plan .point {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1080px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 48px;
+    background: rgba(28, 158, 59, 0.08);
+    border-radius: 12px;
+}
+
+.s-paid-plan .point .explanation {
+    margin-right: 10%;
+    text-align: left;
+    width: 100%;
+}
+
+.s-paid-plan .point .explanation .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.s-paid-plan .point .explanation .heading h2 {
+    font-size: 30px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #1C9E3B;
+}
+
+.s-paid-plan .point .explanation .heading h2 em {
+    font-size: 50px;
+    font-style: normal;
+    color: #1C9E3B;
+}
+
+/* Circle Numbers */
+.s-paid-plan .point .explanation .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #1C9E3B;
+    color: white;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+}
+
+.s-paid-plan .point .explanation p {
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #555555;
+}
+
+@media (max-width: 1024px) {
+    .s-paid-plan .section-heading {
+        font-size: 28px;
+    }
+    .s-paid-plan .point {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .s-paid-plan .point .explanation {
+        margin: 0 0 15px 0;
+    }
+    .s-paid-plan .point .explanation .heading h2 {
+        font-size: 24px;
+    }
+    .s-paid-plan .point .explanation .heading h2 em {
+        font-size: 30px;
+    }
+    .s-paid-plan .point .explanation .circle {
+        height: 34px;
+        width: 34px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .s-paid-plan .point img {
+        max-width: 80%;
+    }
+}

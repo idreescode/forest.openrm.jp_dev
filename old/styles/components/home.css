@@ -1,0 +1,46 @@
+/*
+    Main
+*/
+
+.c-home {
+    padding-top: 20px;
+    text-align: center;
+}
+.c-home .t5 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.c-home .t1 {
+    margin-bottom: 10px;
+    line-height: 1.47;
+}
+.c-home .rabby .t1 {
+    line-height: 1.55;
+}
+.c-home .btn {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/*
+    Mobile
+*/
+
+@media (max-width: 768px) {
+
+    .c-home .t1 {
+        margin-bottom: 20px;
+    }
+    .c-home .t5 {
+        font-size: 16px;
+    }
+    .c-home .btn {
+        margin: 20px auto;
+    }
+
+
+}
+

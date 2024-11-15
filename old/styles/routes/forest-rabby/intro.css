@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+    .r-rabby .s-intro .c-home {
+        padding-top: 28px;
+    }
+    .r-rabby .s-intro .canvas {
+        height: 620px;
+    }
+    .r-rabby .s-intro .btn.primary {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+        text-align: center;
+        height: 48px;
+        border-radius: 24px;
+        width: 300px;
+        max-width: 80%;
+    }
+}

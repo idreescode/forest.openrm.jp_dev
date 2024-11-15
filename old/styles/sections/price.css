@@ -1,0 +1,240 @@
+/* variants */
+.s-price .plans.mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .s-price .plans.mobile {
+        display: flex;
+    }
+    .s-price .plans.desktop {
+        display: none;
+    }
+}
+
+
+.s-price .plans.mobile .plan {
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+.s-price .plans.mobile .plan > div {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.s-price .plans.mobile .plan.free {
+    border-top: 6px solid #3BA642;
+}
+.s-price .plans.mobile .plan.premium {
+    border-top: 6px solid #FF7000;
+}
+.s-price .plans.mobile .plan .summary {
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+.s-price .plans.mobile .plan .summary .name {
+    font-size: 24px;
+}
+.s-price .plans.mobile .plan .summary .price {
+    font-size: 15px;
+}
+.s-pric.s-price.mobile .plan .summary .price span {
+    font-size: 35px;
+    margin-right: 6px;
+}
+.s-price .plans.mobile .plan .seats {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+.s-price .plans.mobile .plan .seats .count span {
+    font-size: 28px;
+}
+.s-price .plans.mobile .plan .features {
+    padding: 24px;
+}
+.s-price .plans.mobile .plan .features .common {
+    font-size: 16px;
+}
+.s-price .plans.mobile .plan .features .common .plus {
+    color: #c8cfca;
+    font-size: 30px;
+    line-height: 30px;
+}
+.s-price .plans.mobile .plan .features ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.s-price .plans.mobile .plan .features ul li {
+    font-size: 14px;
+}
+.s-price .plans.mobile .plan .features ul li + li {
+    padding-top: 12px
+}
+.s-price .plans.mobile .plan .features ul li i {
+    font-size: 18px;
+    color: #1c9e3b;
+    margin-right: 9px;
+}
+.s-price .plans.mobile .plan .features .team {
+    background: #f7faf8;
+    margin-top: 16px;
+    padding: 12px 20px;
+}
+.s-price .plans.mobile .plan .features .team .title span {
+    font-size: 18px;
+}
+.s-price .plans.mobile .plan .features .team .caption {
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+.s-price .plans.mobile .plan .features .team .badge {
+    font-size: 10px;
+    background: #ee6723;
+    padding: 0 4px;
+    width: 54px;
+    border-radius: 2px;
+}
+.s-price .plans.mobile .plan .features .price {
+    font-size: 14px;
+}
+.s-price .plans.mobile .plan .features .price span {
+    font-size: 28px;
+    margin-right: 6px;
+}
+
+/* plans table */
+
+.s-price .plans.desktop {
+    padding: 80px 0;
+    width: 94vw;
+    max-width: 1280px;
+    margin: auto;
+    direction: ltr;
+    color: #111111;
+    font-size: 15px;
+}
+
+
+/*Table start*/
+
+.s-price .plans.desktop table {
+    padding: 0 !important;
+    margin: 0 auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.s-price .plans.desktop table,
+.s-price .plans.desktop th,
+.s-price .plans.desktop td {
+    border: 1px solid #E5E5E5;
+    border-collapse: collapse;
+}
+
+.s-price .plans.desktop thead tr:nth-child(1) th {
+    border: 1px solid #ffffff;
+}
+
+.s-price .plans.desktop thead tr:nth-child(1) th:nth-child(2) {
+    border-bottom: 4px solid #3BA642;
+    color: #3BA642;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.03em;
+}
+
+.s-price .plans.desktop thead tr:nth-child(1) th:nth-child(3) {
+    border-bottom: 4px solid #FF9543;
+    color: #FF9543;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.03em;
+}
+
+.s-price .plans.desktop thead tr:nth-child(2) th {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.005em;
+    color: #222222;
+    text-align: left;
+    padding: 30px 20px;
+}
+
+.s-price .plans.desktop thead tr:nth-child(2) .details {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 160.1%;
+    letter-spacing: 0.005em;
+    color: #97A099;
+    margin: 6px 0 15px 0;
+    display: inline-block;
+}
+
+.s-price .plans.desktop .planPrice {
+    font-size: 34px;
+}
+
+.s-price .plans.desktop thead tr:nth-child(2) .currency {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+    color: #222222;
+}
+
+.s-pric.s-price.desktop thead tr:nth-child(2) div.currency {
+    display: inline-block;
+}
+
+@media(max-width: 1350px) {
+    .s-price .plans.desktop thead tr:nth-child(2) div.currency {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.s-price .plans.desktop thead tr:nth-child(2) th:nth-of-type(5) .currency{
+    font-size: 11px;
+}
+.s-price .plans.desktop thead tr:nth-child(2) th:nth-of-type(5) .details{
+    margin: 15px 0 6px 0;
+}
+
+.s-price .plans.desktop table thead tr th:first-child {
+    border-left: 2px solid #ffffff;
+}
+
+.s-price .plans.desktop tbody td {
+    height: 48px;
+    text-align: center;
+    padding: 12px;
+}
+
+.s-price .plans.desktop tbody td:nth-child(1) {
+    text-align: left;
+}
+
+.s-price .plans.desktop tbody td i {
+    font-size: 22px;
+    color: #1c9e3b;
+}
+
+.s-price .plans.desktop tbody .space {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.s-price .plans.desktop tbody .group td {
+    background: #f7faf8;
+    height: 68px;
+    font-size: 20px;
+}
+
+
+/*Table end*/

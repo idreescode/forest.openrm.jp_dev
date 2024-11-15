@@ -1,0 +1,416 @@
+/*
+    Heading
+*/
+
+.heading {
+    text-align: center;
+    margin-bottom: 64rem;
+}
+.heading .t3 {
+    margin-bottom: 8rem;
+}
+.heading .t2 {
+    margin-bottom: 16rem;
+}
+
+
+
+/*
+    Hero
+*/
+/* 
+.hero {
+    padding: 230rem 40rem;
+    text-align: center;
+}
+.hero .t1 {
+    margin-bottom: 24rem;
+}
+.hero .hero-buttons {
+    display: flex;
+    margin-top: 48rem;
+}
+.hero .hero-buttons a {
+    flex-basis: 50%;
+}
+.hero .hero-link {
+    border: 2px solid #FFFFFF;
+    margin-left: 24rem;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 88rem 24rem;
+    }
+} */
+
+
+/*
+    Service
+*/
+
+.service {
+    text-align: center;
+}
+.service .t4 {
+    padding: 24rem 0;
+}
+
+
+
+/*
+    About
+*/
+
+.about .ui-list {
+    margin-top: 32rem;
+}
+
+
+
+/*
+    Free
+*/
+
+.free .t5 {
+    margin-bottom: 32rem;
+}
+
+
+
+/*
+    CTA
+*/
+
+.cta {
+    text-align: center;
+    padding: 32rem;
+    border-radius: 8rem;
+    background: rgba(255,255,255,.9);
+}
+.cta .t2 {
+    margin-bottom: 16rem;
+}
+.cta .ui-btn {
+    margin-bottom: 32rem;
+    margin-top: 32rem;
+}
+.cta > *:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/*
+    Paid
+*/
+
+.paid {
+    padding: 24rem;
+}
+.paid:not(:last-child) {
+    margin-bottom: 40rem;
+}
+.paid img {
+    border-radius: 8rem;
+}
+.paid .t4 {
+    margin-bottom: 16rem;
+}
+.paid .ui-badge {
+    margin-bottom: 32rem;
+}
+
+
+.l-section.plan .ui-card {
+    padding: 32rem 0;
+    text-align: center;
+}
+.l-section.plan .ui-card .t5 {
+    margin-bottom: 16rem;
+}
+.l-section.plan .ui-card .t3 {
+    margin-bottom: 16rem;
+}
+.l-section.plan .ui-card .ui-btn {
+    margin-top: 32rem;
+}
+@media (max-width: 768px) {
+    .l-section.plan .ui-card { padding: 32rem }
+}
+
+
+/*
+    Text
+*/
+
+.text {
+    padding: 24rem;
+    background: #ffffff;
+    border-radius: 8rem;
+    line-height: 1.6;
+}
+.text .text-narrow {
+    padding: 64rem 80rem;
+}
+.text p {
+    margin-bottom: 1em;
+}
+.text .text-sign {
+    display: flex;
+    margin-top: 2em;
+}
+.text .text-sign:before {
+    content: '';
+    flex-grow: 1;
+}
+@media (max-width: 768px) {
+    .text .text-narrow {
+        padding: 24rem 0;
+    }
+}
+
+
+
+/*
+    Icons
+*/
+
+.icons {
+    display: flex;
+}
+.icons div {
+    flex-basis: 33.33%;
+}
+
+
+
+/*
+    Fee
+*/
+
+@media(max-width:800px) {
+    #pricing {
+        display: none;
+    }
+}
+
+#pricing .subscriptionPeriod {
+    border-bottom: 1px solid #5C665F;
+    margin: 39px auto 34px;
+}
+#pricing .subscriptionPeriod .period {
+    border-radius: 24px 24px 0px 0px;
+    border: 1px solid #5C665F;
+    cursor: pointer;
+    width: 570px;
+    padding: 24px 0px;
+    margin-bottom: -1px;
+}
+#pricing .subscriptionPeriod .period.active {
+    border-bottom: white;
+    background: white;
+}
+#pricing .subscriptionPeriod .period .t3 {
+    margin: 8px 0px;
+}
+
+.fee .fee-row {
+    display: table-row;
+    min-height: 51px;
+    height: 51px;
+}
+
+.fee .fee-row.large {
+    height: 74px;
+}
+
+#planTableRow .monthly {
+    display: none;
+}
+#planTableRow.monthly .yearly {
+    display: none;
+}
+#planTableRow.monthly .monthly {
+    display: initial;
+}
+
+
+/* fee-cell */
+.fee {
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.fee .fee-cell {
+    display: table-cell;
+    width: 330px;
+    font-size: 18px;
+}
+.fee .fee-row:nth-child(n+2) .fee-cell:nth-child(n+2) p, .fee .fee-row:nth-child(n+2) .fee-cell:nth-child(n+2) img {
+    margin-left: 26px;
+}
+.fee-cell:nth-child(1) {
+    width: 305px;
+    font-size: 16px;
+    height: 51px;
+    padding: 12px 40px;
+}
+.fee .fee-row.large .fee-cell:nth-child(1) {
+    height: 74px;
+}
+.fee .fee-row:nth-child(n+2) .fee-cell:nth-child(1) {
+    position: absolute;
+}
+.fee .fee-cell:nth-child(4) {
+    border: 3px solid #EE6723;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+.fee .fee-row:last-child .fee-cell:nth-child(4) {
+    border-bottom: 3px solid #EE6723;
+}
+.fee .fee-body .fee-row.bg-gray .fee-cell {
+    border: none;
+}
+.fee .fee-cell img {
+    width: 24px;
+    height: 24px;
+}
+.fee .fee-like-list {
+    margin-bottom: 16rem;
+}
+.fee .plan {
+    padding: 48px 24px;
+    letter-spacing: 0.18px; 
+}
+.fee .plan .subtitle {
+    margin: 13px 0px 16px;
+    font-size: 20px;
+}
+.fee .plan .name {
+    line-height: 135%;
+}
+.fee .plan .badge {
+    padding: 6px 12px;
+    gap: 8px;
+    margin-left: 12px;
+}
+.fee .plan .description {
+    min-height: 144px;
+    height: 144px;
+    text-align: justify;
+}
+.fee .plan .userCount {
+    margin-top: 14px;
+}
+.fee .plan .price {
+    font-size: 40px;
+    margin: 8px 0px;
+}
+.fee .plan .currency {
+    font-size: 24px;
+}
+.fee .plan .cancelFee {
+    height: 32px;
+}
+.fee .plan .ui-btn {
+    margin-top: 27px;
+}
+.fee .plan .enterpriseNotice {
+    margin: 54px 0px 20px;
+}
+.fee .monthly .plan .enterpriseNotice {
+    margin: 44px 0px 0px;
+}
+
+
+/* fee-head */
+
+.fee .fee-head {
+    display: table;
+    text-align: center;
+}
+
+.fee .fee-head .fee-cell {
+    padding: 24px 0px;
+}
+
+.fee .fee-head .fee-cell.empty {
+    width: 0px;
+}
+.fee .fee-head .fee-cell.double {
+    width: 675px;
+}
+
+.fee .fee-body, .fee .fee-head  {
+    width: 1961px;
+}
+
+
+
+/* fee-body */
+
+.fee .fee-body {
+    display: table;
+    border-top-right-radius: 0;
+}
+.fee .fee-body .fee-cell {
+    border-top: 1px solid #E5E5E5;
+    vertical-align: middle;
+}
+.fee .fee-body .fee-cell:first-child {
+    border-left: none;
+    text-align: left;
+}
+.fee .fee-body .fee-row:first-child .fee-cell {
+    border-top: none;
+}
+.fee .fee-body .fee-row:nth-child(3) .fee-cell {
+    text-align: left;
+}
+.fee .fee-body .fee-block-only {
+    display: none;
+}
+
+
+/* fee-block (created by js) */
+
+.fee .fee-block .fee-cell {
+    display: block;
+    text-align: left;
+}
+.fee .fee-block:not(:last-child) {
+    margin-bottom: 64rem;
+}
+
+
+/*
+    Contact
+*/
+
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.contact .ui-btn {
+    margin-top: 16rem;
+}
+.contact .t2 {
+    margin: 4px 0;
+}
+.contact article {
+    padding: 0 40rem;
+}
+.contact article:first-child {
+    border-right: 1px solid #C8CFCA;
+}
+@media (max-width: 768px) {
+    .contact {
+        display: block;
+    }
+    .contact article:first-child {
+        border-right: none;
+        margin-bottom: 64rem;
+    }
+}

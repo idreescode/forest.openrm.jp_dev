@@ -1,0 +1,12 @@
+.u-flex {
+	display: flex;
+}
+.al-center {
+	align-items: center;
+}
+.j-center {
+	justify-content: center;
+}
+.j-space-around {
+	justify-content: space-around;
+}

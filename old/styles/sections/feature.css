@@ -1,0 +1,126 @@
+.s-feature {
+    padding-top: 78px;
+}
+
+.s-feature .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 60px;
+    text-align: left;
+}
+
+.s-feature .header .text {
+    max-height: 100px;
+}
+
+.s-feature .header .icon {
+    margin-right: 32px;
+    border-radius: 50px;
+    border: solid 1px #d6dbdf;
+    width: 100px;
+    height: 100px;
+}
+
+.s-feature .header .icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.s-feature .content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.s-feature .content .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.s-feature .content .item:nth-child(2n+2) {
+    flex-direction: row-reverse;
+} 
+
+.s-feature .content .item .text {
+    max-width: 540px;
+}
+
+.s-feature .content .image { 
+    border: solid 1px #d6dbdf;
+}
+
+.s-feature .content .image img {
+    max-width: 420px;
+}
+
+.s-feature .content .item .title {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.s-feature .content .item p {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+@media(max-width: 900px) {
+    .s-feature .content {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 850px) {
+    .s-feature .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .s-feature .header .text {
+        max-height: initial;
+    }
+
+    .s-feature .header .icon {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .s-feature {
+        padding-top: 30px;
+    }
+
+    .s-feature .content .item {
+        flex-direction: column-reverse;
+    }
+
+    .s-feature .content .item:nth-child(2n+2) {
+        flex-direction: column-reverse;
+    }
+
+    .s-feature .content .item .title {
+        font-size: 16px;
+    }
+
+    .s-feature .content .item p {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .s-feature .content .item .text, .s-feature .content img {
+        width: 100%;
+    }
+
+    .s-feature .content .item .text > * {
+        margin-top: 10px;
+    }
+}

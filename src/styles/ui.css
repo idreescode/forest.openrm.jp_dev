@@ -1,0 +1,99 @@
+/*
+    Card
+*/
+
+.ui-card {
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 0 26rem rgba(34, 34, 34, 0.09);
+    border-radius: 8rem;
+}
+
+
+
+/*
+    List
+*/
+
+.ui-list li {
+    display: flex;
+    align-items: center;
+}
+.ui-list li:not(:last-child) {
+    margin-bottom: 16rem;
+}
+.ui-list li:before {
+    content: '';
+    width: 28rem;
+    height: 28rem;
+    background-size: cover;
+    margin-right: 10rem;
+    flex-shrink: 0;
+}
+.ui-list--small li:before {
+    width: 20rem;
+    height: 20rem;
+}
+.ui-list--green li:before {
+    background-image: url("/assets/new/ui-list-green.png");
+}
+.ui-list--red li:before {
+    background-image: url("/assets/new/ui-list-red.png");
+}
+
+
+
+/*
+    Badge
+*/
+
+.ui-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34rem;
+    border-radius: 17rem;
+    padding: 0 24rem;
+    background: #E7F5EB;
+    color: #3BA642;
+    font-weight: 700;
+}
+
+
+
+/*
+    Button
+*/
+
+.ui-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35rem;
+    height: 70rem;
+    font-size: 20rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0 32rem;
+    background-size: 200% 100%;
+    transition: background-position-x 0.2s ease-in-out;
+}
+.ui-btn:hover {
+    background-position-x: -100%;
+}
+.ui-btn--success {
+    background-image: linear-gradient(to left, #17802F 50%, #3BA642 50%);
+}
+.ui-btn--danger {
+    background-image: linear-gradient(to left, #F74F02 50%, #FF7000 50%);
+}
+
+
+/*
+    Forest logo
+*/
+
+.ui-logo-forest {
+    width: 196rem;
+    height: 48rem;
+}

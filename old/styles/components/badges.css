@@ -1,0 +1,28 @@
+.badges .badge {
+    height: 28px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 0px 12px 0px 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.badges .badge {
+    margin-right: 8px;
+}
+
+.badges .badge.pro {
+    border-color: #ff7000;
+    color: #ff7000;
+}
+
+.badges .badge.pro.full {
+    color: white;
+    background-color: #ff7000;
+}
+
+.badges .badge.free {
+    border-color: #1c9e3b;
+    color: #1c9e3b;
+}

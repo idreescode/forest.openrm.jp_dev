@@ -1,0 +1,72 @@
+.s-banner-green {
+    max-width: 1000px;
+    background: linear-gradient(to bottom, #1c9e3b 16%, #b7d36a 100%);
+    margin: auto;
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: 700;
+
+    position: relative;
+
+    padding-top: 30px;
+
+}
+
+.s-banner-green .title {
+    font-size: 26px;
+    font-weight: 700;
+    z-index: 1;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.s-banner-green .desc {
+    color: #ffed60;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.s-banner-green .bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.s-banner-green .button a {
+    width: 420px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .s-banner-green {
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+    }
+    .s-banner-green .bg {
+        width: initial;
+    }
+
+    .s-banner-green .button a {
+        max-width: 328px;
+    }
+
+    .s-banner-green .title {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    .s-banner-green .desc {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}

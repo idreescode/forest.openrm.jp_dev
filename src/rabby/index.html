@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>フォレスト・ラビー | 不動産営業ソフト | ピッパの仲介</title>
+    <link rel="canonical" href="https://forest.openrm.jp/rabby" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ピッパの仲介でお馴染み！レインズなどの物件図面を読み込むと、AIがピッと自動でオビ交換、お客さまにその場でパッとすぐ届く！仲介業務を10倍効率化して、物件の独自データベースも構築できるクラウド不動産営業ツール。仲介営業の効率化と反響の可視化を実現。無料で使える顧客管理機能つき">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="フォレスト・ラビー | 不動産営業ソフト | ピッパの仲介">
+    <meta property="og:url" content="https://forest.openrm.jp/rabby">
+    <meta property="og:image" content="https://forest.openrm.jp/assets/new/og-common.png">
+    <meta property="og:site_name" content="フォレスト・ラビー | 不動産営業ソフト | ピッパの仲介">
+    <meta property="og:description" content="ピッパの仲介でお馴染み！レインズなどの物件図面を読み込むと、AIがピッと自動でオビ交換、お客さまにその場でパッとすぐ届く！仲介業務を10倍効率化して、物件の独自データベースも構築できるクラウド不動産営業ツール。仲介営業の効率化と反響の可視化を実現。無料で使える顧客管理機能つき">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese" as="style" media="(min-width: 768px)" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65&l=dataLayer" as="script">
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>&l=dataLayer" as="script">
+    <link rel="preload" href="/assets/new/bg-hero-1.webp" as="image">
+    <link rel="preload" href="/assets/new/logo-forest-black.svg" as="image">
+    <link rel="preload" href="/assets/new/logo-forest-white.svg" as="image">
+    <script>
+        (function (w, d, s, l) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], dl = '&l=' + l; w.addEventListener('load', function () { z('https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65'); z('https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>'); }); function z (u) { var j = d.createElement(s); j.async = true; j.src = u + dl; f.parentNode.insertBefore(j, f); } })(window, document, 'script', 'dataLayer');
+    </script>
+    <script>
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= GA_MEASUREMENT_ID %>');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/new/apple-touch-icon.png">
+    <link rel="stylesheet" href="/dist/new.styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLMWF65" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+    <!--
+        Header
+    -->
+
+    <header class="header l-section">
+        <div class="l-container l-container--lg">
+            <a id="header-logo" class="ui-logo-forest u-flex j-center" href="#"><img src="/assets/images/logo-black-rabby.svg" alt="フォレスト・ラビーホームページのロゴ" title="フォレスト・ラビーホームページのロゴ"></a>
+            <div class="header-space"></div>
+            <a id="header-signup" class="l-desktop ui-btn ui-btn--success" href="https://portal.rabbynet.zennichi.or.jp/">ラビーネットからログイン</a>
+        </div>
+    </header>
+
+
+
+    <!--
+        Hero
+    -->
+
+    <section class="hero l-section cl-white bg-image-hero-1">
+        <h1 class="t1 w7">不動産をより明るくデジタルに</h1>
+        <article class="l-large">
+            <h2 class="t4 w5">暗いイメージを持たれがちな業界をテクノロジーの光で照らします<br>「不動産DXの民主化」を掲げ、誰もが無料で試せる業務効率型営業支援ツール<br>フォレストは、DXに悩む不動産仲介のミカタです</h2>
+            <div class="l-mobile hero-buttons t-center">
+                <a id="header-signup-mobile" class="ui-btn ui-btn--success" href="https://portal.rabbynet.zennichi.or.jp/" style="flex-basis: auto; margin: auto;">ラビーネットからログイン</a>
+            </div>
+        </article>
+    </section>
+
+
+
+    <!--
+        Service
+    -->
+
+    <section class="l-section">
+
+        <div class="heading">
+            <p class="t3 w9 cl-green">SERVICE</p>
+            <h2 class="t2 w9">フォレストとは</h2>
+            <p class="t5">無料から試せて使えるピッパの仲介営業！紙やメールなどの面倒な仲介業務を10倍効率化できる新たな営業支援ツール</p>
+        </div>
+
+        <div class="l-row l-container l-container--lg">
+            <article class="service ui-card">
+                <h4 class="t4 w7">ピッ！とオビ替え</h4>
+                <picture>
+                    <source srcset="/assets/new/service-1.webp" type="image/webp" width=826 height=552>
+                    <source srcset="/assets/new/service-1.png" type="image/png" width=826 height=552>
+                    <img src="/assets/new/service-1.png" alt="帯替え画面" width=826 height=552>
+                </picture>
+            </article>
+            <article class="service ui-card">
+                <h4 class="t4 w7">パッ! とお客さまに届く</h4>
+                <picture>
+                    <source srcset="/assets/new/service-2.webp" type="image/webp" width=826 height=552>
+                    <source srcset="/assets/new/service-2.png" type="image/png" width=826 height=552>
+                    <img src="/assets/new/service-2.png" alt="お客さまに届く" width=826 height=552>
+                </picture>
+            </article>
+            <article class="service ui-card">
+                <h4 class="t4 w7">反響をリアルタイムで確認</h4>
+                <picture>
+                    <source srcset="/assets/new/service-3.webp" type="image/webp" width=826 height=552>
+                    <source srcset="/assets/new/service-3.png" type="image/png" width=826 height=552>
+                    <img src="/assets/new/service-3.png" alt="店頭広告" width=826 height=552>
+                </picture>
+            </article>
+        </div>
+
+    </section>
+
+
+
+    <!--
+        About
+    -->
+
+    <div class="l-section bg-light-green">
+
+        <article class="l-row l-container l-container--md">
+            <div>
+                <picture>
+                    <source srcset="/assets/new/about-1.webp" type="image/webp" width=520 height=278>
+                    <source srcset="/assets/new/about-1.png" type="image/png" width=1028 height=550>
+                    <img src="/assets/new/about-1.png" alt="物件図面" width=1028 height=550>
+                </picture>
+            </div>
+            <div class="about">
+                <p class="t2 w9 cl-green">01</p>
+                <h3 class="t2 w9">AIがピッ! と自動でオビ交換</h3>
+                <ul class="t5 w5 ui-list ui-list--green">
+                    <li>読み込んだレインズ図面の他社帯をAIが自動交換！</li>
+                    <li>カンタンな操作方法で、間取りや写真も編集可</li>
+                    <li>無料プランでもサクサク帯替え操作が可能</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="l-row l-row--revers l-container l-container--md">
+            <div>
+                <picture>
+                    <source srcset="/assets/new/about-2.webp" type="image/webp" width=520 height=278>
+                    <source srcset="/assets/new/about-2.png" type="image/png" width=1008 height=550>
+                    <img src="/assets/new/about-2.png" alt="物件図面" width=1008 height=550>
+                </picture>
+            </div>
+            <div class="about">
+                <p class="t2 w9 cl-green">02</p>
+                <h3 class="t2 w9">お客さまにパッ! と届く</h3>
+                <ul class="t5 w5 ui-list ui-list--green">
+                    <li>オビ替えしたマイソクをその場でお客様に配信</li>
+                    <li>コピー機やスキャナーの面倒な作業とサヨナラ</li>
+                    <li>お客様の閲覧やお気に入りの反響も丸わかり</li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+
+
+
+    <!--
+        Solution
+    -->
+
+    <section class="l-section">
+
+        <div class="heading">
+            <h2 class="t3 w9 cl-green">基本機能</h2>
+            <p class="t2 w9">業務を効率化して、顧客管理から提案・追客もできちゃう</p>
+            <p class="t5">フォレストを使うことで、不動産業務のデジタル化をまとめて解決できます</p>
+        </div>
+
+        <article class="l-row l-container l-container--lg">
+            <div class="ui-card">
+                <picture>
+                    <source srcset="/assets/new/free-1.webp" type="image/webp" width=630 height=380>
+                    <source srcset="/assets/new/free-1.png" type="image/png" width=1258 height=758>
+                    <img src="/assets/new/free-1.png" alt="CRM機能" title="CRM機能" width=1258 height=758>
+                </picture>
+            </div>
+            <div class="free">
+                <h3 class="t3 w9">メルアド１つから<span class="cl-green">顧客情報</span>を管理</h3>
+                <p class="t5 w9">(CRM機能)</p>
+                <p>メールアドレス1つから顧客情報を管理できる機能を搭載。もうエクセルでの面倒な管理は必要ありません。これまで使っていた顧客リストも簡単にアップロード可能なため、業務フローの切り替えやシステム移行もスムーズです。</p>
+            </div>
+        </article>
+
+        <article class="l-row l-row--revers l-container l-container--lg">
+            <div class="ui-card">
+                <picture>
+                    <source srcset="/assets/new/free-2.webp" type="image/webp" width=630 height=380>
+                    <source srcset="/assets/new/free-2.png" type="image/png" width=1258 height=758>
+                    <img src="/assets/new/free-2.png" alt="ラクラクオビ交換" title="ラクラクオビ交換" width=1258 height=758>
+                </picture>
+            </div>
+            <div class="free">
+                <h3 class="t3 w9">面倒な<span class="cl-green">オビ替え</span>もWebでラクラク編集</h3>
+                <p class="t5 w9">(PDF編集)</p>
+                <p>お客さんの急な来店でも安心！図面PDFをその場でサクサク編集してお客さんに渡せます。自前オビもサービス上で自動で用意、大きさも異なる３パターンに対応しています。編集したファイルをPDFからJPEG、PNG形式に変換可能。</p>
+            </div>
+        </article>
+
+        <article class="l-row l-container l-container--lg">
+            <div class="ui-card">
+                <picture>
+                    <source srcset="/assets/new/free-3.webp" type="image/webp" width=630 height=380>
+                    <source srcset="/assets/new/free-3.png" type="image/png" width=1258 height=758>
+                    <img src="/assets/new/free-3.png" alt="お客様マイページからクラウド物件提案・チャット" width=1258 height=758>
+                </picture>
+            </div>
+            <div class="free">
+                <h3 class="t3 w9">これからの物件提案は<span class="cl-green">クラウド</span>の時代</h3>
+                <p class="t5 w9">(クラウド物件提案・チャット)</p>
+                <p>お客様または同業者様毎に個別の専用URLリンク（お客様マイページ）を発行し、リンク共有によって物件提案が可能！クラウドなのでファイル容量を気にせず、好きな数だけ物件を提案できます。鮮明な物件情報で提案力がアップし、お客様とのやり取りもチャットで気軽に行えます。</p>
+            </div>
+        </article>
+
+        <article class="l-row  l-row--revers l-container l-container--lg">
+            <div class="ui-card">
+                <picture>
+                    <source srcset="/assets/new/free-4.webp" type="image/webp" width=630 height=380>
+                    <source srcset="/assets/new/free-4.png" type="image/png" width=1258 height=758>
+                    <img src="/assets/new/free-4.png" alt="リモート仲介営業" title="リモート仲介営業" width=1258 height=758>
+                </picture>
+            </div>
+            <div class="free">
+                <h3 class="t3 w9">完全<span class="cl-green">リモート</span>でも仲介営業が可能に</h3>
+                <p class="t5 w9">(PDF編集、顧客管理、物件データベース)</p>
+                <p>パソコンとネット環境さえあれば、いつでもどこでもアクセスできて完全リモートでの営業が可能です。PDFやJPEGでのマイソク図面データをWeb上で取り込み、帯替えから物件提案、その後の追客までワンストップで完結！オフィス環境にいなくても営業を止めずにビジネスを加速できます。</p>
+            </div>
+        </article>
+
+        <article class="l-row l-container l-container--lg">
+            <div class="ui-card">
+                <picture>
+                    <source srcset="/assets/new/free-5.webp" type="image/webp" width=630 height=380>
+                    <source srcset="/assets/new/free-5.png" type="image/png" width=1258 height=758>
+                    <img src="/assets/new/free-5.png" alt="リモートワーク" width=1258 height=758>
+                </picture>
+            </div>
+            <div class="free">
+                <h3 class="t3 w9"><span class="cl-green">オンライン重説</span>に対応したウェブ会議機能</h3>
+                <p class="t5 w9">(IT重説・Web会議)</p>
+                <p>双方向で使えるオンライン会議機能。国土交通省が発行するITを活用した重要事項説明実施マニュアルにも対応！お客様によるソフトウェアやアプリのインストールは不要。専用Web会議リンクにアクセスするだけでオンライン会議が行えます。録画機能もついていて、データはクラウドに保管されるため、容量の心配もなし。有料プランには、データプロテクションとセキュリティ保証が付きます。</p>
+            </div>
+        </article>
+
+    </section>
+
+
+
+    <!--
+        Paid
+    -->
+
+    <section class="l-section">
+
+        <div class="heading">
+            <h2 class="t3 w9 cl-green">高度機能</h2>
+            <p class="t2 w9">顧客満足を最大化させ、競合に差をつけよう</p>
+            <p class="t5">AIによる帯がえ作業の完全自動化、マップ付き物件提案、チーム連携機能など便利な機能が盛り沢山</p>
+        </div>
+
+        <article class="paid l-row l-container l-container--md ui-card">
+            <div>
+                <h3 class="t4 w9">面倒な帯替えもラクラク、AIがあなたの代わりに完全自動で行ってくれる</h3>
+                <div class="ui-badge">AI自動帯替え</div>
+                <p>当社が独自に開発した最先端のAI技術によって、物件図面に記載されている他社の会社情報を自動で認識し、登録されている御社の情報と完全自動で置き換えてくれます。これによって、店舗あたり平均で月約40時間とも言われる帯がえ業務をほぼゼロにできます。</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/paid-1.webp" type="image/webp" width=496 height=299>
+                    <source srcset="/assets/new/paid-1.png" type="image/png" width=1002 height=604>
+                    <img src="/assets/new/paid-1.png" alt="AI自動帯替え" title="AI自動帯替え" width=1002 height=604>
+                </picture>
+            </div>
+        </article>
+
+        <article class="paid l-row l-container l-container--md ui-card">
+            <div>
+                <h3 class="t4 w9">マイソクでの物件提案がマップ付で可能</h3>
+                <div class="ui-badge">物件マップ提案</div>
+                <p>物件情報を一切手入力せず、最先端のAI技術を使って所在地などの物件情報を登録可能。マイソクでの物件提案もマップ付で行えるように。お客様は過去紹介された物件をマップ上で一覧でき、顧客満足度の向上も期待できます。</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/paid-2.webp" type="image/webp" width=496 height=299>
+                    <source srcset="/assets/new/paid-2.png" type="image/png" width=1002 height=604>
+                    <img src="/assets/new/paid-2.png" alt="物件マップ提案" title="物件マップ提案" width=1002 height=604>
+                </picture>
+            </div>
+        </article>
+
+        <article class="paid l-row l-container l-container--md ui-card">
+            <div>
+                <h3 class="t4 w9">お客様の気に入った理由がわかる</h3>
+                <div class="ui-badge">お気に入りフィードバック</div>
+                <p>お客様がマイページ上で物件をお気に入り登録した際、金額・アクセス・間取り・周辺環境など物件をお気に入りした理由をフォレストが代わりに質問してフィードバックします。ソフトウェアが細かい確認作業を代わりに行うことで、より確度の高い提案にフォーカスすることができます。</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/paid-3.webp" type="image/webp" width=496 height=299>
+                    <source srcset="/assets/new/paid-3.png" type="image/png" width=1002 height=604>
+                    <img src="/assets/new/paid-3.png" alt="お客様専用ページ" title="お客様専用ページ" width=1002 height=604>
+                </picture>
+            </div>
+        </article>
+
+        <article class="paid l-row l-container l-container--md ui-card">
+            <div>
+                <h3 class="t4 w9">物件情報からチャット対応までを社内連携することで営業効率アップ︎</h3>
+                <div class="ui-badge">チーム連携機能</div>
+                <p>チーム内で物件情報を相互共有し、お客様からのチャット問合わせにもチームで対応可能。社内全体の営業効率が飛躍的にアップ。返信漏れアラート、送信メールの開封状況確認で、人為的ミスによる営業の取りこぼしも防げます。</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/paid-4.webp" type="image/webp" width=496 height=299>
+                    <source srcset="/assets/new/paid-4.png" type="image/png" width=1002 height=604>
+                    <img src="/assets/new/paid-4.png" alt="チャット機能" title="チャット機能" width=1002 height=604>
+                </picture>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!--
+        Fee
+    -->
+
+    <section class="l-section" id="pricing">
+
+        <div class="heading">
+            <h2 class="t3 w9 cl-green">料金体系</h2>
+            <p class="t2 w9">かかるのはご利用料のみ、今だけ初回導入費が無料！</p>
+            <p class="t5 cl-gray-2">フォレストは、即日導入が可能。人数や事業規模に合わせて選べるシンプルな料金プランをご用意しています。</p>
+        </div>
+
+        <div class="subscriptionPeriod l-container--md u-flex j-space-around t6">
+            <div id="yearlyPeriod" class="period bg-gray-2 t-center active" onclick="document.getElementById('planTableRow').classList.remove('monthly'); this.classList.add('active'); document.getElementById('monthlyPeriod').classList.remove('active');">
+                <div class="cl-orange">ダンゼンお得！</div>
+                <p class="t3 w9">年払いプラン</p>
+                <p class="description cl-gray">月払いに比べ、ダンゼンお得にご利用頂けます</p>
+            </div>
+            <div id="monthlyPeriod" class="period bg-gray-2 t-center" onclick="document.getElementById('planTableRow').classList.add('monthly'); this.classList.add('active'); document.getElementById('yearlyPeriod').classList.remove('active');">
+                <div class="cl-orange">より柔軟さを求める方に</div>
+                <p class="t3 w9">月払いプラン</p>
+                <p class="description cl-gray">ご利用中にいつでも年払いへのお切り替えが可能</p>
+            </div>
+        </div>
+
+        <div class="fee t5 l-container l-container--md">
+
+            <div class="fee-head">
+                <div class="fee-row">
+                    <div class="fee-cell bg-gray"></div>
+                    <div class="fee-cell w9 cl-white bg-green double">個人プラン</div>
+                    <div class="fee-cell empty"></div>
+                    <div class="fee-cell w9 cl-white bg-red double">ビジネスプラン</div>
+                    <div class="fee-cell empty"></div>
+                    <div class="fee-cell w9 cl-white bg-red">エンタープライズプラン</div>
+                </div>
+            </div>
+
+            <div class="fee-body ui-card">
+                <div class="fee-row" id="planTableRow">
+                    <div class="fee-cell bg-white">
+                        <p class="w9">利用料金</p>
+                    </div>
+                    <div class="fee-cell plan">
+                        <p class="w9 h3 name t3">FREE</p>
+                        <p class="w9 subtitle">まずは使いやすさを体験</p>
+                        <p class="description">物件情報を一元管理でき、便利な帯替えも無料で試せるビギナー様向け。まずは無料で登録から</p>
+                        <p class="userCount">1ユーザー/月</p>
+                        <p class="w9"><span class="price">0</span><span class="currency w9">円</span></p>
+                        <p class="w9 cancelFee yearly"></p>
+                        <a class="ui-btn ui-btn--success" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">無料登録する</a>
+                    </div>
+                    <div class="fee-cell plan">
+                        <p class="w9 h3 name t3">LIGHT</p>
+                        <p class="w9 subtitle">帯替えツールの決定版</p>
+                        <p class="description">コストを抑え、帯替えをメインにご利用されたい方向け。無料登録からクレカ一つでご購入も可能</p>
+                        <p class="userCount">1ユーザー/月</p>
+                        <p><span class="w9 price yearly">1,000</span><span class="w9 price monthly">1,200</span><span class="currency w9">円</span><span class="yearly">（税込 1,100円）</span><span class="monthly">（税込 1,320円）</span></p>
+                        <p class="w9 cancelFee yearly">年額 1.2 万円</p>
+                        <a class="ui-btn ui-btn--success" target="_blank" href="https://ie.nativeforms.com/rZVTGdWPmZSbvh3ZkhmZp1Db">資料請求する</a>
+                    </div>
+                    <div class="fee-cell plan">
+                        <p class="w9 al-center u-flex"><span class="h3 name t3">STANDARD</span><span class="badge u-flex bg-orange cl-white t6">おすすめ</span></p>
+                        <p class="w9 subtitle">顧客への物件提案力を高める</p>
+                        <p class="description">帯替え効率化とクラウド物件提案を組み合わせることで成約効率を改善。物件のお取り扱い件数がさほど多くなく、デジタル対応がまだお済みでない事業者様向け</p>
+                        <p class="userCount">1ユーザー/月</p>
+                        <p><span class="w9 price yearly">2,000</span><span class="w9 price monthly">2,400</span><span class="currency w9">円</span><span class="yearly">（税込 2,200円）</span><span class="monthly">（税込 2,640円）</span></p>
+                        <p class="w9 cancelFee yearly">年額 2.4 万円</p>
+                        <a class="ui-btn ui-btn--danger" target="_blank" href="https://ie.nativeforms.com/rZVTGdWPmZSbvh3ZkhmZp1Db">資料請求する</a>
+                    </div>
+                    <div class="fee-cell plan">
+                        <p class="w9 h3 name t3">PRO</p>
+                        <p class="w9 subtitle">業務効率と顧客満足の最大化</p>
+                        <p class="description">STANDARDに比べ、高性能なAIで飛躍的な営業効率化を実現。日々一定の物件量をお取り扱い、大幅なコスト削減と顧客満足向上を目的とされる法人様向け</p>
+                        <p class="userCount">1ユーザー/月</p>
+                        <p><span class="w9 price yearly">4,000</span><span class="w9 price monthly">4,800</span><span class="currency w9">円</span><span class="yearly">（税込 4,400円）</span><span class="monthly">（税込 5,280円）</span></p>
+                        <p class="w9 cancelFee yearly">年額 4.8 万円</p>
+                        <a class="ui-btn ui-btn--danger" target="_blank" href="https://ie.nativeforms.com/rZVTGdWPmZSbvh3ZkhmZp1Db">資料請求する</a>
+                    </div>
+                    <div class="fee-cell plan">
+                        <p class="w9 h3 name t3">ENTERPRISE</p>
+                        <p class="w9 subtitle">社内営業を可視化して最適化</p>
+                        <p class="description">ビジネスプランで提供される全ての機能に加え、全社での営業活動の管理、集約、分析を可能にする本社ツールへのアクセス権付き。営業効率を最適化されたい中・大規模の法人様向け</p>
+                        <p class="price yearly"></p>
+                        <p class="enterpriseNotice">まずはお見積り<br>お気軽にお問合せください</p>
+                        <a class="ui-btn ui-btn--danger" target="_blank" href="https://ie.nativeforms.com/rZVTGdWPmZSbvh3ZkhmZp1Db">資料請求する</a>
+                    </div>
+                </div>
+
+                <div class="fee-row bg-gray">
+                    <div class="fee-cell">
+                        <p class="w9">物件情報管理</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">図面データ管理</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">図面データ編集</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">ダウンロード</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>1件/日まで（個別のみ）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>無制限（個別のみ）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>無制限（個別＆一括）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>無制限（個別＆一括）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>無制限（個別＆一括）</p>
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">データ共有</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">データ検索</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">帯替え</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>手動</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>手動</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>手動</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>自動（AI）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>自動（AI）</p>
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">物件情報の自動入力補助<br>(AI-OCR)</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                    <div class="fee-cell">
+
+                    </div>
+                </div>
+
+                <div class="fee-row bg-gray">
+                    <div class="fee-cell">
+                        <p class="w9">業務効率化</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">データ出力（CSV他）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">IT重説（ウェブ会議）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row bg-gray">
+                    <div class="fee-cell">
+                        <p class="w9">顧客情報管理（CRM）</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">顧客リスト</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">顧客データ出力（CSV他）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">顧客データ共有・チーム連携</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row bg-gray">
+                    <div class="fee-cell">
+                        <p class="w9">顧客情報管理（CRM）</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">営業支援（クラウド提案）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">お客様マイページ</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">リンク共有</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">チャット</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">お客様行動ログ</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">顧客へのメール通知</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">QRコード表示</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">マップ表示（学区表示あり）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">おすすめ物件フラグ</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">多言語対応</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">ユーザーへのメール通知</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row">
+                    <div class="fee-cell bg-white">
+                        <p class="">チャットへのファイル添付</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">追客サポート</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="fee-row bg-gray">
+                    <div class="fee-cell">
+                        <p class="w9">その他</p>
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                    <div class="fee-cell">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">本社管理ツール</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">請求書発行<br>※別途発行手数料がかかります</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <p>カード払いのみ<br>（クレジット／デビット可）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">データセキュリティ保証</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">サービス品質保証(SLA)</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/checkmark.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="fee-row large">
+                    <div class="fee-cell bg-white">
+                        <p class="">チャットサポート</p>
+                    </div>
+                    <div class="fee-cell">
+                        <img src="/assets/images/dash.svg" alt="">
+                    </div>
+                    <div class="fee-cell">
+                        <p>3営業日以内（目安）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>2営業日以内（目安）</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>即日対応（営業時間内)</p>
+                    </div>
+                    <div class="fee-cell">
+                        <p>即日対応（営業時間内)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--
+        Plan
+    -->
+
+    <section class="l-section plan bg-image-hero-2">
+
+        <div class="heading cl-white">
+            <h3 class="t2 w9">まずは無料からスタートしょう</h3>
+            <p class="t5">無料からサービスを体験できるプランをご用意。すべての不動産仲介に優れたソフトウェアの機会を提供します。</p>
+        </div>
+
+        <div class="l-row l-container l-container--lg">
+            <article class="ui-card">
+                <h4 class="t5 w9">まずは試したい・社内承認なしで利用したい方はこちら</h4>
+                <p class="t3 w9 cl-green">個人プラン</p>
+                <p class="t5 w7 cl-gray">FREE・LIGHT</p>
+                <p>メルアド一つでご登録頂けます。<br>今すぐ使えて、今日からあなたも不動産DX！</p>
+                <a id="section-plans-free-signup" class="ui-btn ui-btn--success" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">無料でアカウント作成</a>
+            </article>
+            <article class="ui-card">
+                <h4 class="t5 w9">ビジネスを成長させたい・サービスを検討される方はこちら</h4>
+                <p class="t3 w9 cl-red">ビジネスプラン</p>
+                <p class="t5 w7 cl-gray">STANDARD・PRO</p>
+                <p>ユーザーあたり<b>月額2,000円</b>（税別）から導入できます。<br>今だけ初回導入費が無料！</p>
+                <a id="section-plans-pro-contact" class="ui-btn ui-btn--danger" href="https://ie.nativeforms.com/IXSkxWPmZSbvh3ZkhmZp1Db" target="_blank">無料トライアルに申し込む</a>
+            </article>
+        </div>
+
+    </section>
+
+
+    <!--
+        Clients
+    -->
+
+    <section class="l-section">
+
+        <div class="heading">
+            <p class="t3 w9 cl-green">CLIENTS</p>
+            <h2 class="t2 w9">導入実績</h2>
+            <p class="t5">サービスは、その高いパフォーマンスが評価され、すでに多くの企業様によって導入されています。以下一例；</p>
+        </div>
+
+        <div class="icons l-container l-container--sm">
+            <div>
+                <picture>
+                    <source srcset="/assets/new/client-1.webp" type="image/webp" width=608 height=360>
+                    <source srcset="/assets/new/client-1.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/client-1.png" alt="三菱UFJ不動産販売" width=608 height=360>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/client-2.webp" type="image/webp" width=608 height=360>
+                    <source srcset="/assets/new/client-2.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/client-2.png" alt="三井住友トラスト不動産" width=608 height=360>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/client-3.webp" type="image/webp" width=608 height=360>
+                    <source srcset="/assets/new/client-3.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/client-3.png" alt="三菱地所ハウスネット" width=608 height=360>
+                </picture>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--
+        Value
+    -->
+
+    <section class="l-section bg-image-forest">
+
+        <div class="heading cl-white">
+            <p class="t3 w9">VALUE</p>
+            <h2 class="t2 w9">サービスに込められた思い</h2>
+            <p class="t5">ご利用者様がフォレストを利用することで、紙の消費を減らし、次の世代に向けたより豊かな自然環境の保全に貢献します</p>
+        </div>
+
+        <div class="l-container l-container--sm text t5">
+            <p>フォレストは、不動産業界における新たな業務インフラとしての役割を担うだけでなく、<b>「次の世代により良い未来をつなぐ」</b>ことをサービス理念に掲げています。</p>
+            <p>その一つが自然環境への取り組みです。紙の消費が多い不動産業界における年間の紙の消費量は、新聞等の折り込みチラシだけで約300億枚以上あり、仮にA4サイズで換算すると15万トンにも及びます。これは365万本の樹木に相当し、1日あたり約1万本分の樹木を消費している計算になります。<br>日々取り扱う物件情報を紙からデータに移行することで、<b>無駄な紙の消費量を抑え、印刷代の削減に</b>も繋げていただけます。</p>
+            <p>英語で森を意味する”<b class="cl-green">Forest(フォレスト)</b>”は、サービスを通じて緑豊かな自然を次世代に残す活動に不動産業界と一緒に取り組んで参ります。</p>
+            <p>サービスを通じてぜひこの活動にご協力ください。</p>
+        </div>
+
+    </section>
+
+
+
+    <!--
+        Media
+    -->
+
+    <section class="l-section">
+
+        <div class="heading">
+            <p class="t3 w9 cl-green">MEDIA</p>
+            <h2 class="t2 w9">メディア掲載実績</h2>
+            <p class="t5">フォレストは、様々な全国メディアで取り上げられた実績のあるサービスです</p>
+        </div>
+
+        <div class="icons l-container l-container--sm">
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-1.webp" type="image/webp" width=320 height=189>
+                    <source srcset="/assets/new/media-1.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/media-1.png" alt="日本経済新聞" title="日本経済新聞" width=608 height=360>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-2.webp" type="image/webp" width=305 height=180>
+                    <source srcset="/assets/new/media-2.png" type="image/png" width=305 height=180>
+                    <img src="/assets/new/media-2.png" alt="産経新聞" title="産経新聞" width=305 height=180>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-3.webp" type="image/webp" width=320 height=189>
+                    <source srcset="/assets/new/media-3.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/media-3.png" alt="住宅新報" title="住宅新報" width=608 height=360>
+                </picture>
+            </div>
+        </div>
+
+        <div class="icons l-container l-container--sm">
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-4.webp" type="image/webp" width=320 height=189>
+                    <source srcset="/assets/new/media-4.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/media-4.png" alt="プロパティマネジメント" title="プロパティマネジメント" width=608 height=360>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-5.webp" type="image/webp" width=320 height=189>
+                    <source srcset="/assets/new/media-5.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/media-5.png" alt="全国賃貸住宅新聞" title="全国賃貸住宅新聞" width=608 height=360>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="/assets/new/media-6.webp" type="image/webp" width=320 height=189>
+                    <source srcset="/assets/new/media-6.png" type="image/png" width=608 height=360>
+                    <img src="/assets/new/media-6.png" alt="NewsPicks" title="NewsPicks" width=608 height=360>
+                </picture>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--
+        Contact
+    -->
+
+    <section class="l-section bg-light-green">
+
+
+        <div class="heading">
+            <h2 class="t3 w9 cl-green">お問い合わせ</h2>
+            <p class="t2 w9">お気軽にご相談ください</p>
+            <p class="t5">ご質問・ご相談などありましたら、下記までお問い合わせください。</p>
+            <p class="t5">気になる点・ご不明な点・導入準備など、専任のスタッフがご案内いたします。</p>
+        </div>
+
+        <div class="contact l-container l-container--sm">
+            <article>
+                <h4 class="w9">WEBからのお問い合わせ</h4>
+                <a id="section-contact-web" class="ui-btn ui-btn--success" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" target="_blank" onclick='return contact(event)'>お問い合わせフォームへ</a>
+            </article>
+            <article>
+                <h4 class="w7">お電話からのお問い合わせ</h4>
+                <a id="section-contact-phone" class="t2 w9 cl-green" href="tel:050-3033-5162">050 - 3033 - 5162</a>
+                <p>受付時間 10:00 ~ 17:00 （土日祝を除きます）</p>
+            </article>
+        </div>
+
+    </section>
+
+
+    <!--
+        Footer
+    -->
+
+    <footer class="footer l-section bg-dark cl-white">
+        <div class="l-row l-container l-container--lg">
+
+            <div class="footer-address">
+                <img class="ui-logo-forest" src="/assets/new/logo-forest-white.svg" alt="フォレストのロゴ" title="フォレストのロゴ" width="163" height="40">
+                <p>株式会社オープンルーム</p>
+                <p>東京都渋谷区道玄坂一丁目 2 番 3 号　渋谷フクラス 17 階<br>050 - 3033 - 5162</p>
+            </div>
+
+            <div class="footer-nav">
+                <p class="w7 cl-light-grey">フォレスト・ラビーについて</p>
+                <div>
+                    <a id="footer-top" href="/">トップ</a>
+                </div>
+                <div>
+                    <a id="footer-faq" target="_blank" href="https://help.openrm.jp/hc/ja/categories/5665361026329">よくあるご質問</a>
+                    <a id="footer-news" target="_blank" href="https://help.openrm.jp/hc/ja/categories/6953458555417">お知らせ</a>
+                    <a id="footer-contact" class="link" target="_blank" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" onclick='return contact(event)'>お問い合わせ</a>
+                    <a id="footer-policy" href="https://openrm.co.jp/policy.html">プライバシーポリシー</a>
+                    <a id="footer-company" href="https://openrm.co.jp/">運営会社</a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <p class="w7 cl-light-grey">機能</p>
+                <div>
+                    <a id="footer-features-rpa" href="/features/rpa.html">図面編集・帯替えRPA</a>
+                    <a id="footer-features-ai-ocr" href="/features/ai-ocr.html">AI-OCR物件データベース</a>
+                    <a id="footer-features-share" href="/features/share.html">お客様専用ページ作成</a>
+                    <a id="footer-features-activity-feed" href="/features/customer-logs.html">お客様の行動ログ</a>
+                    <a id="footer-features-crm" href="/features/data.html">顧客データベース</a>
+                </div>
+                <div>
+                    <a id="footer-features-support" href="/features/support.html">サポート体制</a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p class="cl-light-grey">Copyright © Open Room inc. All Rights Reserved.</p>
+                <a id="footer-company-logo" href="https://openrm.co.jp/">
+                    <img src="/assets/new/logo-openroom-white.svg" alt="Open Room Inc. ロゴ" title="Open Room Inc. ロゴ" width="166" height="20">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="dist/new.scripts.js"></script>
+
+</body>
+</html>

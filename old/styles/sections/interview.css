@@ -1,0 +1,183 @@
+/*
+    Root
+*/
+
+.s-interview {
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+@media (min-width: 769px) {
+    .s-interview {
+        padding: 32px 20px 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-interview {
+        padding: 0 16px 0 16px;
+    }
+}
+
+
+
+/*
+    Summary
+*/
+
+@media (min-width: 769px) {
+    .s-interview .с-summary {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-interview .с-summary {
+        margin-top: 40px;
+    }
+}
+
+
+
+/*
+    Heading
+*/
+
+.s-interview-heading .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 4px 0;
+    padding: 0;
+    list-style: none;
+}
+.s-interview-heading .tags li {
+    display: inline-block;
+    padding: 8px;
+    background: #D6F1DD;
+    color: #1C9E3B;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.s-interview-heading .note {
+    color: #97A099;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.s-interview-heading .title {
+    color: #222222;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+@media (min-width: 769px) {
+    .s-interview-heading img {
+        margin-bottom: 32px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .s-interview-heading .tags li {
+        font-size: 15px;
+        margin-right: 28px;
+    }
+    .s-interview-heading .note {
+        font-size: 20px;
+    }
+    .s-interview-heading .title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-interview-heading img {
+        margin-bottom: 24px;
+        margin-left: -16px;
+        width: calc(100% + 32px);
+    }
+    .s-interview-heading .tags li {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+    .s-interview-heading .note {
+        font-size: 18px;
+    }
+    .s-interview-heading .title {
+        font-size: 24px;
+    }
+}
+
+
+
+/*
+    Topic
+*/
+
+.s-interview-topic {
+    margin: 80px 0;
+}
+.s-interview-topic h2 {
+    font-weight: 700;
+    line-height: 1.5;
+}
+.s-interview-topic .paragraph {
+    font-size: 16px;
+    margin: 32px 0;
+}
+.s-interview-topic .paragraph:last-child {
+    margin-bottom: 0;
+}
+.s-interview-topic .paragraph b {
+    font-weight: 700;
+}
+.s-interview-topic .paragraph h3 {
+    font-size: inherit;
+    font-weight: 700;
+}
+.s-interview-topic img {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .s-interview-topic h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-interview-topic h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+/*
+    About
+*/
+
+.s-interview-about {
+    background: #F7FAF8;
+    padding: 40px;
+    border-radius: 8px;
+}
+.s-interview-about h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.s-interview-about .paragraph {
+    font-size: 16px;
+    margin: 16px 0;
+}
+.s-interview-about .paragraph:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 769px) {
+    .s-interview-about {
+        margin-bottom: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .s-interview-about {
+        margin-bottom: 80px;
+    }
+}

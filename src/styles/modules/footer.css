@@ -1,0 +1,68 @@
+.footer {
+    padding-top: 40rem;
+    padding-bottom: 20rem;
+    font-size: 12rem;
+}
+.footer .l-row {
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+
+/*
+    Address
+*/
+
+.footer-address img {
+    margin-bottom: 40rem;
+}
+.footer-address p {
+    margin-top: 8rem;
+}
+
+
+/*
+    Nav
+*/
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-nav .w7 {
+    flex-basis: 100%;
+    font-size: 14rem;
+    margin-bottom: 16rem;
+}
+.footer-nav div {
+    flex-basis: 50%;
+}
+.footer-nav a {
+    line-height: 32rem;
+}
+.footer-nav a::before {
+    content: '›';
+    margin-right: 10rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*
+    Copyright
+*/
+
+.footer-copyright {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60rem;
+}
+
+

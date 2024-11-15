@@ -1,0 +1,87 @@
+
+
+
+/*
+    Global
+*/
+
+html {
+    font-size: 1px;
+}
+
+body {
+    /* https://systemfontstack.com */
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-weight: 400;
+    font-size: 16rem;
+    font-display: swap;
+    line-height: 1.35;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/*
+    Font-sizes
+*/
+
+.t1 {
+    font-size: 76rem;
+}
+.t2 {
+    font-size: 40rem;
+}
+.t3 {
+    font-size: 32rem;
+}
+.t4 {
+    font-size: 24rem;
+}
+.t5 {
+    font-size: 20rem;
+}
+.t6 {
+    font-size: 16rem;
+}
+
+
+
+/*
+    Font-weights
+*/
+
+.w4 {
+    font-weight: 400;
+}
+.w5 {
+    font-weight: 500;
+}
+.w7 {
+    font-weight: 700;
+}
+.w9 {
+    font-weight: 900;
+}
+
+
+
+/*
+    Responsibility
+*/
+
+@media (max-width: 1280px) {
+    html { font-size: 0.85px }
+}
+
+@media (max-width: 1024px) {
+    html { font-size: 0.75px }
+}
+
+@media (max-width: 768px) {
+    .t1 { font-size: 56rem; }
+}
+
+.t-center {
+    text-align: center;
+}

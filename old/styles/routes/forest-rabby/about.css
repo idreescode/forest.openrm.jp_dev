@@ -1,0 +1,107 @@
+.s-about {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.s-about .greened {
+    font-size: 18px;
+}
+
+.s-about .head {
+    font-size: 40px;
+}
+
+.s-about .grey {
+    color: #555555;
+}
+
+.s-about iframe {
+    margin-top: 40px;
+    max-width: 90%;
+    width: 1080px;
+    height: 608px;
+}
+
+.s-about .point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    max-width: 90%;
+}
+
+.s-about .point .image {
+    width: 560px;
+    max-width: 100%;
+}
+
+.s-about .point:first-of-type .image {
+    margin-right: 34px;
+}
+
+.s-about .point:last-of-type .image {
+    margin-left: 34px;
+}
+
+.s-about .point .index {
+    font-family: roboto, sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    text-shadow:
+        -1px -1px 0 #3ba642,
+        1px -1px 0 #3ba642,
+        -1px 1px 0 #3ba642,
+        1px 1px 0 #3ba642;
+    color: white;
+}
+
+.s-about .point .step {
+    font-size: 32px;
+    line-height: 135%;
+    margin-bottom: 25px;
+}
+
+.s-about .point .subpoint {
+    display: flex;
+}
+
+.s-about .point div .subpoint:nth-of-type(even) {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.s-about .point .subpoint p {
+    font-size: 19.5px;
+}
+
+@media (max-width: 1024px) {
+    .s-about .point {
+        flex-direction: column;
+    }
+    .s-about .point + .point {
+        flex-direction: column-reverse;
+    }
+    .s-about .point .image,
+    .s-about .point:last-of-type .image,
+    .s-about .point:first-of-type .image {
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .s-about h1 {
+        font-size: 28px;
+    }
+    .s-about iframe {
+        height: 300px;
+    }
+    .s-about .point .step {
+        font-size: 24px;
+    }
+    .s-about .point .subpoint p {
+        font-size: 15px;
+    }
+}

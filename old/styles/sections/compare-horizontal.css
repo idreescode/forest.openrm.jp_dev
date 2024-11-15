@@ -1,0 +1,83 @@
+.s-compare-horizontal {
+    margin-top: 78px;
+    background-image: linear-gradient(to bottom, #1c9e3b 24%, #b7d36a 114%);
+    color: white;
+    position: relative;
+}
+
+.s-compare-horizontal .header {
+    padding-top: 80px;
+}
+
+.s-compare-horizontal .bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.s-compare-horizontal .content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    z-index: 1;
+    position: relative;
+}
+
+.s-compare-horizontal .content .card {
+    color: black;
+    background-color: white;
+    padding: 40px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 480px;
+    min-height: 384px;
+}
+
+.s-compare-horizontal .content .card .title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.s-compare-horizontal .content .card .subtitle {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.s-compare-horizontal .content .card .highlight {
+    font-size: 30px;
+    font-weight: 700;
+}
+.s-compare-horizontal .content .card.free .highlight {
+    color: #1c9e3b;
+}
+.s-compare-horizontal .content .card.pro .highlight {
+    color: #ff7000;
+}
+
+.s-compare-horizontal .content .card img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    .s-compare-horizontal .content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .s-compare-horizontal .content .card {
+      margin-bottom: 30px;
+      padding: 16px;
+    }
+
+    .s-compare-horizontal .content {
+        padding: 20px;
+    }
+}
