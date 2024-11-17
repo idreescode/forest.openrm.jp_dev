@@ -2033,11 +2033,12 @@ text-decoration-skip-ink: none;
 }
 
 #pricing .plan-info .fee-cell {
-  width: 230px !important;
+  width: 250px !important;
   display: flex;
   align-items: center;
-  min-width: 230px !important;
+  min-width: 250px !important;
   border: var(--px) solid #e9efeb;
+  padding: 12px 30px;
 }
 
 .plan-info .fee-row.bg-gray {
@@ -2058,8 +2059,8 @@ text-decoration-skip-ink: none;
 }
 
 #pricing .plan-info .fee-cell:nth-child(2) {
-  width: 105px !important;
-  min-width: 105px !important;
+  width: 95px !important;
+  min-width: 95px !important;
 }
 
 .plan-info .fee-row {
@@ -2070,9 +2071,6 @@ text-decoration-skip-ink: none;
   margin-left: -20px !important;
 }
 
-.plan-info .fee-body .fee-cell .table-dash {
-  margin-left: 54px !important;
-}
 
 .plan-info .fee-body {
   border-radius: 0 !important;
@@ -2794,6 +2792,10 @@ text-decoration-skip-ink: none;
   .advantages .box {
     margin-top: var(--16);
   }
+
+  .enterprise .whatsin>div {
+    margin-top: 0;
+}
 
   .feedback {
     width: calc(100vw - var(--10));
