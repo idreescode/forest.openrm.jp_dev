@@ -671,8 +671,8 @@ text-decoration-skip-ink: none;
   flex-direction: column;
   align-items: center;
   border-radius: var(--2h);
-  box-shadow: var(--3) var(--3) var(--6) 0 #0000000d,
-    0 0 var(--2) 0 #0000000d inset;
+  /* box-shadow: var(--3) var(--3) var(--6) 0 #0000000d,
+    0 0 var(--2) 0 #0000000d inset; */
 }
 
 .card {
@@ -682,8 +682,9 @@ text-decoration-skip-ink: none;
 
 .card:hover {
   /* transform: scale(1.05); */
-  box-shadow: var(--4) var(--4) var(--8) 0 #00000029,
-    0 0 var(--3) 0 #00000029 inset;
+  /* box-shadow: var(--4) var(--4) var(--8) 0 #00000029, */
+    /* 0 0 var(--3) 0 #00000029 inset; */
+    box-shadow: var(--1) var(--1) var(--4) 0 #00000015;
 }
 
 .service .ui-btn {
@@ -961,6 +962,9 @@ text-decoration-skip-ink: none;
   line-height: 1;
   font-weight: 700;
 }
+.feedback h4 span {
+  font-size: var(--10);
+}
 
 /* pricing */
 
@@ -990,16 +994,18 @@ text-decoration-skip-ink: none;
   padding: var(--1);
 }
 
-.fee-body,
+/* .fee-body,
 .fee-head .fee-cell {
   box-shadow: 0 0 var(--7h) 0 #00000026;
-}
+} */
 
 .fee {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   overflow-x: auto;
   padding-bottom: 0;
+  border-radius: var(--2h);
+  box-shadow: var(--3) var(--3) var(--6) var(--3) #00000020;
 }
 
 .subscription div {
@@ -1113,6 +1119,10 @@ text-decoration-skip-ink: none;
   min-width: 0 !important;
 }
 
+#pricing .fee-body .fee-row .fee-cell p {
+  width: max-content !important;
+}
+
 #pricing .plan {
   padding: var(--4) var(--2h);
   vertical-align: unset;
@@ -1120,7 +1130,7 @@ text-decoration-skip-ink: none;
 }
 
 #pricing .plan .name {
-  font-size: var(--6);
+  font-size: var(--7);
   font-weight: 700;
   color: var(--gray);
   display: flex;
@@ -1221,7 +1231,7 @@ text-decoration-skip-ink: none;
 
 .fee-body .fee-cell .table-dash {
   padding: 0 !important;
-  margin-right: 29px !important;
+  /* margin-right: 29px !important; */
 }
 
 .fee-mobile {
