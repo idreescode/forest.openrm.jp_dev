@@ -2774,7 +2774,7 @@ text-decoration-skip-ink: none;
 
   .features .card-container {
     padding: var(--8) var(--4);
-    gap: var(4) var(--4);
+    gap: var(--4);
   }
 
   .features .card {
