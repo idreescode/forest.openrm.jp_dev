@@ -6,9 +6,9 @@ menuBtn.addEventListener("click", () => {
   const menuImg = menuBtn.querySelector("img");
 
   if (isOpen) {
-    menuImg.src = "/assets/new/close.svg";
-  } else {
     menuImg.src = "/assets/new/menu.svg";
+  } else {
+    menuImg.src = "/assets/new/close.svg";
   }
 
   menubar.classList.toggle("hidden");

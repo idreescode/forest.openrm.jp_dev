@@ -2481,6 +2481,10 @@ text-decoration-skip-ink: none;
     font-size: var(--6);
   }
 
+  .hero h2 {
+    font-size: 25px;
+}
+
   .hero h3 {
     font-size: var(--3h);
   }
@@ -2491,6 +2495,7 @@ text-decoration-skip-ink: none;
 
   .rewards {
     padding: var(--5) 0;
+    gap: var(--2);
   }
 
   .brands {
@@ -2498,8 +2503,13 @@ text-decoration-skip-ink: none;
   }
 
   .rewards img {
-    max-width: var(--40);
-  }
+    max-width: 49%;
+    height: var(--25);
+}
+
+.rewards img:first-child {
+  max-width: 55%;
+}
 
   .service .card h3 {
     margin-top: var(--7);
