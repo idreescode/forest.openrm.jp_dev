@@ -2820,6 +2820,10 @@ text-decoration-skip-ink: none;
     font-size: var(--4);
   }
 
+  .feedback h4 span {
+    font-size: var(--8);
+}
+
   .process {
     padding: var(--10) var(--12);
   }
