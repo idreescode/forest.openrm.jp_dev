@@ -1002,7 +1002,7 @@ text-decoration-skip-ink: none;
 .fee {
   position: relative;
   overflow: hidden;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   padding-bottom: 0;
   border-radius: var(--2h);
   box-shadow: var(--3) var(--3) var(--6) var(--3) #00000020;
@@ -1540,9 +1540,9 @@ text-decoration-skip-ink: none;
   background-color: #ff7000;
   border-radius: var(--2h);
   position: relative;
-  padding: var(--4);
+  padding: var(--5);
   text-align: center;
-  margin-bottom: -16px;
+  margin-bottom: -20px;
 }
 
 .comparison article .col:nth-child(3) .cell {
@@ -1575,7 +1575,7 @@ text-decoration-skip-ink: none;
 }
 
 .comparison article .col:nth-child(3) .round {
-  border: 5px solid #ff7000;
+  border: 6px solid #ff7000;
 }
 
 .comparison .double {
@@ -1743,7 +1743,7 @@ text-decoration-skip-ink: none;
   background-image: linear-gradient(to left, #d3f1dd 50%, white 50%);
   border: var(--1) solid var(--green);
   font-size: var(--4);
-  gap: var(--px);
+  gap: var(--2h);
   color: var(--green) !important;
 }
 
@@ -1810,6 +1810,7 @@ text-decoration-skip-ink: none;
   font-size: var(--4);
   font-weight: 500;
   text-align: left;
+  line-height: 173%;
 }
 
 .accordion img {
