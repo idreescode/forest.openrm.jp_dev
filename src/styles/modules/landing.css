@@ -1447,6 +1447,7 @@ text-decoration-skip-ink: none;
 
 .footer-address p {
   font-size: var(--3h);
+  text-transform: uppercase;
 }
 
 .footer .l-row {
@@ -1875,13 +1876,13 @@ text-decoration-skip-ink: none;
   display: flex;
   justify-content: center;
   gap: var(--7h);
-  margin-top: var(--8);
+  margin-top: var(--16);
 }
 
 .cta .card {
   background-color: white;
   width: 520px;
-  padding: var(--9) var(--15);
+  padding: var(--9) var(--10);
   border-radius: var(--2h);
   box-shadow: 12px 12px 24px 0px #0000000d, 4px 4px 10px 2px #0000000d,
     0px 0px 8px 0px #0000000d inset;
@@ -1933,6 +1934,7 @@ text-decoration-skip-ink: none;
   border: 0;
   height: 72px;
   padding: 0 var(--9);
+  gap: var(--3);
 }
 
 .cta .ui-btn--success {
@@ -1942,8 +1944,8 @@ text-decoration-skip-ink: none;
 
 .cta .container {
   display: flex;
-  margin-top: var(--8) !important;
-  gap: var(--8);
+  margin-top: var(--16) !important;
+  gap: var(--16);
   justify-content: center;
 }
 
