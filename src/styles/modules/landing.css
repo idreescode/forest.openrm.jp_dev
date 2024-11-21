@@ -3017,3 +3017,529 @@ text-decoration-skip-ink: none;
     margin: auto;
   }
 }
+
+
+
+.pricing-container .text {
+  padding: inherit;
+  background: none;
+  border-radius: inherit;
+  line-height: inherit;
+}
+
+.tab-buttons {
+	background-color: #E4E4E4;
+	border-radius: 100px;
+	width: 300px;
+	display: flex;
+	margin: 40px auto;
+	color: #868686;
+	font-size: 16px;
+	padding: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.tab-buttons button {
+	flex-grow: 1;
+	text-align: center;
+	padding: 16px 10px;
+	vertical-align: unset;
+	text-align: center;
+	color: #868686;
+	font-size: 16px;
+	font-weight: 700;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.tab-buttons button.active,
+.tab-buttons button:active {
+	background-color: white;
+	color: #333333;
+}
+
+.tab-buttons button:hover,
+.tab-buttons button:focus {
+	color: #333333;
+}
+
+.tab-buttons button .badge {
+	color: white;
+	background-color: #333333;
+	border-radius: 5px;
+	padding: 6px 12px;
+	margin-left: 10px;
+	font-size: 80%;
+	line-height: 1.1;
+}
+
+.pricing-container {
+	/* max-width: 1200px;
+	width: 90%; */
+	margin: 20px auto;
+	padding: 0;
+	border-radius: 10px;
+	background: transparent;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+}
+
+.pricing-container .pricing-table,
+#plansFeatures .feature-tab-content table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 0;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+}
+
+.pricing-table .plans-head tr,
+#plansFeatures .feature-tab-content table tr {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: center;
+	width: 100%;
+}
+
+.pricing-table .plans-head th,
+.pricing-table .plans-head td,
+#plansFeatures .feature-tab-content table th,
+#plansFeatures .feature-tab-content table td {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1;
+	padding: 15px 20px;
+	line-height: 1;
+	border: 0;
+	border-bottom: 1px solid #E4E4E4;
+	border-left: 1px solid #E4E4E4;
+	transition: all 0.3s ease-in-out;
+}
+
+#plansFeatures .feature-row {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+#plansFeatures td.feature-tab {
+	padding: 0;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.pricing-table .plans-head th:first-child,
+.pricing-table .plans-head td:first-child,
+#plansFeatures .feature-tab-content table th:first-child,
+#plansFeatures .feature-tab-content table td:first-child {
+	min-width: 240px;
+	max-width: 240px;
+	border-left: 0;
+}
+
+.pricing-table .plans-head .plan-categories-row th {
+	border-top: 15px solid transparent;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+
+.pricing-table .plans-head .plan-categories-row th.plan-cat-individual {
+	border-top: 15px solid #FFA418;
+}
+
+.pricing-table .plans-head .plan-categories-row th.plan-cat-business {
+	border-top: 15px solid #007E47;
+}
+
+.pricing-table .plans-head .plan-terget-row th,
+.pricing-table .plans-head .plan-size-row th {
+	background-color: #8FDE29;
+	color: white;
+}
+
+.pricing-table .plans-head .plan-terget-row .plan-terget-individual,
+.pricing-table .plans-head .plan-size-row .plan-size-individual {
+	background-color: #FFA418;
+}
+
+.pricing-table .plans-head .plan-terget-row .plan-terget-business,
+.pricing-table .plans-head .plan-size-row .plan-size-business {
+	background-color: #007E47;
+}
+
+.pricing-table .plans-head h1,
+.pricing-table .plans-head h2,
+.pricing-table .plans-head h3,
+.pricing-table .plans-head h4,
+.pricing-table .plans-head h5,
+.pricing-table .plans-head h6 {
+	margin: 0;
+}
+
+.pricing-table .plans-head p {
+	font-size: 10px;
+	line-height: 1.2;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.pricing-table .plans-head .plan-cat h2 {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 10px;
+
+}
+
+.pricing-table .plans-head .plan-cat p {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 0;
+
+}
+
+.pricing-table .plans-head .plan-terget-row,
+.pricing-table .plans-head .plan-size-row {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+
+}
+
+.pricing-table .plans-head .plan-terget h4,
+.pricing-table .plans-head .plan-size h4 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+
+}
+
+.pricing-table .plans-head .price {
+	padding: 0;
+	justify-content: space-between;
+}
+
+.pricing-table .plans-head .price .plans-item {
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pricing-table .plans-head .price .plans-item .plan-title {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.pricing-table .plans-head .price .plans-item .plan-title .badge {
+	/* position: absolute; */
+	width: auto;
+	/* min-width: 55px; */
+	/* left: 100%; */
+	padding: 4px;
+	font-size: 11px;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+	background-color: #FF7000;
+	border-radius: 100px;
+}
+
+.pricing-table .plans-head .price .plans-item .ammount {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.pricing-table .plans-head .price .plans-item .ammount .currency {
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-left: 5px;
+}
+
+.pricing-table .plans-head .price .plans-item .notes {
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+
+.pricing-table .plans-head .price .plans-item .slugline {
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.plans-item a.button {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	padding: 12px 16px;
+	margin: 0 auto;
+	margin-top: 15px;
+	display: block;
+	background-color: #8FDE29;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 100px;
+}
+
+#price_free .plans-item a.button {
+	background-color: #FFA418;
+}
+
+
+#plansFeatures .feature-tab-button,
+#plansFeatures .feature-tab-button.collaps {
+	width: 100%;
+	padding: 10px 20px;
+	text-align: center;
+	border: 1px solid #E4E4E4;
+	background-color: #E4E4E4;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+#plansFeatures .feature-tab-button:hover {
+	border: 1px solid #d1d1d1;
+	background-color: #d1d1d1;
+}
+
+#plansFeatures .feature-tab-content {
+	overflow: hidden;
+	max-height: 0;
+	width: 100%;
+	transition: max-height 0.3s ease-in-out;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+#plansFeatures .feature-tab-content svg.bi.bi-check-circle-fill {
+	color: #007E47;
+	fill: #007E47;
+	width: 20px;
+	height: 20px;
+}
+
+#plansFeatures .feature-tab-content .feature-title {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0 15px;
+}
+
+#plansFeatures .feature-tab-content .feature-title h5 {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+#plansFeatures .feature-tab-content .feature-title .tooltip {
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	right: -16px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#plansFeatures .feature-tab-content .feature-title .tooltip:hover {
+	opacity: 0.9;
+}
+
+#plansFeatures .feature-tab-content .feature-title .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	height: auto;
+	background-color: #333333;
+	color: white;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transform: translate(20px, -10px);
+	z-index: 99;
+	transition: all 0.3s ease-in-out;
+}
+
+#plansFeatures .feature-tab-content .feature-title .tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.pricing-table .plan-price-row .mobile-feature {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	overflow: hidden;
+	display: none;
+	flex-direction: column;
+}
+
+.pricing-table .plan-price-row .mobile-feature .feature-expand-btn {
+	width: 100%;
+	padding: 15px 20px;
+	text-align: center;
+	border: 2px solid #FFA418;
+	background-color: #FFA418;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 700;
+}
+
+.pricing-table .plan-price-row .mobile-feature .feature-expand-btn:hover,
+.pricing-table .plan-price-row .mobile-feature .feature-expand-btn:active,
+.pricing-table .plan-price-row .mobile-feature .feature-expand-btn.active {
+	color: #FFA418;
+	background-color: white;
+}
+
+.pricing-table button .icon {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 150%;
+	line-height: 1;
+	width: 18px;
+}
+
+#price_free .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(3),
+#price_free .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(4),
+#price_free .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(5),
+#price_light .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(2),
+#price_light .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(4),
+#price_light .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(5),
+#price_standard .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(2),
+#price_standard .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(3),
+#price_standard .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(5),
+#price_pro .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(2),
+#price_pro .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(3),
+#price_pro .mobile-feature .mobile-feature-expand-area .feature-tab-content table tr td:nth-child(4) {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.mobile-feature .mobile-feature-expand-area #plansFeatures .feature-tab-content table th,
+.mobile-feature .mobile-feature-expand-area #plansFeatures .feature-tab-content table td {
+	width: calc(40% - 20px);
+	min-width: calc(40% - 20px);
+	max-width: calc(40% - 20px);
+	padding: 10px 10px;
+}
+
+.mobile-feature .mobile-feature-expand-area #plansFeatures .feature-tab-content table th:first-child,
+.mobile-feature .mobile-feature-expand-area #plansFeatures .feature-tab-content table td:first-child {
+	width: calc(60% - 20px);
+	min-width: calc(60% - 20px);
+	max-width: calc(60% - 20px);
+}
+
+@media (max-width: 768px) {
+	#plansFeatures {
+		display: none;
+	}
+
+	.pricing-table .plan-price-row .mobile-feature #plansFeatures,
+	.pricing-table .plan-price-row .mobile-feature {
+		display: flex;
+	}
+
+	.mobile-feature,
+	.mobile-feature .plans-features {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.pricing-table .plans-head .plan-categories-row,
+	.pricing-table .plans-head .plan-terget-row,
+	.pricing-table .plans-head .plan-size-row,
+	.pricing-table .plans-head .plan-price-row>td:first-child {
+		display: none;
+	}
+
+	.pricing-table .plans-head .plan-price-row {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	#plansFeatures .feature-tab-button,
+	#plansFeatures .feature-tab-button.collaps {
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+
+	#plansFeatures .feature-tab-content .title h5 {
+		font-size: 14px;
+	}
+}
