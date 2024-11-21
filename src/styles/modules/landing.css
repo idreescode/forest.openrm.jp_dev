@@ -1638,6 +1638,10 @@ text-decoration-skip-ink: none;
   font-size: var(--9);
 }
 
+span.com-text {
+  font-size: 18px !important;
+  margin-top: 10px;
+}
 .comparison article .title {
   position: absolute;
   width: 100%;
