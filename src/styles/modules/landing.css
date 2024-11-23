@@ -3695,7 +3695,7 @@ span.com-text {
 .service-row-reverse {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 60px;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
@@ -3704,6 +3704,7 @@ span.com-text {
 .service-image-col {
   width: 30%;
   max-width: 280px;
+  min-width: 280px;
   padding: 20px;
   aspect-ratio: 1/1;
   border: none;
@@ -3740,14 +3741,14 @@ span.com-text {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .service-item-tag .tag {
   background-color: #007E47;
   color: #F4F4F4;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -3774,7 +3775,7 @@ span.com-text {
 
 .service-item-text {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   margin-bottom: 0px;
   color: #333333;
@@ -3798,9 +3799,8 @@ span.com-text {
   }
 
   .tab-menu {
-    padding: 8px 12px;
     height: 50px;
-    min-width: 180px;
+    min-width: 160px;
     font-size: 12px;
   }
 
@@ -3827,10 +3827,6 @@ span.com-text {
   .service-item-tag {
     align-items: center;
     justify-content: center;
-  }
-
-  .service-item-tag .tag {
-    font-size: 12px;
   }
 
   .service-item-heading {
