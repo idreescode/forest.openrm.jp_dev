@@ -3820,6 +3820,7 @@ span.com-text {
   .service-image-col,
   .service-content-col {
     width: 100%;
+    min-width: auto;
     align-items: center;
     justify-content: center;
   }
