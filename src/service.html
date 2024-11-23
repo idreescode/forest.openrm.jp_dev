@@ -358,25 +358,7 @@
                     </div>
                 </div>
             </div>
-
-            <script>
-                // JavaScript for Tab Functionality
-                const tabs = document.querySelectorAll('.tab-menu');
-                const panels = document.querySelectorAll('.tab-panel');
-
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        // Remove active class from all tabs and panels
-                        tabs.forEach(t => t.classList.remove('tab-active'));
-                        panels.forEach(p => p.classList.remove('panel-active'));
-
-                        // Add active class to the clicked tab and its corresponding panel
-                        tab.classList.add('tab-active');
-                        const panelToShow = document.querySelector(`.tab-panel[data-panel="${tab.dataset.tab}"]`);
-                        panelToShow.classList.add('panel-active');
-                    });
-                });
-            </script>
+            
         </div>
 
 
@@ -485,6 +467,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        // JavaScript for Tab Functionality
+        const tabs = document.querySelectorAll('.tab-menu');
+        const panels = document.querySelectorAll('.tab-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and panels
+                tabs.forEach(t => t.classList.remove('tab-active'));
+                panels.forEach(p => p.classList.remove('panel-active'));
+
+                // Add active class to the clicked tab and its corresponding panel
+                tab.classList.add('tab-active');
+                const panelToShow = document.querySelector(`.tab-panel[data-panel="${tab.dataset.tab}"]`);
+                panelToShow.classList.add('panel-active');
+            });
+        });
+    </script>
 
     <script src="dist/new.scripts.js"></script>
 </body>
