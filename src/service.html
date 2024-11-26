@@ -44,8 +44,10 @@
 </head>
 
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLMWF65" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLMWF65" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe>
+    </noscript>
 
     <div class="menubar hidden">
         <div class="mobile-links">
@@ -104,21 +106,24 @@
         </div>
     </div>
     <!-- Header -->
-    <header class="header l-section">
+
+    <header class="header new l-section">
         <div class="l-container l-container--lg">
-            <a id="header-logo" class="ui-logo-forest" href="#"><img src="/assets/new/logo-forest-black.svg"
-                    alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ" width="229" height="56"></a>
+            <a id="header-logo" class="ui-logo-forest" href="#">
+                <img src="/assets/images/logo-black.svg"
+                     alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ" width="229" height="56">
+            </a>
             <div class="flex-col flex items-end">
                 <div class="header-contact flex">
                     <div class="flex flex-col">
                         <div class="flex">
-                            <img src="/assets/new/phone.svg" alt="phone-icon">
+                            <img src="/assets/new/icons/phone.svg" alt="phone-icon">
                             <h3 class="h3 w5">050-3033-5162</h3>
                         </div>
                         <p class="w5 cl-gray">受付時間 10:00 ~ 17:00 （土日祝を除く）</p>
                     </div>
-                    <a class="l-desktop ui-btn ui-btn--success-outlined" href="#">
-                        <img src="/assets/new/mail.svg" alt="mail-icon">
+                    <a class="l-desktop ui-btn ui-btn--success-outlined" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" target="_blank">
+                        <img src="/assets/new/icons/mail.svg" alt="mail-icon">
                         <span class="ml-2">お問い合わせ</span>
                     </a>
                     <button class="menu" id="menuBtn">
@@ -127,22 +132,22 @@
                 </div>
                 <div class="flex mt-3 links-container">
                     <div class="nav-links flex h6 w5 cl-gray gap-5">
-                        <a href="#">サービス内容</a>
-                        <a href="#">選ばれる理由</a>
-                        <a href="#">料金プラン</a>
-                        <a href="#">ご利用の流れ</a>
-                        <a href="#">お客様の声</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">お知らせ</a>
+                        <a href="/#features">サービス内容</a>
+                        <a href="/#advantages">選ばれる理由</a>
+                        <a href="/#pricing">料金プラン</a>
+                        <a href="/#process">ご利用の流れ</a>
+                        <a href="/#voices">お客様の声</a>
+                        <a href="/#faq">FAQ</a>
+                        <a href="/#news">お知らせ</a>
                     </div>
                     <div class="login flex">
                         <a id="header-login-mobile" class="ui-btn hero-link" href="<%= APP_ORIGIN %>">
-                            <img src="/assets/new/logout.svg" alt="logout">
+                            <img src="/assets/new/icons/logout.svg" alt="logout">
                             <span>ログイン</span>
                         </a>
                         <a id="header-signup-mobile" class="ui-btn ui-btn--danger"
-                            href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
-                            <img src="/assets/new/shield.svg" alt="shield">
+                           href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
+                            <img src="/assets/new/icons/shield.svg" alt="shield">
                             <span>無料でアカウント登録する</span>
                         </a>
                     </div>
@@ -152,12 +157,13 @@
     </header>
 
 
-
     <!-- Service Section -->
     <section class="service-section">
         <h2 class="section-title"> Forestの機能</h2>
-        <h3 class="section-sub-title">営業効率化から集客アップまで、これ一つで全て解決！<br>
-            オールインワンの多彩な機能を備えています</h3>
+        <h3 class="section-sub-title">
+            営業効率化から集客アップまで、これ一つで全て解決！<br>
+            オールインワンの多彩な機能を備えています
+        </h3>
         <div class="section-container">
             <div class="service-tab-container">
                 <!-- tab-menu -->
@@ -181,7 +187,8 @@
                                     <div class="service-item-tag"><span class="tag black">FREE（無料）</span></div>
                                     <h3 class="service-item-heading">ブラウザ拡張機能を使ってボタン１つで物件データを取り込み  </h3>
                                     <p class="service-item-text">
-                                        レインズ、ATBBなどの業者間ポータルからの物出し作業を格段に効率化できます。普段お使いのブラウザに公式の拡張機能をインストールすることで、ボタン１つでフォレストに物件を取り込むことができます。</p>
+                                        レインズ、ATBBなどの業者間ポータルからの物出し作業を格段に効率化できます。普段お使いのブラウザに公式の拡張機能をインストールすることで、ボタン１つでフォレストに物件を取り込むことができます。
+                                    </p>
                                 </div>
                             </div>
 
@@ -190,13 +197,14 @@
                                     <div class="service-item-tag"><span class="tag black">FREE（無料）</span></div>
                                     <h3 class="service-item-heading">登録済み物件はマーキングされ、次回以降もひと目でわかる</h3>
                                     <p class="service-item-text">
-                                        ブラウザ拡張機能を使って過去に取り込んだ物件は「アップロード済み」とマーキングされ、次回以降も、どの物件が登録済みでそうでないかが一目でわかるため、二度手間がなくなり、物件情報の管理が楽になります。</p>
-                                </div>                                
+                                        ブラウザ拡張機能を使って過去に取り込んだ物件は「アップロード済み」とマーキングされ、次回以降も、どの物件が登録済みでそうでないかが一目でわかるため、二度手間がなくなり、物件情報の管理が楽になります。
+                                    </p>
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature1.svg" alt="service">
                                 </div>
                             </div>
-                            
+
                             <div class="service-row">
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature2.svg" alt="service">
@@ -219,7 +227,8 @@
                                     <div class="service-item-tag"><span class="tag black">FREE（無料）</span></div>
                                     <h3 class="service-item-heading">PDFエディタの感覚で自在に販売用図面を編集  </h3>
                                     <p class="service-item-text">
-                                        帯イメージの削除・挿入、イメージの切り取り・挿入、テキスト入力までできてすべて無料！自社オビも登録されるユーザー情報をもとにサービスが自動で生成、サイズの異なる３パターンを用意します。またファイル変換が可能。PDF、JPEG、PNGから自由に選べます。</p>
+                                        帯イメージの削除・挿入、イメージの切り取り・挿入、テキスト入力までできてすべて無料！自社オビも登録されるユーザー情報をもとにサービスが自動で生成、サイズの異なる３パターンを用意します。またファイル変換が可能。PDF、JPEG、PNGから自由に選べます。
+                                    </p>
                                 </div>
                             </div>
 
@@ -228,13 +237,14 @@
                                     <div class="service-item-tag"><span class="tag orange">LIGHT</span><span class="tag">STANDARD</span><span class="tag">PRO</span><span class="tag">ENTERPRISE</span></div>
                                     <h3 class="service-item-heading">帯替えした図面を何枚でも自由にダウンロード</h3>
                                     <p class="service-item-text">
-                                        有料プランでは、帯替えした図面を何枚でも自由にダウンロードできます。LIGHTプランでは個別図面のダウンロードのみですが、STANDARD及びPROプランでは、まとめて一括のダウンロードも行えます。</p>
-                                </div>                                
+                                        有料プランでは、帯替えした図面を何枚でも自由にダウンロードできます。LIGHTプランでは個別図面のダウンロードのみですが、STANDARD及びPROプランでは、まとめて一括のダウンロードも行えます。
+                                    </p>
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature4.svg" alt="service">
                                 </div>
                             </div>
-                            
+
                             <div class="service-row">
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/safety4.svg" alt="service">
@@ -265,12 +275,12 @@
                                     <div class="service-item-tag"><span class="tag">STANDARD</span><span class="tag">PRO</span><span class="tag">ENTERPRISE</span></div>
                                     <h3 class="service-item-heading">チャットでお客様とリアルタイムにコミュニケーション</h3>
                                     <p class="service-item-text">お客様とのやり取りは、マイページ内のチャットで行えます。お客様から届いたメッセージは、サービス内、登録メールアドレス宛にそれぞれ通知が飛ぶため、見逃す心配はありません。</p>
-                                </div>                                
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature5.svg" alt="service">
                                 </div>
                             </div>
-                            
+
                             <div class="service-row">
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/safety5.svg" alt="service">
@@ -287,12 +297,12 @@
                                     <div class="service-item-tag"><span class="tag">PRO</span><span class="tag">ENTERPRISE</span></div>
                                     <h3 class="service-item-heading">物件の位置情報を自動で判別してマップ付きで表示</h3>
                                     <p class="service-item-text">販売用図面に記載される物件の所在地をソフトウェアが自動で識別し、Googleマップで表示してくれます。住所情報を手入力することなく、お客様に地図付きで物件をご提案できます。また地図上では、学校区やハザードマップなどの切り替え表示も可能です。</p>
-                                </div>                                
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature6.svg" alt="service">
                                 </div>
                             </div>
-                            
+
                             <div class="service-row">
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature7.svg" alt="service">
@@ -309,7 +319,7 @@
                                     <div class="service-item-tag"><span class="tag">STANDARD</span><span class="tag">PRO</span><span class="tag">ENTERPRISE</span></div>
                                     <h3 class="service-item-heading">サクッとお客様に配信したい時に便利な共有リンク</h3>
                                     <p class="service-item-text">お客様のメールアドレスがわからない、細かい行動ログまでは必要ないけど閲覧されたかは知りたい、今すぐに物件を共有したい時などには、共有リンクを活用しましょう。また業者間など不特定多数との物件共有の際にも役立ちます。</p>
-                                </div>                                
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature8.svg" alt="service">
                                 </div>
@@ -334,7 +344,7 @@
                                     <div class="service-item-tag"><span class="tag black">FREE（無料）</span></div>
                                     <h3 class="service-item-heading">自己PRページを充実させることで競合と差別化</h3>
                                     <p class="service-item-text">営業マン毎に自己プロフィールページを無料で作成し公開できます。見込み顧客は、各エージェントのプロフィール情報を閲覧してどのエージェントを通じて問い合わせるか決められます。ご自身のページを魅力的なものにしてより多くの集客へと繋げましょう。</p>
-                                </div>                                
+                                </div>
                                 <div class="service-image-col">
                                     <img class="service-icon-img" src="/assets/new/feature10.svg" alt="service">
                                 </div>
@@ -353,12 +363,12 @@
                                     <p class="service-item-text">国土交通省のIT重説マニュアルにも対応した双方向で使えるオンライン会議機能。お客様による事前インストールやログインは一切不要。専用リンクにアクセスするだけでオンライン会議が行えます。録画機能も搭載され、クラウドで保管されたデータは容量無制限！データプロテクションとセキュリティ保証も付いて安心。</p>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
 
@@ -445,7 +455,7 @@
             </div>
             <div class="footer-address">
                 <img class="ui-logo-forest" src="/assets/new/logo-forest-white.svg" alt="フォレストのロゴ" title="フォレストのロゴ"
-                    width="163" height="40">
+                     width="163" height="40">
                 <p>
                     株式会社オープンルーム
                     <br>

@@ -341,7 +341,7 @@ a,
   height: var(--12h);
 }
 
-.header {
+.header.new {
   position: fixed;
   top: 0;
   left: 0;
@@ -350,14 +350,15 @@ a,
   font-size: 1.125em;
   padding: var(--2h);
   z-index: 99;
+	height: unset;
 }
 
-.bg-image-hero-1 {
+.hero.new.bg-image-hero-1 {
   background: #b2c3b7 url("/assets/new/bg-hero-1.svg") center;
   background-size: cover;
 }
 
-.header .l-container {
+.header.new .l-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -378,11 +379,11 @@ a,
   font-size: var(--2h);
 }
 
-.header .login {
+.header.new .login {
   margin-left: var(--12h);
 }
 
-.header .login .hero-link {
+.header.new .login .hero-link {
   color: var(--green);
   font-size: var(--3h);
   height: var(--7h);
@@ -390,21 +391,21 @@ a,
   margin-right: var(--4h);
 }
 
-.header .login .hero-link img,
-.header .ui-btn--danger img {
+.header.new .login .hero-link img,
+.header.new .ui-btn--danger img {
   width: var(--3);
   margin-right: var(--2);
 }
 
-.header .ui-btn--success-outlined {
+.header.new .ui-btn--success-outlined {
   margin-left: var(--4);
 }
 
-.header .ui-btn--danger {
+.header.new .ui-btn--danger {
   font-size: var(--3h);
 }
 
-.header+* {
+.header.new + * {
   margin-top: var(--30);
 }
 
@@ -414,39 +415,39 @@ a,
 
 /* hero */
 
-.hero {
+.hero.new {
   padding: var(--17) 0;
 }
 
-.bg-image-hero-1 {
+.hero.new.bg-image-hero-1 {
   background: var(--dark-green) url("/assets/new/bg-hero-1.svg");
   background-size: cover;
 }
 
-.hero .l-container {
+.hero.new .l-container {
   padding: 0 var(--15);
 }
 
-.hero article {
+.hero.new article {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero h2 {
+.hero.new h2 {
   font-size: var(--12);
 }
 
-.hero .hero-banner img {
+.hero.new .hero-banner img {
   min-width: var(--150);
   margin-left: var(--m9);
 }
 
-.hero .hero-banner-mobile {
+.hero.new .hero-banner-mobile {
   display: none;
 }
 
-.hero .features {
+.hero.new .features {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -456,13 +457,13 @@ a,
   margin-bottom: var(--5);
 }
 
-.hero h1 {
+.hero.new h1 {
   margin-top: var(--5);
   filter: drop-shadow(0 0 var(--2h) 0 var(--shadow));
   max-width: var(--156);
 }
 
-.hero h3 {
+.hero.new h3 {
   margin-top: var(--8);
   max-width: var(--126);
   font-size: 14px;
@@ -474,18 +475,18 @@ a,
   text-decoration-skip-ink: none;
 }
 
-.hero .login-btns {
+.hero.new .login-btns {
   margin-top: var(--10);
   display: flex;
   align-items: center;
   gap: var(--4h);
 }
 
-.hero .login-btns p {
+.hero.new .login-btns p {
   margin-bottom: var(--4);
 }
 
-.hero .login-btns .ui-btn {
+.hero.new .login-btns .ui-btn {
   border: 0;
   padding: var(--4) var(--6);
   font-size: var(--4);
@@ -494,12 +495,12 @@ a,
   box-shadow: 0 0 var(--2) 0 #0000000d inset;
 }
 
-.hero .ui-btn img {
+.hero.new .ui-btn img {
   width: var(--5);
   margin-left: var(--4);
 }
 
-.hero .ui-btn--primary,
+.hero.new .ui-btn--primary,
 .menubar .ui-btn--primary {
   background-image: linear-gradient(90deg, var(--lime) 0%, #80c823 100%),
     linear-gradient(90deg, var(--secondary) 0%, #f19136 100%);
@@ -519,6 +520,10 @@ a,
   height: var(--22h);
   object-fit: cover;
   min-width: var(--40);
+}
+.rewards img:not(:last-child) {
+  /* TODO fix svgs */
+  transform: translateX(-7px);
 }
 
 .award .bg-dark-gray {
@@ -552,7 +557,6 @@ a,
 
 .brands img {
   width: auto;
-  cursor: pointer;
 }
 
 /* employee */
@@ -676,7 +680,6 @@ a,
 }
 
 .card {
-  cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -784,6 +787,7 @@ a,
 
 .safety img {
   width: auto;
+  max-width: 245px;
   height: 100%;
   margin: auto;
 }
@@ -1031,8 +1035,7 @@ a,
   padding: 7px 13px;
 }
 
-.fee-body,
-.fee .fee-head {
+.fee-body {
   width: auto !important;
 }
 
@@ -1054,6 +1057,9 @@ a,
 #pricing .fee-cell {
   width: 256px !important;
   min-width: 256px !important;
+}
+#pricing .fee-cell:first-child {
+  max-width: 256px;
 }
 
 #pricing .fee .fee-cell {
@@ -1128,6 +1134,7 @@ a,
   padding: var(--4) var(--2h);
   vertical-align: unset;
   text-align: center;
+  justify-content: center;
 }
 
 #pricing .plan .name {
@@ -1336,6 +1343,9 @@ a,
   background-image: linear-gradient(to left, #000 50%, var(--gray) 50%);
 }
 
+.enterprise .ui-btn {
+  width: max-content;
+}
 .enterprise .ui-btn img {
   width: auto;
 }
@@ -1576,7 +1586,7 @@ a,
 }
 
 .comparison .triangle {
-  background-image: url("/assets/new/triangle.svg");
+  background-image: url("/assets/new/icons/triangle.svg");
   width: var(--5);
   height: 17px;
   background-repeat: no-repeat;
@@ -1584,7 +1594,7 @@ a,
 }
 
 .comparison .cross {
-  background-image: url("/assets/new/cross.svg");
+  background-image: url("/assets/new/icons/cross.svg");
   width: var(--5);
   height: var(--5);
   background-repeat: no-repeat;
@@ -1660,7 +1670,6 @@ span.com-text {
 
 .voice .card-container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 12px;
@@ -2124,11 +2133,11 @@ span.com-text {
 }
 
 @media (max-width: 1100px) {
-  .header {
+  .header.new {
     padding: 13px var(--5);
   }
 
-  .header .ui-btn,
+  .header.new .ui-btn,
   .links-container,
   .voice .pagination,
   .voice .navigation {
@@ -2139,7 +2148,7 @@ span.com-text {
     gap: var(--8);
   }
 
-  .header+* {
+  .header.new + * {
     margin-top: 51px;
   }
 
@@ -2164,26 +2173,26 @@ span.com-text {
     height: var(--5);
   }
 
-  .hero {
+  .hero.new {
     text-align: center;
   }
 
-  .hero .hero-banner {
+  .hero.new .hero-banner {
     display: none;
   }
 
-  .hero .features,
+  .hero.new .features,
   .login-btns {
     justify-content: center;
   }
 
-  .hero h3,
-  .hero h1 {
+  .hero.new h3,
+  .hero.new h1 {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .hero .hero-banner-mobile {
+  .hero.new .hero-banner-mobile {
     display: block;
     margin: 22px auto;
   }
@@ -2414,22 +2423,40 @@ span.com-text {
     font-weight: 700;
     cursor: pointer;
     font-size: var(--4);
+    border: 2px solid transparent;
   }
 
   .fee-mobile .plan-card .plan-card-footer img {
     width: var(--6);
   }
 
+  .fee-mobile .plan-card .plan-card-footer .close {
+    display: none;
+  }
+
   .fee-mobile .plan-card .plan-card-footer.open {
-    background-color: white;
+    background-color: white !important;
     border: 2px solid #ffa418;
     color: #ffa418;
+  }
+  .fee-mobile .plan-card .plan-card-footer.bg-green.open {
+    border: 2px solid var(--green);
+    color: var(--green);
+  }
+  .fee-mobile .plan-card .plan-card-footer.open .show {
+    display: none;
+  }
+  .fee-mobile .plan-card .plan-card-footer.open .close {
+    display: inline;
   }
 
   .fee-mobile .plan-card .plan-card-footer.open img {
     height: 2px;
     width: 14px;
     background: #ffa418;
+  }
+  .fee-mobile .plan-card .plan-card-footer.bg-green.open img {
+    background: var(--green);
   }
 
   .enterprise .title {
@@ -2472,20 +2499,21 @@ span.com-text {
 }
 
 @media (max-width: 768px) {
-  .bg-image-hero-1 {
+  .hero.new.bg-image-hero-1 {
     background: var(--dark-green) url("/assets/new/bg-hero-1.svg");
+    background-size: cover;
   }
 
   .concept .box .box-content {
     padding: var(--10) var(--6) var(--6) var(--6);
   }
 
-  .bg-image-hero-1 .l-container {
+  .hero.new.bg-image-hero-1 .l-container {
     padding-left: var(--5);
     padding-right: var(--5);
   }
 
-  .hero {
+  .hero.new {
     padding-top: var(--10);
     padding-bottom: var(--10);
   }
@@ -2494,21 +2522,21 @@ span.com-text {
     padding: var(--1h) var(--1);
   }
 
-  .hero h1 {
+  .hero.new h1 {
     margin-top: var(--5);
     max-width: none;
     font-size: var(--6);
   }
 
-  .hero h2 {
+  .hero.new h2 {
     font-size: 25px;
   }
 
-  .hero h3 {
+  .hero.new h3 {
     font-size: var(--3h);
   }
 
-  .hero .hero-banner-mobile {
+  .hero.new .hero-banner-mobile {
     width: 70%;
   }
 
@@ -2519,6 +2547,9 @@ span.com-text {
 
   .brands {
     padding: var(--5);
+  }
+  .brands .row {
+    justify-content: start;
   }
 
   .rewards img {
@@ -2758,7 +2789,7 @@ span.com-text {
     justify-content: center;
   }
 
-  .hero .login-btns p,
+  .hero.new .login-btns p,
   .features .card h3 {
     font-size: var(--3);
   }

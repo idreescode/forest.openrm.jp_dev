@@ -26,9 +26,10 @@
     <link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65&l=dataLayer" as="script">
     <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>&l=dataLayer"
         as="script">
-    <link rel="preload" href="/assets/new/bg-hero-1.webp" as="image">
-    <link rel="preload" href="/assets/new/logo-forest-black.svg" as="image">
-    <link rel="preload" href="/assets/new/logo-forest-white.svg" as="image">
+    <link rel="preload" href="/assets/new/bg-hero-1.svg" as="image">
+    <link rel="preload" href="/assets/new/hero-banner.webp" as="image">
+    <link rel="preload" href="/assets/images/logo-black.svg" as="image">
+    <link rel="preload" href="/assets/images/logo-white.svg" as="image">
     <script>
         (function (w, d, s, l) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], dl = '&l=' + l; w.addEventListener('load', function () { z('https://www.googletagmanager.com/gtm.js?id=GTM-KLMWF65'); z('https://www.googletagmanager.com/gtag/js?id=<%= GA_MEASUREMENT_ID %>'); }); function z(u) { var j = d.createElement(s); j.async = true; j.src = u + dl; f.parentNode.insertBefore(j, f); } })(window, document, 'script', 'dataLayer');
     </script>
@@ -49,76 +50,76 @@
 
     <div class="menubar hidden">
         <div class="mobile-links">
-            <a href="/">
+            <a href="/" onclick="document.getElementById('menuBtn').click()">
                 <span>Top</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#features" onclick="document.getElementById('menuBtn').click()">
                 <span>サービス内容</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#advantages" onclick="document.getElementById('menuBtn').click()">
                 <span>選ばれる理由</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#pricing" onclick="document.getElementById('menuBtn').click()">
                 <span>料金プラン</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#process" onclick="document.getElementById('menuBtn').click()">
                 <span>ご利用の流れ</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#voices" onclick="document.getElementById('menuBtn').click()">
                 <span>お客様の声</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#faq" onclick="document.getElementById('menuBtn').click()">
                 <span>FAQ</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
-            <a href="/">
+            <a href="/#news" onclick="document.getElementById('menuBtn').click()">
                 <span>お知らせ</span>
-                <img src="/assets/new/link-icon.svg" alt="arrow">
+                <img src="/assets/new/icons/link-icon.svg" alt="arrow">
             </a>
         </div>
         <div class="btns-container">
-            <button class="ui-btn ui-btn--danger">
+            <a class="ui-btn ui-btn--danger" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
                 <span>無料でアカウント登録する</span>
-                <img src="/assets/new/play-video.svg" alt="play video">
-            </button>
-            <button class="ui-btn ui-btn--primary">
+                <img src="/assets/new/icons/play-video.svg" alt="play video">
+            </a>
+            <a class="ui-btn ui-btn--primary" href="https://ie.nativeforms.com/IXSkxWPmZSbvh3ZkhmZp1Db" target="_blank">
                 <span>無料トライアルに申し込む</span>
-                <img src="/assets/new/play-video-lime.svg" alt="play video">
-                <!-- <img src="/assets/new/play-video-green.svg" alt="play video"> -->
-            </button>
-            <button class="ui-btn ui-btn--primary cl-green w7">
-                <img src="/assets/new/email.svg" alt="email">
+                <img src="/assets/new/icons/play-video-lime.svg" alt="play video">
+                <!-- <img src="/assets/new/icons/play-video-green.svg" alt="play video"> -->
+            </a>
+            <a class="ui-btn ui-btn--primary cl-green w7" target="_blank" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db">
+                <img src="/assets/new/icons/email.svg" alt="email">
                 <span>お問い合わせ</span>
-                <img src="/assets/new/play-video-green.svg" alt="play video">
-            </button>
+                <img src="/assets/new/icons/play-video-green.svg" alt="play video">
+            </a>
             <a class="ui-btn hero-link" href="<%= APP_ORIGIN %>">
-                <img src="/assets/new/logout.svg" alt="logout">
+                <img src="/assets/new/icons/logout.svg" alt="logout">
                 <span class="cl-dark-green">ログイン</span>
             </a>
         </div>
     </div>
     <!-- Header -->
-    <header class="header l-section">
+    <header class="header new l-section">
         <div class="l-container l-container--lg">
-            <a id="header-logo" class="ui-logo-forest" href="#"><img src="/assets/new/logo-forest-black.svg"
+            <a id="header-logo" class="ui-logo-forest" href="#"><img src="/assets/images/logo-black.svg"
                     alt="フォレストホームページのロゴ" title="フォレストホームページのロゴ" width="229" height="56"></a>
             <div class="flex-col flex items-end">
                 <div class="header-contact flex">
                     <div class="flex flex-col">
                         <div class="flex">
-                            <img src="/assets/new/phone.svg" alt="phone-icon">
+                            <img src="/assets/new/icons/phone.svg" alt="phone-icon">
                             <h3 class="h3 w5">050-3033-5162</h3>
                         </div>
                         <p class="w5 cl-gray">受付時間 10:00 ~ 17:00 （土日祝を除く）</p>
                     </div>
-                    <a class="l-desktop ui-btn ui-btn--success-outlined" href="#">
-                        <img src="/assets/new/mail.svg" alt="mail-icon">
+                    <a class="l-desktop ui-btn ui-btn--success-outlined" href="https://ie.nativeforms.com/qhXZilzNiJXPmZSbvh3ZkhmZp1Db" target="_blank">
+                        <img src="/assets/new/icons/mail.svg" alt="mail-icon">
                         <span class="ml-2">お問い合わせ</span>
                     </a>
                     <button class="menu" id="menuBtn">
@@ -127,22 +128,22 @@
                 </div>
                 <div class="flex mt-3 links-container">
                     <div class="nav-links flex h6 w5 cl-gray gap-5">
-                        <a href="#">サービス内容</a>
-                        <a href="#">選ばれる理由</a>
-                        <a href="#">料金プラン</a>
-                        <a href="#">ご利用の流れ</a>
-                        <a href="#">お客様の声</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">お知らせ</a>
+                        <a href="#features">サービス内容</a>
+                        <a href="#advantages">選ばれる理由</a>
+                        <a href="#pricing">料金プラン</a>
+                        <a href="#process">ご利用の流れ</a>
+                        <a href="#voices">お客様の声</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#news">お知らせ</a>
                     </div>
                     <div class="login flex">
                         <a id="header-login-mobile" class="ui-btn hero-link" href="<%= APP_ORIGIN %>">
-                            <img src="/assets/new/logout.svg" alt="logout">
+                            <img src="/assets/new/icons/logout.svg" alt="logout">
                             <span>ログイン</span>
                         </a>
                         <a id="header-signup-mobile" class="ui-btn ui-btn--danger"
                             href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
-                            <img src="/assets/new/shield.svg" alt="shield">
+                            <img src="/assets/new/icons/shield.svg" alt="shield">
                             <span>無料でアカウント登録する</span>
                         </a>
                     </div>
@@ -152,7 +153,7 @@
     </header>
 
     <!--Hero-->
-    <div class="hero l-section cl-white bg-image-hero-1">
+    <div class="hero new l-section cl-white bg-image-hero-1">
         <article class="l-container l-container--lg">
             <div>
                 <div class="features">
@@ -163,29 +164,29 @@
                 <h2 class="w7 h2">不動産仲介の営業を<span class="cl-green">効率化</span>し <span class="cl-green"> 集客力</span>を高める
                 </h2>
                 <div class="hero-banner-mobile">
-                    <img src="/assets/new/hero-banner.svg" alt="hero">
+                    <img src="/assets/new/hero-banner.webp" alt="hero">
                 </div>
                 <h3 class="h6 w7">
                     フォレストは、営業、集客、業務効率の課題をワンストップで解決します。賃貸・売買いずれにも対応し、ご利用可能な人数制限もなく、個人から大手まで事業規模を問わず幅広くご利用できます。</h3>
                 <div class="login-btns">
                     <div>
                         <p class="w7 h6 text-center">＼ 個人の方向け ／</p>
-                        <button class="ui-btn ui-btn--danger">
+                        <a class="ui-btn ui-btn--danger" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
                             <span>無料でアカウント登録する</span>
-                            <img src="/assets/new/play-video.svg" alt="play video">
-                        </button>
+                            <img src="/assets/new/icons/play-video.svg" alt="play video">
+                        </a>
                     </div>
                     <div>
                         <p class="w7 h6 text-center">＼ 企業様向け ／</p>
-                        <button class="ui-btn ui-btn--primary">
+                        <a class="ui-btn ui-btn--primary" href="https://ie.nativeforms.com/IXSkxWPmZSbvh3ZkhmZp1Db" target="_blank">
                             <span>無料トライアルに申し込む</span>
-                            <img src="/assets/new/play-video-lime.svg" alt="play video">
-                        </button>
+                            <img src="/assets/new/icons/play-video-lime.svg" alt="play video">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="hero-banner">
-                <img src="/assets/new/hero-banner.svg" alt="hero">
+                <img src="/assets/new/hero-banner.webp" alt="hero">
             </div>
         </article>
     </div>
@@ -193,40 +194,39 @@
     <!-- Award -->
     <div class="award">
         <div class="rewards flex">
-            <img src="/assets/new/reward1.svg" alt="reward">
-            <img src="/assets/new/reward2.svg" alt="reward">
-            <img src="/assets/new/reward3.svg" alt="reward">
+            <img src="/assets/new/reward1.webp" alt="reward">
+            <img src="/assets/new/reward2.webp" alt="reward">
+            <img src="/assets/new/reward3.webp" alt="reward">
         </div>
         <p class="w5 p text-center">※2024年8月時点</p>
         <div class="bg-dark-gray">
             <div class="brands l-container l-container--lg">
                 <div class="row">
-                    <img src="/assets/new/brands/brand1.svg" alt="brand">
-                    <img src="/assets/new/brands/brand2.svg" alt="brand">
-                    <img src="/assets/new/brands/brand3.svg" alt="brand">
-                    <img src="/assets/new/brands/brand4.svg" alt="brand">
-                    <img src="/assets/new/brands/brand5.svg" alt="brand">
-                    <img src="/assets/new/brands/brand6.svg" alt="brand">
-                    <img src="/assets/new/brands/brand7.svg" alt="brand">
+                    <img src="/assets/new/brands/brand1.webp" alt="brand">
+                    <img src="/assets/new/brands/brand2.webp" alt="brand">
+                    <img src="/assets/new/brands/brand3.webp" alt="brand">
+                    <img src="/assets/new/brands/brand4.webp" alt="brand">
+                    <img src="/assets/new/brands/brand5.webp" alt="brand">
+                    <img src="/assets/new/brands/brand7.webp" alt="brand">
                 </div>
                 <div class="row">
-                    <img src="/assets/new/brands/brand8.svg" alt="brand">
-                    <img src="/assets/new/brands/brand9.svg" alt="brand">
-                    <img src="/assets/new/brands/brand10.svg" alt="brand">
-                    <img src="/assets/new/brands/brand11.svg" alt="brand">
-                    <img src="/assets/new/brands/brand12.svg" alt="brand">
-                    <img src="/assets/new/brands/brand13.svg" alt="brand">
-                    <img src="/assets/new/brands/brand14.svg" alt="brand">
-                    <img src="/assets/new/brands/brand15.svg" alt="brand">
+                    <img src="/assets/new/brands/brand8.webp" alt="brand">
+                    <img src="/assets/new/brands/brand9.webp" alt="brand">
+                    <img src="/assets/new/brands/brand10.webp" alt="brand">
+                    <img src="/assets/new/brands/brand11.webp" alt="brand">
+                    <img src="/assets/new/brands/brand12.webp" alt="brand">
+                    <img src="/assets/new/brands/brand13.webp" alt="brand">
+                    <img src="/assets/new/brands/brand14.webp" alt="brand">
+                    <img src="/assets/new/brands/brand15.webp" alt="brand">
                 </div>
                 <div class="row">
-                    <img src="/assets/new/brands/brand16.svg" alt="brand">
-                    <img src="/assets/new/brands/brand17.svg" alt="brand">
-                    <img src="/assets/new/brands/brand18.svg" alt="brand">
-                    <img src="/assets/new/brands/brand19.svg" alt="brand">
-                    <img src="/assets/new/brands/brand20.svg" alt="brand">
-                    <img src="/assets/new/brands/brand21.svg" alt="brand">
-                    <img src="/assets/new/brands/brand22.svg" alt="brand">
+                    <img src="/assets/new/brands/brand16.webp" alt="brand">
+                    <img src="/assets/new/brands/brand17.webp" alt="brand">
+                    <img src="/assets/new/brands/brand18.webp" alt="brand">
+                    <img src="/assets/new/brands/brand19.webp" alt="brand">
+                    <img src="/assets/new/brands/brand20.webp" alt="brand">
+                    <img src="/assets/new/brands/brand21.webp" alt="brand">
+                    <img src="/assets/new/brands/brand22.webp" alt="brand">
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@
                     </p>
                 </div>
                 <div class="problem">
-                    <img src="/assets/new/problem.svg" alt="problem">
+                    <img src="/assets/new/problem.webp" alt="problem">
                 </div>
                 <div class="card">
                     <p> 見込み客に対し
@@ -280,14 +280,14 @@
             <div class="card">
                 <button class="ui-btn ui-btn--secondary-outlined">AIによる帯替えの自動化</button>
                 <h3 class="h6 w7 mt-4">今までより格段に<span>業務効率化</span></h3>
-                <img src="/assets/new/service1.svg" alt="service">
+                <img src="/assets/new/service1.webp" alt="service">
                 <div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>レインズの物出しもワンクリック</p>
                     </div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>面倒な帯替えもAIが完全自動化</p>
                     </div>
                 </div>
@@ -295,14 +295,14 @@
             <div class="card">
                 <button class="ui-btn ui-btn--secondary-outlined">お客様専用のマイページ</button>
                 <h3 class="h6 w7 mt-4">提案の改善で<span>顧客満足度</span>アップ</h3>
-                <img src="/assets/new/service2.svg" alt="service">
+                <img src="/assets/new/service2.webp" alt="service">
                 <div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>物件図面をMAP付きで提案</p>
                     </div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>お客様の閲覧をログで追跡</p>
                     </div>
                 </div>
@@ -310,14 +310,14 @@
             <div class="card">
                 <button class="ui-btn ui-btn--secondary-outlined">物件情報をポータル掲載</button>
                 <h3 class="h6 w7 mt-4">最短かつスピーディな <span>集客</span></h3>
-                <img src="/assets/new/service3.svg" alt="service">
+                <img src="/assets/new/service3.webp" alt="service">
                 <div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>物件情報の入力は基本不要</p>
                     </div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>最短で物件をネット掲載</p>
                     </div>
                 </div>
@@ -325,14 +325,14 @@
             <div class="card">
                 <button class="ui-btn ui-btn--secondary-outlined">業界最安値</button>
                 <h3 class="h6 w7 mt-4">初めての利用でも <span>安心</span></h3>
-                <img src="/assets/new/service4.svg" alt="service">
+                <img src="/assets/new/service4.webp" alt="service">
                 <div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>月額1,250円（税別）から導入可能</p>
                     </div>
                     <div class="feature">
-                        <img src="/assets/new/checkmark.svg" alt="checkmark">
+                        <img src="/assets/new/icons/checkmark.svg" alt="checkmark">
                         <p>無料プランで機能や操作を試せる</p>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
     </section>
 
     <!-- Safety -->
-    <section class="safety">
+    <section class="safety" id="features">
         <h1 class="cl-gray w7 h2">Forestでできること</h1>
         <h2 class="title">
             オールインワン！
@@ -354,32 +354,32 @@
                 <div class="card-header">レインズからボタン１つで<br>
                     販売用図面を取り込み</div>
                 <div class="card-content">
-                    <img src="/assets/new/safety1.svg" alt="safety">
+                    <img src="/assets/new/safety1.webp" alt="safety">
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">いま流行りのマイページ提案</div>
                 <div class="card-content">
-                    <img src="/assets/new/safety2.svg" alt="safety">
+                    <img src="/assets/new/safety2.webp" alt="safety">
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">最速で物件をネット掲載</div>
                 <div class="card-content">
-                    <img src="/assets/new/safety3.svg" alt="safety">
+                    <img src="/assets/new/safety3.webp" alt="safety">
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">帯替え作業をAIが完全自動化</div>
                 <div class="card-content">
-                    <img src="/assets/new/safety4.svg" alt="safety">
+                    <img src="/assets/new/safety4.webp" alt="safety">
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">お客様の行動が<br>
                     リアルタイムでわかる</div>
                 <div class="card-content">
-                    <img src="/assets/new/safety5.svg" alt="safety">
+                    <img src="/assets/new/safety5.webp" alt="safety">
                 </div>
             </div>
         </div>
@@ -392,68 +392,68 @@
             <div class="card">
                 <h3>取込み済みの<br>
                     レインズ物件をマーキング</h3>
-                <img src="/assets/new/feature1.svg" alt="feature">
+                <img src="/assets/new/feature1.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>レインズの物件写真も<br>
                     自動で取込み</h3>
-                <img src="/assets/new/feature2.svg" alt="feature">
+                <img src="/assets/new/feature2.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>楽々PDF図面編集ツール</h3>
-                <img src="/assets/new/feature3.svg" alt="feature">
+                <img src="/assets/new/feature3.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>帯替え図面を<br>
                     無制限にダウンロード</h3>
-                <img src="/assets/new/feature4.svg" alt="feature">
+                <img src="/assets/new/feature4.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>お客様とチャットで<br>
                     自在にやり取り</h3>
-                <img src="/assets/new/feature5.svg" alt="feature">
+                <img src="/assets/new/feature5.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>手入力なしでの<br>
                     マップ付き提案</h3>
-                <img src="/assets/new/feature6.svg" alt="feature">
+                <img src="/assets/new/feature6.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>おすすめコメントで<br>
                     推し物件をアピール</h3>
-                <img src="/assets/new/feature7.svg" alt="feature">
+                <img src="/assets/new/feature7.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>サクッとまとめて<br>
                     お客様に共有リンク</h3>
-                <img src="/assets/new/feature8.svg" alt="feature">
+                <img src="/assets/new/feature8.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>IT重説対応の<br>
                     ウェブ会議ツール</h3>
-                <img src="/assets/new/feature9.svg" alt="feature">
+                <img src="/assets/new/feature9.webp" alt="feature">
             </div>
             <div class="card">
                 <h3>お客様の心を掴む<br>
                     自己PRページ</h3>
-                <img src="/assets/new/feature10.svg" alt="feature">
+                <img src="/assets/new/feature10.webp" alt="feature">
             </div>
 
         </div>
-        <button class="ui-btn ui-btn--primary cl-green w7">
+        <button class="ui-btn ui-btn--primary cl-green w7 todo">
             <span>詳しく見る</span>
-            <img src="/assets/new/play-video-green.svg" alt="play video">
+            <img src="/assets/new/icons/play-video-green.svg" alt="play video">
         </button>
     </section>
 
     <!-- Advantages -->
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <h1 class="cl-gray h2 w7">Forestが選ばれる
             <span class="h1 cl-dark-green">4</span>つの理由
         </h1>
         <div class="box">
             <div>
-                <img src="/assets/new/reason1.svg" alt="reason">
+                <img src="/assets/new/reason1.webp" alt="reason">
             </div>
             <div class="box-content">
                 <h2>01</h2>
@@ -468,7 +468,7 @@
         </div>
         <div class="box rtl">
             <div>
-                <img src="/assets/new/reason2.svg" alt="reason">
+                <img src="/assets/new/reason2.webp" alt="reason">
             </div>
             <div class="box-content">
                 <h2>02</h2>
@@ -480,7 +480,7 @@
         </div>
         <div class="box">
             <div>
-                <img src="/assets/new/reason3.svg" alt="reason">
+                <img src="/assets/new/reason3.webp" alt="reason">
             </div>
             <div class="box-content">
                 <h2>03</h2>
@@ -493,7 +493,7 @@
         </div>
         <div class="box rtl">
             <div>
-                <img src="/assets/new/reason4.svg" alt="reason">
+                <img src="/assets/new/reason4.webp" alt="reason">
             </div>
             <div class="box-content">
                 <h2>04</h2>
@@ -521,7 +521,7 @@
                 </div>
                 <div class="card">
                     <p>契約継続率</p>
-                    <h4><span>98</span>%</h4>
+                    <h4><span>97</span>%</h4>
                     <p>以上</p>
                 </div>
                 <div class="card">
@@ -1470,29 +1470,29 @@
                     <div class="whatsin">
                         <div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>本社管理ツール</p>
                             </div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>ユーザーID管理</p>
                             </div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>店舗・センター管理</p>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>データ分析ツール</p>
                             </div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>サービス品質保証（SLA）</p>
                             </div>
                             <div>
-                                <img src="/assets/new/checkmark-orange.svg" alt="checkmark">
+                                <img src="/assets/new/icons/checkmark-orange.svg" alt="checkmark">
                                 <p>専任担当サポート</p>
                             </div>
                         </div>
@@ -1506,14 +1506,14 @@
             </div>
             <a href="#" class="h3 w-7 text-center">詳細は個別にお問い合わせください</a>
         </div>
-        <button class="ui-btn ui-btn--primary">
+        <a class="ui-btn ui-btn--primary" href="https://ie.nativeforms.com/rZVTGdWPmZSbvh3ZkhmZp1Db" target="_blank">
             <span>ENTERPRISEプランに申し込む</span>
-            <img src="/assets/new/play-video-white.svg" alt="play video">
-        </button>
+            <img src="/assets/new/icons/play-video-white.svg" alt="play video">
+        </a>
     </section>
 
     <!-- Process -->
-    <section class="process">
+    <section class="process" id="process">
         <h1 class="text-center h2 w7 leading-1">ご利用の流れは簡単<span class="cl-dark-green h1">3</span>ステップ</h1>
         <div class="card-container">
             <div class="card">
@@ -1522,39 +1522,39 @@
                     <span>01</span>
                 </div>
                 <h2 class="text-center cl-gray h3 w7">アカウント登録</h2>
-                <img src="/assets/new/process1.svg" alt="process">
+                <img src="/assets/new/process1.webp" alt="process">
                 <p>登録フォームに必要情報を入力するだけで<br>すぐにアカウントを作成できます。</p>
             </div>
-            <img src="/assets/new/arrow-right.svg" alt="arrow" class="arrow">
+            <img src="/assets/new/icons/arrow-right.svg" alt="arrow" class="arrow">
             <div class="card">
                 <div class="card-header">
                     <p>Step</p>
                     <span>02</span>
                 </div>
                 <h2 class="text-center cl-gray h3 w7">ご利用開始</h2>
-                <img src="/assets/new/process2.svg" alt="process">
+                <img src="/assets/new/process2.webp" alt="process">
                 <p>操作ガイド、利用説明動画、利用マニュアル<br>なども充実！PCが苦手でも安心。</p>
             </div>
-            <img src="/assets/new/arrow-right.svg" alt="arrow" class="arrow">
+            <img src="/assets/new/icons/arrow-right.svg" alt="arrow" class="arrow">
             <div class="card">
                 <div class="card-header">
                     <p>Step</p>
                     <span>03</span>
                 </div>
                 <h2 class="text-center cl-gray h3 w7">（有料の場合）お支払い</h2>
-                <img src="/assets/new/process3.svg" alt="process">
+                <img src="/assets/new/process3.webp" alt="process">
                 <p>有料プランの購入もクレジットカードを登録<br>するだけで簡単に行えます。</p>
             </div>
         </div>
         <div class="btns-container">
-            <button class="ui-btn ui-btn--danger">
+            <a class="ui-btn ui-btn--danger" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
                 <span>無料でアカウント登録する</span>
-                <img src="/assets/new/play-video.svg" alt="play video">
-            </button>
-            <button class="ui-btn ui-btn--success">
+                <img src="/assets/new/icons/play-video.svg" alt="play video">
+            </a>
+            <a class="ui-btn ui-btn--success" href="https://ie.nativeforms.com/IXSkxWPmZSbvh3ZkhmZp1Db" target="_blank">
                 <span>無料トライアルに申し込む</span>
-                <img src="/assets/new/play-video-lime.svg" alt="play video">
-            </button>
+                <img src="/assets/new/icons/play-video-lime.svg" alt="play video">
+            </a>
         </div>
     </section>
 
@@ -1739,15 +1739,15 @@
     </section>
 
     <!-- voice -->
-    <section class="voice">
+    <section class="voice" id="voices">
         <h1 class="w7 h2">お客様の声</h1>
         <h2 class="mt-6 w7 h3">小〜大規模まで、さまざまな事業者の方から<br>お褒めの言葉をいただいております</h2>
         <div class="card-container">
             <!-- <a href="#" class="navigation">
-                <img src="/assets/new/arrow-left.svg" alt="arrow">
+                <img src="/assets/new/icons/arrow-left.svg" alt="arrow">
             </a> -->
-            <!-- <div class="card">
-                <img src="/assets/new/voice1.svg" alt="voice">
+            <div class="card">
+                <img src="/assets/new/voice1.webp" alt="voice">
                 <div class="tags">
                     <span>居住用賃貸仲介</span>
                     <span>不動産オーナー業</span>
@@ -1758,12 +1758,12 @@
                     <span>東京都</span>
                     <strong>株式会社ツナシマ様</strong>
                 </p>
-                <button class="ui-btn">
+                <a class="ui-btn" href="/interviews/tsunashima-tokyo-bunkyo">
                     詳しく見る
-                </button>
-            </div> -->
+                </a>
+            </div>
             <div class="card">
-                <img src="/assets/new/voice2.svg" alt="voice">
+                <img src="/assets/new/voice2.webp" alt="voice">
                 <div class="tags">
                     <span>法人向け社宅仲介</span>
                 </div>
@@ -1772,12 +1772,13 @@
                     <span>大阪府・東京都</span>
                     <strong>株式会社エリオン様</strong>
                 </p>
-                <button class="ui-btn">
+                <a class="ui-btn" href="/interviews/elion">
                     詳しく見る
-                </button>
+                </a>
             </div>
+            <!--
             <div class="card">
-                <img src="/assets/new/voice3.svg" alt="voice">
+                <img src="/assets/new/voice3.webp" alt="voice">
                 <div class="tags">
                     <span>タグ入る</span>
                     <span>タグ入る</span>
@@ -1792,8 +1793,9 @@
                     詳しく見る
                 </button>
             </div>
+            -->
             <!-- <a href="#" class="navigation">
-                <img src="/assets/new/chevron-right.svg" alt="arrow">
+                <img src="/assets/new/icons/chevron-right.svg" alt="arrow">
             </a> -->
         </div>
         <!-- <div class="pagination">
@@ -1801,14 +1803,14 @@
             <div></div>
             <div></div>
         </div> -->
-        <button class="ui-btn ui-btn--primary w7 mt-8">
+        <button class="ui-btn ui-btn--primary w7 mt-8 todo">
             <span>お客様の声を全て見る</span>
-            <img src="/assets/new/play-video-green.svg" alt="play video">
+            <img src="/assets/new/icons/play-video-green.svg" alt="play video">
         </button>
     </section>
 
     <!-- faq -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <h1 class="w7 h2 mb-10">FAQ</h1>
         <div class="accordion">
             <div class="accordion-header">
@@ -1893,10 +1895,10 @@
                 <p>サービスは、原則としてクレジットカード登録によるお支払いをお願いしています。銀行振込によるお支払いには、別途請求書発行手数料がかかります。詳しくは、サポート窓口までお問い合わせください。</p>
             </div>
         </div>
-        <button class="ui-btn ui-btn--primary w7 mt-16 gap-4">
+        <a class="ui-btn ui-btn--primary w7 mt-16 gap-4" href="https://help.openrm.jp/hc/ja/categories/5665361026329">
             <span>詳しく見る</span>
-            <img src="/assets/new/play-video-green.svg" alt="play video">
-        </button>
+            <img src="/assets/new/icons/play-video-green.svg" alt="play video">
+        </a>
     </section>
 
     <!-- concept -->
@@ -1904,7 +1906,7 @@
         <h1 class="w7 h2">サービスに込めた想い</h1>
         <div class="box">
             <div>
-                <img src="/assets/new/concept.svg" alt="reason">
+                <img src="/assets/new/concept.webp" alt="reason">
             </div>
             <div class="box-content">
                 <h3>住まい・暮らしに関わるみんなを笑顔に</h3>
@@ -1917,7 +1919,7 @@
 
     <!-- cta -->
     <section class="cta">
-        <img class="ui-logo-forest" src="/assets/new/logo-forest-black.svg" alt="フォレストのロゴ">
+        <img class="ui-logo-forest" src="/assets/images/logo-black.svg" alt="フォレストのロゴ">
         <h3 class="w7">まずは資料請求・無料トライアルからお試しください</h3>
         <div class="card-container">
             <div class="card">
@@ -1929,10 +1931,10 @@
                         <span class="bg-secondary">LIGHT</span>
                     </div>
                 </div>
-                <button class="ui-btn ui-btn--danger">
+                <a class="ui-btn ui-btn--danger" href="<%= LOGIN_ORIGIN %>/signup?app_id=01e2f21e-db9f-45f2-891f-6ec62f4e9d4e">
                     <span>無料でアカウント登録する</span>
-                    <img src="/assets/new/play-video.svg" alt="play video">
-                </button>
+                    <img src="/assets/new/icons/play-video.svg" alt="play video">
+                </a>
             </div>
             <div class="card">
                 <div>
@@ -1944,44 +1946,39 @@
                         <span class="bg-green">ENTERPRISE</span>
                     </div>
                 </div>
-                <button class="ui-btn ui-btn--success">
+                <a class="ui-btn ui-btn--success" href="https://ie.nativeforms.com/IXSkxWPmZSbvh3ZkhmZp1Db" target="_blank">
                     <span>無料トライアルに申し込む</span>
-                    <img src="/assets/new/play-video-lime.svg" alt="play video">
-                </button>
+                    <img src="/assets/new/icons/play-video-lime.svg" alt="play video">
+                </a>
             </div>
         </div>
         <div class="container">
             <div>
                 <h4>Webからのお問い合わせはこちら</h4>
                 <div class="grow">
-                    <button class="ui-btn ui-btn--primary w7 gap-4">
-                        <img src="/assets/new/email.svg" alt="email">
+                    <a class="ui-btn ui-btn--primary w7 gap-4" href="mailto:help@openrm.co.jp">
+                        <img src="/assets/new/icons/email.svg" alt="email">
                         <span>メールで問い合わせる</span>
-                        <img src="/assets/new/play-video-green.svg" alt="play video">
-                    </button>
+                        <img src="/assets/new/icons/play-video-green.svg" alt="play video">
+                    </a>
                 </div>
             </div>
             <div>
                 <h4>お電話でもお気軽にお問い合わせいただけます</h4>
                 <h3>サポート専用ダイヤル</h3>
-                <div class="flex">
-                    <img src="/assets/new/phone-green.svg" alt="phone">
+                <a class="flex" href="tel:050-3033-5162">
+                    <img src="/assets/new/icons/phone-green.svg" alt="phone">
                     <h1>050-3033-5162</h1>
-                </div>
+                </a>
                 <p>受付時間 10:00 ~ 17:00 （土日祝を除く）</p>
             </div>
         </div>
     </section>
 
     <!-- news -->
-    <section class="news">
+    <section class="news" id="news">
         <h1 class="h2 w7">お知らせ</h1>
         <div class="row-container">
-            <div class="row">
-                <p>2024.8.15</p>
-                <span>お知らせ</span>
-                <p>新サービスリリースのお知らせ</p>
-            </div>
             <div class="row">
                 <p>2022.6.3</p>
                 <span>プレスリリース</span>
@@ -2000,19 +1997,19 @@
         <div class="l-row l-container l-container--lg">
             <div class="footer-links-mobile">
                 <div>
-                    <a href="#">サービス内容</a>
-                    <a href="#">選ばれる理由</a>
-                    <a href="#">料金プラン</a>
-                    <a href="#">ご利用の流れ</a>
+                    <a href="#features">サービス内容</a>
+                    <a href="#advantages">選ばれる理由</a>
+                    <a href="#pricing">料金プラン</a>
+                    <a href="#process">ご利用の流れ</a>
                 </div>
                 <div>
-                    <a href="#">お客様の声</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">お知らせ</a>
+                    <a href="#voices">お客様の声</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#news">お知らせ</a>
                 </div>
             </div>
             <div class="footer-address">
-                <img class="ui-logo-forest" src="/assets/new/logo-forest-white.svg" alt="フォレストのロゴ" title="フォレストのロゴ"
+                <img class="ui-logo-forest" src="/assets/images/logo-white.svg" alt="フォレストのロゴ" title="フォレストのロゴ"
                     width="163" height="40">
                 <p>
                     株式会社オープンルーム
@@ -2021,16 +2018,17 @@
                 </p>
             </div>
             <div class="footer-links">
-                <a href="#">サービス内容</a>
-                <a href="#">選ばれる理由</a>
-                <a href="#">料金プラン</a>
-                <a href="#">ご利用の流れ</a>
-                <a href="#">お客様の声</a>
-                <a href="#">FAQ</a>
-                <a href="#">お知らせ</a>
+                <a href="#features">サービス内容</a>
+                <a href="#advantages">選ばれる理由</a>
+                <a href="#pricing">料金プラン</a>
+                <a href="#process">ご利用の流れ</a>
+                <a href="#voices">お客様の声</a>
+                <a href="#faq">FAQ</a>
+                <a href="#news">お知らせ</a>
             </div>
             <div class="footer-copyright">
-                <p>プライバシーポリシー 運営会社</p>
+                <a href="https://openrm.co.jp/policy.html">プライバシーポリシー</a>
+                <a href="https://openrm.co.jp/">運営会社</a>
                 <p class="cl-light-grey">Copyright © Open Room inc. All Rights Reserved.</p>
             </div>
         </div>
