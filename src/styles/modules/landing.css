@@ -54,6 +54,7 @@
   --4h: 18px;
   --4: 16px;
   --3: 12px;
+  --02: 15px;
   --2h: 10px;
   --2: 8px;
   --1h: 6px;
@@ -252,6 +253,7 @@ a,
   padding: 0 var(--8);
   background-size: 200% 100%;
   transition: background-position-x 0.2s ease-in-out;
+  cursor: default !important;
 }
 
 .ui-btn:hover {
@@ -612,9 +614,14 @@ a,
   align-items: center;
   justify-content: center;
   padding: var(--4);
-  font-size: var(--4);
+  font-size: var(02);
   font-weight: 700;
   border: var(--1) solid #e2e2e2;
+}
+
+.card h3{
+
+  font-size: var(02) !important;
 }
 
 .employees .problem {
@@ -687,7 +694,7 @@ a,
   /* transform: scale(1.05); */
   /* box-shadow: var(--4) var(--4) var(--8) 0 #00000029, */
   /* 0 0 var(--3) 0 #00000029 inset; */
-  box-shadow: var(--1) var(--1) var(--4) 0 #00000015;
+  /* box-shadow: var(--1) var(--1) var(--4) 0 #00000015; */
 }
 
 .service .ui-btn {
@@ -965,10 +972,12 @@ a,
   color: var(--green);
   line-height: 1;
   font-weight: 700;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .feedback h4 span {
   font-size: var(--10);
+  font-family: "Roboto", sans-serif !important;
 }
 
 /* pricing */
@@ -3245,7 +3254,7 @@ span.com-text {
   margin-bottom: 10px;
 }
 
-.pricing-table .plans-head .plan-cat h2 {
+.pricing-table .plans-head .plan-cat .h2 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
@@ -3269,8 +3278,8 @@ span.com-text {
 
 }
 
-.pricing-table .plans-head .plan-terget h4,
-.pricing-table .plans-head .plan-size h4 {
+.pricing-table .plans-head .plan-terget .h4,
+.pricing-table .plans-head .plan-size .h4 {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
@@ -3325,6 +3334,7 @@ span.com-text {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .pricing-table .plans-head .price .plans-item .ammount .currency {

@@ -1,107 +1,140 @@
-(function () {
+(() => {
+    const plans = document.querySelectorAll(
+      ".fee-mobile .plan-card .plan-card-footer"
+    );
+
+    const otherPlans = document.querySelectorAll(".fee-mobile .plan-info");
+
+    plans.forEach((plan) => {
+      plan.addEventListener("click", () => {
+        const isOpen = plan.classList.contains("open");
+        const planInfo = plan.parentElement.parentElement.children[1];
+
+        if (!isOpen) {
+          otherPlans.forEach((plan) => (plan.className = "hidden plan-info"));
+          plans.forEach((plan) => plan.classList.remove("open"));
+        }
+
+        plan.classList.toggle("open");
+        planInfo.classList.toggle("hidden");
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Tab switching functionality
+      const monthlyTab = document.getElementById("monthly-tab");
+      const yearlyTab = document.getElementById("yearly-tab");
+
+      // Function to update the prices, tax info, and notes dynamically
+      const updatePlanDetails = (type) => {
+          const plans = document.querySelectorAll(".plans-item");
+
+          plans.forEach((plan) => {
+              // Update the amount
+              const amountElement = plan.querySelector(".ammount");
+              if (amountElement) {
+                  const newAmount = amountElement.getAttribute(`data-${type}`);
+                  const currencySpan = amountElement.querySelector(".currency");
+                  if (currencySpan) {
+                      currencySpan.previousSibling.textContent = newAmount; // Update numeric value
+                  }
+              }
+
+              // Update the tax info
+              const taxInfoElement = plan.querySelector(".tax-info");
+              if (taxInfoElement) {
+                  taxInfoElement.textContent = taxInfoElement.getAttribute(`data-${type}`);
+              }
+
+              // Update the notes
+              const notesElement = plan.querySelector(".notes");
+              if (notesElement) {
+                  notesElement.textContent = notesElement.getAttribute(`data-${type}`);
+              }
+          });
+      };
+
+      // Event listeners for switching between tabs
+      monthlyTab.addEventListener("click", () => {
+          updatePlanDetails("monthly");
+          monthlyTab.classList.add("active");
+          yearlyTab.classList.remove("active");
+      });
+
+      yearlyTab.addEventListener("click", () => {
+          updatePlanDetails("yearly");
+          yearlyTab.classList.add("active");
+          monthlyTab.classList.remove("active");
+      });
+
+      // Initialize with monthly prices
+      updatePlanDetails("monthly");
 
 
 
-    // --------------------
-    // Root
-    // --------------------
+      // Collapsible functionality
+      const setupCollapsible = () => {
+          const collapsibles = document.querySelectorAll('.feature-tab-button');
+          const contents = document.querySelectorAll('.feature-tab-content');
+          const icons = document.querySelectorAll('.feature-tab-button .icon'); // Select all icons
 
-    const $fee = document.querySelector('.fee');
-    if (!$fee) return;
+          collapsibles.forEach((collapsible, index) => {
+              // On page load, open all collapsible sections
+              collapsible.classList.add('collaps');  // Add the 'collaps' class to all collapsibles
+              contents[index].style.maxHeight = `${contents[index].scrollHeight}px`;  // Set the max-height to the scrollHeight to open the content
+              icons[index].textContent = '-';  // Change icon to '-' when open
+          });
 
-    const $rows = select('.fee-row');
-    const $head = select('.fee-head');
-    const $body = select('.fee-body');
+          collapsibles.forEach((collapsible, index) => {
+              collapsible.addEventListener('click', () => {
+                  const isOpen = collapsible.classList.contains('collaps');
+                  collapsible.classList.toggle('collaps', !isOpen);
+                  contents[index].style.maxHeight = isOpen ? null : `${contents[index].scrollHeight}px`;
 
+                  // Toggle icon between '-' and '+'
+                  icons[index].textContent = isOpen ? '+' : '−';
+              });
+          });
+      };
 
-
-    // --------------------
-    // Helpers
-    // --------------------
-
-    function select (selector) {
-        return Array.from($fee.querySelectorAll(selector));
-    }
-
-    function wrap ($nodes, parent) {
-        const $parent = document.createElement('div')
-        $parent.className = parent;
-        $fee.appendChild($parent);
-        $nodes.forEach($node => $parent.appendChild($node))
-    }
-
-    function toggle ($nodes, value) {
-        $nodes.forEach($node => $node.style.display = value ? '' : 'none')
-    }
-
-    function toggleClass (name) {
-        if ($fee.classList.contains(name)) return;
-        const mobile = name === 'fee--mobile';
-        $fee.classList.toggle('fee--desktop', !mobile);
-        $fee.classList.toggle('fee--mobile', mobile);
-        return true;
-    }
+      setupCollapsible(); // Initial setup for collapsibles
 
 
+      // Expandable feature functionality
+      const expandButtons = document.querySelectorAll('.feature-expand-btn');
 
-    // --------------------
-    // To mobile
-    // --------------------
+      expandButtons.forEach((expandButton) => {
+          const featureExpand = expandButton.nextElementSibling; // Corresponding mobile-feature-expand-area
+          const featureTemplate = document.getElementById('plansFeatures');
 
-    function toMobile () {
+          expandButton.addEventListener('click', () => {
+              const isExpanded = expandButton.getAttribute('data-expanded') === 'true';
 
-        if (!toggleClass('fee--mobile')) return;
+              if (!isExpanded) {
+                  // Append content to feature-expand section
+                  featureExpand.innerHTML = '';
+                  featureExpand.appendChild(featureTemplate.cloneNode(true));
+                  featureExpand.style.display = 'block';
 
-        const $free = select('.fee-cell:nth-child(2)');
-        const $paid = select('.fee-cell:nth-child(3)');
+                  // Update button text, icon, and state
+                  expandButton.querySelector('.icon').textContent = '−';
+                  expandButton.querySelector('.text').textContent = '閉じる';
+                  expandButton.setAttribute('data-expanded', 'true');
+                  expandButton.classList.add('active')
+                  // Re-setup collapsibles after adding content
+                  setupCollapsible();
+              } else {
+                  // Hide feature-expand section
+                  featureExpand.style.display = 'none';
+                  featureExpand.innerHTML = '';
 
-        wrap($free, 'fee-block ui-card');
-        wrap($paid, 'fee-block ui-card');
-
-        toggle($head, false);
-        toggle($body, false);
-
-    }
-
-
-
-    // --------------------
-    // To desktop
-    // --------------------
-
-    function toDesktop () {
-
-        if (!toggleClass('fee--desktop')) return;
-
-        const $block = select('.fee-block');
-
-        $rows.forEach($row => {
-            $row.appendChild($block[0].firstElementChild);
-            $row.appendChild($block[1].firstElementChild);
-        })
-
-        $fee.removeChild($block[0]);
-        $fee.removeChild($block[1]);
-
-        toggle($head, true);
-        toggle($body, true);
-
-    }
-
-
-
-    // --------------------
-    // Resize
-    // --------------------
-
-    function resize () {
-        if (window.innerWidth > 768) toDesktop();
-        else toMobile();
-    }
-
-    window.addEventListener('resize', resize);
-    resize();
-
-
-
-})()
+                  // Update button text, icon, and state
+                  expandButton.querySelector('.icon').textContent = '+';
+                  expandButton.querySelector('.text').textContent = '詳しく見る';
+                  expandButton.setAttribute('data-expanded', 'false');
+                  expandButton.classList.remove('active')
+              }
+          });
+      });
+    });
+})();

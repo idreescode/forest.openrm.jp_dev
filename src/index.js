@@ -11,7 +11,8 @@ import './styles/modules/header.css'
 import './styles/modules/footer.css'
 import './styles/modules/landing.css'
 
-import './scripts/gtm'
 import '../old/scripts/menu'
 import '../old/scripts/accordion'
-import '../old/scripts/pricing'
+
+import './scripts/fee'
+import './scripts/gtm'

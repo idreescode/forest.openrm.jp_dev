@@ -20,7 +20,7 @@ function getVariables (env) {
 
 module.exports = env => ({
 
-    target: ['web', 'es5'],
+    target: ['web'],
 
     module: {
         rules: [
