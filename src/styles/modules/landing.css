@@ -3952,7 +3952,9 @@ p.location {
 .tabs-menu-list {
   margin-bottom: 20px;
 }
-
+.mun_sih_tab2_heading1{
+  max-width: 176px;
+}
 
 
 }
