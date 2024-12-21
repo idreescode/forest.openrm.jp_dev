@@ -122,8 +122,16 @@
   color: var(--lime) !important;
 }
 
+.cl-dark-green-logout {
+  color: var(--green);
+  font-family: 'Roboto', sans-serif;
+}
+
 .cl-dark-green {
   color: var(--green);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
 }
 
 .cl-gray {
@@ -321,7 +329,7 @@ a,
 .menubar .btns-container {
   display: flex;
   flex-direction: column;
-  gap: var(--2);
+  gap: var(--4);
   max-width: 280px;
   margin: var(--7) var(--4) auto var(--4);
 }
@@ -438,6 +446,7 @@ a,
 
 .hero.new h2 {
   font-size: var(--12);
+  text-align: left;
 }
 
 .hero.new .hero-banner img {
@@ -613,7 +622,7 @@ a,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--4);
+  padding: var(--3);
   font-size: var(02);
   font-weight: 700;
   border: var(--1) solid #e2e2e2;
@@ -682,6 +691,7 @@ a,
   flex-direction: column;
   align-items: center;
   border-radius: var(--2h);
+  height: 370px;
   /* box-shadow: var(--3) var(--3) var(--6) 0 #0000000d,
     0 0 var(--2) 0 #0000000d inset; */
 }
@@ -978,6 +988,7 @@ a,
 .feedback h4 span {
   font-size: var(--10);
   font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
 }
 
 /* pricing */
@@ -1303,6 +1314,7 @@ a,
   padding: 35px 0;
 }
 
+
 .enterprise .content>div {
   flex: 1;
   display: flex;
@@ -1359,6 +1371,12 @@ a,
   width: auto;
 }
 
+.enterprise .headingh4{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 /* process */
 
 .process {
@@ -1411,6 +1429,8 @@ a,
 
 .process .card .card-header span {
   font-size: var(--9);
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
 }
 
 .process .card img {
@@ -1422,7 +1442,7 @@ a,
 }
 
 .process .card p {
-  font-size: var(--3h);
+  font-size: 13px;
   text-align: center;
   font-weight: 500;
   margin-top: var(--3h);
@@ -1489,10 +1509,12 @@ a,
 }
 
 .footer-copyright {
-  flex-direction: column;
-  align-items: center;
-  margin-top: var(--6);
-  gap: var(--5);
+  display: flex; /* Align child elements horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align vertically */
+  gap: 15px; /* Add space between elements */
+  flex-wrap: wrap; /* Wrap to the next line if necessary */
+  text-align: center; /* Center align text content */
 }
 
 .footer-copyright p :first-child {
@@ -1579,6 +1601,8 @@ a,
   padding: var(--5);
   text-align: center;
   margin-bottom: -20px;
+  border: 10px solid #ff7000; /* Correct border thickness, style, and color */
+
 }
 
 .comparison article .col:nth-child(3) .cell {
@@ -1687,6 +1711,7 @@ span.com-text {
 }
 
 .voice .card {
+  height: 414px;
   width: 300px;
   border-radius: var(--3);
   padding: var(--5);
@@ -1710,6 +1735,12 @@ span.com-text {
   font-size: var(--2h);
   color: white;
 }
+h3.card-title {
+  margin-bottom: 10px;
+}
+.voice .card-body {
+  height: 175px;
+}
 
 .voice .card h3 {
   color: var(--gray);
@@ -1723,10 +1754,12 @@ span.com-text {
   font-weight: 400;
   text-align: left;
   color: var(--gray);
-  margin-top: var(--3);
   display: flex;
   flex-direction: column;
   gap: var(--2h);
+}
+p.location {
+  margin-top: 4px;
 }
 
 .voice .card strong {
@@ -1734,7 +1767,6 @@ span.com-text {
 }
 
 .voice .card .ui-btn {
-  margin-top: var(--5);
   background-color: white;
   color: var(--secondary);
   border: 2px solid var(--secondary);
@@ -1743,6 +1775,10 @@ span.com-text {
   font-size: var(--4);
 }
 
+
+.card-footer2 {
+  margin-top: 27px;
+}
 .voice .navigation {
   width: 50px;
   min-width: 50px;
@@ -2031,6 +2067,7 @@ span.com-text {
   font-size: var(--10);
   font-weight: 700;
   line-height: 1;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .cta .container p {
@@ -2920,18 +2957,31 @@ span.com-text {
   }
 
   .footer-copyright {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    gap: var(--4); /* Add space between links */
     margin-top: var(--10);
-    gap: var(--4);
     font-size: var(--3);
-  }
+    flex-wrap: wrap; /* Wrap if content exceeds width */
+}
 
-  .footer-copyright .cl-light-grey {
-    font-size: var(--2h);
-  }
+.footer-copyright a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Match text color */
+    margin: 0 10px; /* Add horizontal spacing */
+}
 
-  .footer-links {
-    display: none;
-  }
+.footer-copyright p.cl-light-grey {
+    width: 100%; /* Ensure the text spans full width */
+    text-align: center; /* Center-align the text */
+    font-size: var(--2h); /* Adjust font size */
+    margin-top: 10px; /* Add spacing above the text */
+}
+
+
+.footer-links {
+    display: none; /* Keep hidden as per original */
+}
 
   .footer-links-mobile {
     display: flex;
@@ -3407,7 +3457,7 @@ span.com-text {
   max-height: 0;
   width: 100%;
   transition: max-height 0.3s ease-in-out;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
 }

@@ -100,7 +100,7 @@
             </a>
             <a class="ui-btn hero-link" href="<%= APP_ORIGIN %>">
                 <img src="/assets/new/icons/logout.svg" alt="logout">
-                <span class="cl-dark-green">ログイン</span>
+                <span class="cl-dark-green-logout">ログイン</span>
             </a>
         </div>
     </div>
@@ -1403,7 +1403,7 @@
                                             </div>
                                         </td>
                                         <td></td>
-                                        <td>カード払いのみ
+                                        <td>カード払いのみ<br/>
                                             （クレジット・デビット可）</td>
                                         <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
@@ -1499,7 +1499,7 @@
                 </div>
                 <hr>
                 <div>
-                    <h4>社内営業を可視化して最適化</h4>
+                    <h4 class="headingh4">社内営業を可視化して最適化</h4>
                     <p>ビジネスプランで提供される全ての機能に加え、全社での営業活動の管理、集約、分析を可能にし、ユーザー管理までを一括で行える本社ツールへのアクセス権付きです。</p>
                 </div>
             </div>
@@ -1746,34 +1746,44 @@
                 <img src="/assets/new/icons/arrow-left.svg" alt="arrow">
             </a> -->
             <div class="card">
-                <img src="/assets/new/voice1.svg" alt="voice">
-                <div class="tags">
-                    <span>居住用賃貸仲介</span>
-                    <span>不動産オーナー業</span>
-                    <span>サービスアパートメント事業</span>
+                <div class="card-header">
+                    <img src="/assets/new/voice1.svg" alt="voice">
                 </div>
-                <h3>フォレストPROで今まで30分かかっていたメールでの物件提案が5分に短縮し、よりお客様への信頼を得られました</h3>
-                <p>
-                    <span>東京都</span>
-                    <strong>株式会社ツナシマ様</strong>
-                </p>
-                <a class="ui-btn" href="/interviews/tsunashima-tokyo-bunkyo">
-                    詳しく見る
-                </a>
+                <div class="card-body">
+                    <div class="tags">
+                        <span class="tag">居住用賃貸仲介</span>
+                        <span class="tag">不動産オーナー業</span>
+                        <span class="tag">サービスアパートメント事業</span>
+                    </div>
+                    <h3 class="card-title">
+                        フォレストPROで今まで30分かかっていたメールでの物件提案が5分に短縮し、よりお客様への信頼を得られました
+                    </h3>
+                    <p class="location">東京都</p>
+                    <p class="company-name"><strong>株式会社ツナシマ様</strong></p>
+                </div>
+                <div class="card-footer">
+                    <a href="/interviews/tsunashima-tokyo-bunkyo" class="ui-btn">詳しく見る</a>
+                </div>
             </div>
+
+            <!-- Testimonial Card 2 -->
             <div class="card">
-                <img src="/assets/new/voice2.svg" alt="voice">
-                <div class="tags">
-                    <span>法人向け社宅仲介</span>
+                <div class="card-header">
+                    <img src="/assets/new/voice2.svg" alt="voice">
                 </div>
-                <h3>物件の仕入れからお客様への提案までをワンストップで改善するフォレストPROを導入しました</h3>
-                <p>
-                    <span>大阪府・東京都</span>
-                    <strong>株式会社エリオン様</strong>
-                </p>
-                <a class="ui-btn" href="/interviews/elion">
-                    詳しく見る
-                </a>
+                <div class="card-body">
+                    <div class="tags">
+                        <span class="tag">法人向け社宅仲介</span>
+                    </div>
+                    <h3 class="card-title">
+                        物件の仕入れからお客様への提案までをワンストップで改善するフォレストPROを導入しました
+                    </h3>
+                    <p class="location">大阪府・東京都</p>
+                    <p class="company-name"><strong>株式会社エリオン様</strong></p>
+                </div>
+                <div class="card-footer">
+                    <a href="/interviews/elion" class="ui-btn">詳しく見る</a>
+                </div>
             </div>
             <!--
             <div class="card">
@@ -1817,7 +1827,7 @@
             </div>
             <div class="accordion-content">
                 <span>A.</span>
-                <p>どなたでも無料から登録して基本機能をお試しいただけます。無料プランでご利用いただく場合も期間の制限や登録できる物件数や顧客数には上限はありません。 また有料プランを試されたい方のために無料トライアルもご案内差し上げています。（STANDARD、PROプランのみ）詳しくは、下記フォームよりお問合せください。
+                <p>どなたでも無料から登録して基本機能をお試しいただけます。無料プランでご利用いただく場合も期間の制限や登録できる物件数や顧客数には上限はありません。<br /> また有料プランを試されたい方のために無料トライアルもご案内差し上げています。（STANDARD、PROプランのみ）詳しくは、下記フォームよりお問合せください。
                 </p>
             </div>
         </div>
@@ -2006,11 +2016,12 @@
             <div class="footer-address">
                 <img class="ui-logo-forest" src="/assets/images/logo-white.svg" alt="フォレストのロゴ" title="フォレストのロゴ"
                     width="163" height="40">
-                <p>
-                    株式会社オープンルーム
-                    <br>
-                    東京都渋谷区道玄坂一丁目 2 番 3 号　渋谷フクラス 17 階
-                </p>
+                    <p>
+                        株式会社オープンルーム
+                        <br>
+                        東京都渋谷区道玄坂一丁目2番3号 渋谷フクラス17階
+                    </p>
+                    
             </div>
             <div class="footer-links">
                 <a href="#features">サービス内容</a>
@@ -2024,6 +2035,9 @@
             <div class="footer-copyright">
                 <a href="https://openrm.co.jp/policy.html">プライバシーポリシー</a>
                 <a href="https://openrm.co.jp/">運営会社</a>
+             
+            </div>
+            <div class="footer-copyright">
                 <p class="cl-light-grey">Copyright © Open Room inc. All Rights Reserved.</p>
             </div>
         </div>
