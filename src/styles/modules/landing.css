@@ -3928,5 +3928,21 @@ p.location {
   .service-item-heading {
     font-size: 16px;
   }
-
 }
+
+
+@media (max-width: 575px) {
+  .tab-menu {
+    min-width: 149px;
+}
+
+
+
+
+
+
+    
+}
+
+
+
