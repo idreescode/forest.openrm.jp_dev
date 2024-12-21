@@ -190,6 +190,8 @@
   gap: var(--10);
 }
 
+
+
 .flex {
   display: flex;
   align-items: center;
