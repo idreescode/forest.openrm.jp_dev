@@ -3846,7 +3846,7 @@ p.location {
   padding: 10px 15px;
   border-radius: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -3935,7 +3935,9 @@ p.location {
   .tab-menu {
     min-width: 149px;
 }
-
+.service-item-tag .tag {
+  font-weight: 700;
+}
 
 
 
