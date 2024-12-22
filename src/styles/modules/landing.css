@@ -2078,6 +2078,7 @@ p.location {
   margin-top: var(--4);
   font-size: var(--3);
   font-size: 500;
+  font-weight: 500;
 }
 
 .news {
@@ -3303,11 +3304,12 @@ p.location {
 }
 
 .pricing-table .plans-head p {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   margin-bottom: 10px;
+  max-width: 254px;
 }
 
 .pricing-table .plans-head .plan-cat .h2 {
@@ -3387,27 +3389,27 @@ p.location {
 }
 
 .pricing-table .plans-head .price .plans-item .ammount {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
   font-family: "Roboto", sans-serif !important;
 }
 
 .pricing-table .plans-head .price .plans-item .ammount .currency {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 500;
   margin-left: 5px;
 }
 
 .pricing-table .plans-head .price .plans-item .notes {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
 }
 
 .pricing-table .plans-head .price .plans-item .slugline {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 10px;
@@ -4024,8 +4026,6 @@ p.location {
 }
 
 
-
-
 }
 
 @media (max-width: 575px) {
@@ -4036,12 +4036,138 @@ p.location {
 .feedback .card {
   padding: 11px;
 }
+.pricing .heading .title {
+  padding: 10px 19px;
+  max-width: 230px;
+}
+.pricing .heading h3 {
+  max-width: 288px;
+  margin: auto;
+  margin-top: 18px;
+}
+#plansFeatures .feature-tab-content .feature-title h5 {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.pricing-container .pricing-table{
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+.pricing-container {
+  box-shadow: none;
+}
+.pricing-table .plans-head .price {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.pricing-table .plan-price-row .mobile-feature .m-feature-expand-btn2 {
+    border: 2px solid #007E47;
+    background-color: #007E47;
+}
+.pricing-container .text {
+  padding: 0;
+}
+.pricing-table .plans-head tr, #plansFeatures .feature-tab-content table tr {
+  justify-content: space-between;
+}
+#plansFeatures .feature-tab-content .feature-title {
+  padding: 0 15px 0px 0px;
+}
+.mobile-feature .mobile-feature-expand-area #plansFeatures .feature-tab-content table td:first-child {
+  width: calc(75% - 20px);
+  min-width: calc(75% - 20px);
+  max-width: calc(75% - 20px);
+}
+#plansFeatures .feature-tab-button, #plansFeatures .feature-tab-button.collaps {
+  padding: 15px 40px;
+  font-size: 16px;
+}
+.enterprise .content h4 {
+  margin-bottom: 4px;
+}
+.advantages h1 span, .process h1 span {
+  font-size: 32px;
+  font-weight: 700;
+  color: #007E47;
+}
+.process .card p {
+  font-weight: 700;
+}
+.process .card .card-header {
+  width: 60px;
+  height: 60px;
+}
+.process .card img {
+  margin-top: 14px;
+}
+.process .card .card-header {
+  top: -35px;
+}
+.process .card p:last-child {
+  font-weight: 500;
+  font-size: 12px !important;
+}
+span.com-text {
+  margin-top: 0px;
+}
+span.com-text {
+  font-size: 10px !important;
+}
+.comparison article .col:nth-child(3) .round {
+  border: 2px solid #ff7000;
+}
+.comparison article .col:nth-child(3) {
+  padding: 0px;
+}
+.accordion p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.concept .box .box-content {
+  padding: 40px 20px 22px 20px;
+}
+.cta h3 {
+  max-width: 272px;
+  margin: auto;
+  margin-top: 16px;
+}
+.cta .card-container, .cta .container {
+  margin-top: 32px;
+}
+.cta .card p {
+  max-width: 180px;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 12px;
+}
+.cta .plans {
+  margin-top: 12px;
+}
+.cta .card .ui-btn {
+  font-size: 16px;
+  padding: 15px;
+}
+.cta .card .plans span {
+  padding: 5px 10px;
+}
+.cta .card-container, .cta .container {
+  margin-top: 32px !important;
+}
+.cta .flex h1 {
+  margin-top: 8px;
+}
+
+
+
 
 
 
 
 
 }
+
+
 
 @media (max-width: 374px) {
   .features .card-container {
@@ -4055,10 +4181,12 @@ p.location {
   font-size: 12px;
   font-weight: 500;
 }
-
-
-
-
+#plansFeatures .feature-tab-button, #plansFeatures .feature-tab-button.collaps {
+  padding: 15px 35px 15px 15px;
+}
+.concept .box .box-content {
+  padding: 40px 15px 22px 15px;
+}
 
 
     
