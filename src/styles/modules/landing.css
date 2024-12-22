@@ -638,7 +638,9 @@ a,
 .employees .problem {
   margin-bottom: var(--m15);
 }
-
+.employees_mobile{
+  display: none;
+}
 /* Service */
 
 .service h2 span,
@@ -3979,13 +3981,85 @@ p.location {
 }
 
 
+.hero.new h2 {
+  font-size: 26px;
+  text-align: center;
+}
+.employees_desktop{
+  display: none;
+}
+.employees_mobile{
+  display: block;
+}
+.service h2 span, .employees .card span {
+  font-size: 11px;
+}
+.employees .card {
+  width: 150px;
+  height: 150px;
+}
+.employees .problem {
+  transform: translateY(-110px);
+}
+.employees>* {
+  padding-left: 0;
+  padding-right: 0;
+}
+.employees .cards {
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+.employees .-mt-8 {
+  margin-top: 15px;
+}
+.service .card .feature {
+  font-size: 14px;
+}
+.features .card {
+  font-size: 12px;
+  padding: 15px 8px;
+}
+.features_text span{
+  max-width: 72px;
+}
+
 
 
 
 }
 
-
 @media (max-width: 575px) {
+  .feedback h4 span {
+    font-size: 24px;
+    font-weight: 700;
+}
+.feedback .card {
+  padding: 11px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 374px) {
+  .features .card-container {
+    gap: 8px;
+}
+.advantages .box p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.feedback .card p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+
+
 
     
 }
