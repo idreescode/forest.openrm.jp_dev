@@ -3923,7 +3923,10 @@ p.location {
   .service-item-tag {
     align-items: center;
     justify-content: center;
-  }
+}
+.m_service_item_tag_tab2{
+  max-width: 200px;
+}
 
   .service-item-heading {
     font-size: 16px;
@@ -3936,7 +3939,7 @@ p.location {
   font-size: 14px;
 }
 .service-item-heading {
-  max-width: 256px;
+  max-width: 257px;
 }
 .service-image-col {
   max-width: 300px;
@@ -3945,6 +3948,7 @@ p.location {
 .service-item-text {
   font-size: 12px;
   max-width: 300px;
+  text-align: left;
 }
 .panel-container {
   align-items: center;
@@ -3955,6 +3959,27 @@ p.location {
 .mun_sih_tab2_heading1{
   max-width: 176px;
 }
+.mun_sih_tab2_heading2{
+  max-width: 192px;
+}
+.tab-panel {
+  padding: 10px;
+}
+.m_service_icon_img_5{
+  width: 185px !important;
+}
+.m_service_icon_img_7{
+  width: 140px !important;
+}
+.mun_sih_tab2_heading3{
+  max-width: 192px;
+}
+.m_service_icon_img_9{
+  width: 170px !important;
+}
+
+
+
 
 
 }
