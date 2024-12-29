@@ -2135,51 +2135,102 @@
         </div>
     </footer>
 
+
+
+    <!-- <script src="dist/new.scripts.js"></script> -->
     <script>
         // Collapsible functionality
-var setupCollapsible = function setupCollapsible() {
-  var collapsibles = document.querySelectorAll('.feature-tab-button');
-  var contents = document.querySelectorAll('.feature-tab-content');
-  var icons = document.querySelectorAll('.feature-tab-button .icon'); // Icon gula select kora
+        var setupCollapsible = function setupCollapsible() {
+        var collapsibles = document.querySelectorAll('.feature-tab-button');
+        var contents = document.querySelectorAll('.feature-tab-content');
+        var icons = document.querySelectorAll('.feature-tab-button .icon'); // Icon gula select kora
 
-  // Prothom e shudhu 1st accordion open rakhbo
-  collapsibles.forEach(function (collapsible, index) {
-    if (index === 0) {
-      // Prothom accordion open korbo
-      collapsible.classList.add('collaps');
-      contents[index].style.maxHeight = `${contents[index].scrollHeight}px`;
-      icons[index].textContent = '−'; // Open state er icon
+        // Prothom e shudhu 1st accordion open rakhbo
+        collapsibles.forEach(function (collapsible, index) {
+            if (index === 0) {
+            // Prothom accordion open korbo
+            collapsible.classList.add('collaps');
+            contents[index].style.maxHeight = `${contents[index].scrollHeight}px`;
+            icons[index].textContent = '−'; // Open state er icon
+            } else {
+            // Onnoder close rakhbo
+            collapsible.classList.remove('collaps');
+            contents[index].style.maxHeight = null;
+            icons[index].textContent = '+'; // Close state er icon
+            }
+        });
+
+        // Click event listener add korbo
+        collapsibles.forEach(function (collapsible, index) {
+            collapsible.addEventListener('click', function () {
+            var isOpen = collapsible.classList.contains('collaps');
+
+            // Sob accordion close kore debo prothome
+            collapsibles.forEach(function (otherCollapsible, otherIndex) {
+                otherCollapsible.classList.remove('collaps');
+                contents[otherIndex].style.maxHeight = null;
+                icons[otherIndex].textContent = '+';
+            });
+
+            // Jodi already open na thake, tahole toggle kore open korbo
+            if (!isOpen) {
+                collapsible.classList.add('collaps');
+                contents[index].style.maxHeight = `${contents[index].scrollHeight}px`;
+                icons[index].textContent = '−';
+            }
+            });
+        });
+        };
+
+        setupCollapsible(); // Initial setup for collapsibles
+
+
+
+
+
+        // Collapsible functionality for FAQs
+var accordions = document.querySelectorAll(".faq .accordion");
+
+// Initial setup: Keep only the first accordion open
+accordions.forEach(function (accordion, index) {
+  var img = accordion.querySelector("img");
+
+  if (index === 0) {
+    // First accordion open
+    accordion.classList.remove("closed");
+    img.src = "/assets/images/dash-black.svg";
+  } else {
+    // All other accordions closed
+    accordion.classList.add("closed");
+    img.src = "/assets/new/plus-small.svg";
+  }
+});
+
+// Add click event listeners
+accordions.forEach(function (accordion) {
+  accordion.addEventListener("click", function () {
+    // Close all accordions first
+    accordions.forEach(function (otherAccordion) {
+      var otherImg = otherAccordion.querySelector("img");
+      otherAccordion.classList.add("closed");
+      otherImg.src = "/assets/new/plus-small.svg";
+    });
+
+    // Toggle the clicked accordion
+    var isOpen = !accordion.classList.contains("closed");
+    var img = accordion.querySelector("img");
+    if (isOpen) {
+      // Close the clicked accordion
+      accordion.classList.add("closed");
+      img.src = "/assets/new/plus-small.svg";
     } else {
-      // Onnoder close rakhbo
-      collapsible.classList.remove('collaps');
-      contents[index].style.maxHeight = null;
-      icons[index].textContent = '+'; // Close state er icon
+      // Open the clicked accordion
+      accordion.classList.remove("closed");
+      img.src = "/assets/images/dash-black.svg";
     }
   });
+});
 
-  // Click event listener add korbo
-  collapsibles.forEach(function (collapsible, index) {
-    collapsible.addEventListener('click', function () {
-      var isOpen = collapsible.classList.contains('collaps');
-
-      // Sob accordion close kore debo prothome
-      collapsibles.forEach(function (otherCollapsible, otherIndex) {
-        otherCollapsible.classList.remove('collaps');
-        contents[otherIndex].style.maxHeight = null;
-        icons[otherIndex].textContent = '+';
-      });
-
-      // Jodi already open na thake, tahole toggle kore open korbo
-      if (!isOpen) {
-        collapsible.classList.add('collaps');
-        contents[index].style.maxHeight = `${contents[index].scrollHeight}px`;
-        icons[index].textContent = '−';
-      }
-    });
-  });
-};
-
-setupCollapsible(); // Initial setup for collapsibles
 
     </script>
 </body>
