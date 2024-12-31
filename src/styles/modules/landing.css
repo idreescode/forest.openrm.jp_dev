@@ -580,7 +580,6 @@ a,
 
 
 
-
 /* employee */
 .employees {
   background-color: #f4f4f4;
@@ -652,11 +651,10 @@ a,
 }
 /* Service */
 
-.service h2 span,
-.employees .card span {
+.service h2 span, .employees .card span {
   background: linear-gradient(180deg,
-      transparent 75%,
-      var(--secondary) 25%);
+    transparent 65%,
+    var(--secondary) 35%);
 }
 
 .service h2 {
@@ -4282,6 +4280,51 @@ span.com-text {
 	display: inline-block;
 	margin: auto;
 	text-align: center;
+}
+.menubar .ui-btn {
+  font-size: 12px;
+  font-weight: 700;
+}
+.cl-dark-green-service-btn{
+  font-size: 12px;
+  font-weight: 700;
+}
+.hero.new h3 {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+.rewards img:not(:last-child) {
+	transform: translateX(0px);
+}
+.rewards img {
+	max-width: 100%;
+	width: 160px;
+	height: 76px;
+	object-fit: cover;
+}
+
+.rewards span:first-child {
+	display: inline-block;
+	flex: 0 0 100%;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.employees > * {
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.service h2 span {
+	font-size: 24px;
+	font-weight: 700;
+}
+.service h2 b {
+	max-width: 190px;
+	display: inline-block;
+}
+.service h2 span{
+	background: linear-gradient(180deg, transparent 75%, var(--secondary) 25%);
 }
 
 
