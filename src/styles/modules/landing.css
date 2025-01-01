@@ -702,9 +702,10 @@ a,
   flex-direction: column;
   align-items: center;
   border-radius: var(--2h);
-  height: 370px;
+  height: 100%;
+  justify-content: space-between;
   /* box-shadow: var(--3) var(--3) var(--6) 0 #0000000d,
-    0 0 var(--2) 0 #0000000d inset; */
+  0 0 var(--2) 0 #0000000d inset; */
 }
 
 .card {
@@ -4326,7 +4327,26 @@ span.com-text {
 .service h2 span{
 	background: linear-gradient(180deg, transparent 75%, var(--secondary) 25%);
 }
-
+.advantages .box-content {
+  margin-top: -20px;
+}
+.pricing-table .plans-head p {
+  max-width: 243px;
+}
+.voice_card3{
+  display: none;
+}
+.concept {
+  padding: 40px 20px;
+}
+.concept .box p {
+  line-height: 18px;
+  text-align: justify;
+  font-weight: 500;
+}
+.footer-copyright2{
+  margin-top: -20px;
+}
 
 }
 
